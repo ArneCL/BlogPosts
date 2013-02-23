@@ -17,7 +17,7 @@ If your repository isn't local or isn't on the default maven reposistory on the 
     </ivysettings>
 Note we've kept the 'central' ibiblio resolver. This is the one at mvnrespository.com.
 
-The pattern matches how we [[Blog:Blog/Apache_Ivy_-_Publishing_(to_local_and_ssh)|previously]] published using ssh.
+The pattern matches how we published using ssh.
 
 Then in ivy.xml you'll say what you want to grab from that repository:
  
@@ -32,12 +32,12 @@ So we're looking at http://ivy.denevell.org/denevell/BriefWebServer/0.1/ivy-0.1.
 
 Then you can run ant to do the retrieving.
 
-   <project xmlns:ivy="antlib:org.apache.ivy.ant" name="SampleApp" default="resolve">
+    <project xmlns:ivy="antlib:org.apache.ivy.ant" name="SampleApp" default="resolve">
      <target name="resolve">
          <ivy:retrieve type="jar" pattern="libs/[artifact]-[revision].[ext]"/>
          <ivy:retrieve type="source" pattern="libs-non-dex/[artifact]-[revision]-[type].[ext]"/>
      </target>
-   </project>
+    </project>
 
 These two retrieve lines get different tpyes, jar and source, and put them into different directories, libs and libs-non-dex, specifying their filename pattern.
 
