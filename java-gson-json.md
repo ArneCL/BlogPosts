@@ -19,7 +19,7 @@ To do the same this with arrays, just pass in a JSON array and set the class typ
 
 To create custom mappings between JSON properties and object class fields, you need to register a type adapter:
 
-     public class OtherExample {
+      public class OtherExample {
         private String other;
         public String getOther() {
           return other;
