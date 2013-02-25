@@ -31,7 +31,7 @@ Here's how you start using 1.1 of their API using Scribe.
                 return super.shouldOverrideUrlLoading(view, url);
               }
         });
-  webview.loadUrl(authUrl);
+        webview.loadUrl(authUrl);
 
 4) Once you have the verifier string, you run another background task to get the AccessToken using this verifier string and the request token you gained at the start. You use this to sign all future API calls.
 
