@@ -12,7 +12,7 @@ And we want to remove the double new line.
 
 This ugly looking command will replace all the newlines with nothing.
 
-    sed ':a;N;$!ba;s/\n\n//' unix-zip.md
+    sed ':a;N;$!ba;s/\n\n//' YOURFILE
 
 The :a says create a label - we'll need this in a moment.
 
