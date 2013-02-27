@@ -1,5 +1,8 @@
 Title: Ant: If-else conditionals
-{{wl-tags:ant|ant-condition}}{{wl-publish: 2012-12-09 16:16:55 -0500 | Denevell }}
+Tags: ant|ant-condition
+Date: 2012-12-09 16:16:55 -0500 
+Author: Denevell
+
 
 You can create normal conditionals via:
 

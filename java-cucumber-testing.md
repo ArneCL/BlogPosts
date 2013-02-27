@@ -1,5 +1,9 @@
 Title: Java Cucumber testing
-{{wl-tags:java|java-testing|cucumber}}{{wl-tags:java|ant|java-testing|cucumber}}{{wl-publish: 2013-01-16 10:40:49 -0500 | Denevell }}
+Tags: java|java-testing|cucumber
+Tags: java|ant|java-testing|cucumber
+Date: 2013-01-16 10:40:49 -0500 
+Author: Denevell
+
 
 Make a product directory with bin/ and lib/ directories within.
 

@@ -1,4 +1,7 @@
-{{wl-tags: json|android|gson|java}}{{wl-publish: 2012-11-23 16:13:11 -0500 | Denevell }}
+Tags:  json|android|gson|java
+Date: 2012-11-23 16:13:11 -0500 
+Author: Denevell
+
 
 First download Google's Gson.
 

@@ -1,5 +1,8 @@
 Title: Android: Custom views and attributes
-{{wl-tags: android|android-custom-views}}{{wl-publish: 2013-01-31 11:57:15 -0500 | Denevell }}
+Tags:  android|android-custom-views
+Date: 2013-01-31 11:57:15 -0500 
+Author: Denevell
+
 
 First create a class that extends a View, like FrameLayout here. It inflates a normal layout. You can skip that if you extends a TextView or something.
 

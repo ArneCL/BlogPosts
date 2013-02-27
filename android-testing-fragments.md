@@ -1,6 +1,9 @@
 Title: Android: Testing fragments
-{{wl-tags:android|android-testing|android-fragments}}
-{{wl-publish: 2012-12-18 11:53:37 -0500 | Denevell }}
+Tags: android|android-testing|android-fragments
+
+Date: 2012-12-18 11:53:37 -0500 
+Author: Denevell
+
 
 If you want to test a fragment in isolation, you need to create a Test FragmentActivity so your test can use that. The test activity will look something like this. Remember to declare it in your application's manifest:
 

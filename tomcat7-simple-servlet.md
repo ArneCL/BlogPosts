@@ -1,5 +1,8 @@
 Title: Tomcat 7: Deploying a simple Servlet
-{{wl-tags:tomcat|tomcat-setup|ant|tomcat-httpservlet|java}}{{wl-publish: 2013-02-10 09:42:03 -0500 | Denevell }}
+Tags: tomcat|tomcat-setup|ant|tomcat-httpservlet|java
+Date: 2013-02-10 09:42:03 -0500 
+Author: Denevell
+
 
 Now you've deployed a simple JSP, you can now alter that to deploy a simple servlet.
 

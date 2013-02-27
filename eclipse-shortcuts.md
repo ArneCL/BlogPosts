@@ -1,5 +1,8 @@
 Title: Eclipes shortcuts
-{{wl-tags:eclipse}}{{wl-publish: 2012-12-18 04:39:25 -0500 | Denevell }}
+Tags: eclipse
+Date: 2012-12-18 04:39:25 -0500 
+Author: Denevell
+
 
 Shortcuts! I'm using Eclipse Juno in case that matters
 

@@ -1,5 +1,8 @@
 Title: Unix: Killing a process using ps, grep and nawk
-{{wl-tags:unix|unix-grep|unix-awk}}{{wl-publish: 2013-02-09 12:29:24 -0500 | Denevell }}
+Tags: unix|unix-grep|unix-awk
+Date: 2013-02-09 12:29:24 -0500 
+Author: Denevell
+
 
      ps ax | grep -v grep | grep PROCESSNAME | nawk '{print $1}'
 

@@ -1,4 +1,7 @@
-{{wl-tags:twitter|oauth|java}}{{wl-publish: 2012-11-19 16:39:36 -0500 | Denevell }}
+Tags: twitter|oauth|java
+Date: 2012-11-19 16:39:36 -0500 
+Author: Denevell
+
 
 The horror that is Twitter's API, since version 1.1, and OAuth make for an aneurysm-inducing combination.
 

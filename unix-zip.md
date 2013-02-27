@@ -1,5 +1,7 @@
 Title: Unix commands: zip
-{{wl-tags:unix|unix-zip}}{{wl-publish: 2012-12-04 08:59:29 -0500 | Denevell }}
+Tags: unix|unix-zip
+Date: 2012-12-04 08:59:29 -0500 
+Author: Denevell
 
 To unzip a file
 

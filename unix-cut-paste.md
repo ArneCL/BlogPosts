@@ -1,5 +1,8 @@
 Title: Unix commands: cut and paste
-{{wl-tags:unix|unix-cut|unix-paste}}{{wl-publish: 2012-12-02 10:49:57 -0500 | Denevell }}
+Tags: unix|unix-cut|unix-paste
+Date: 2012-12-02 10:49:57 -0500 
+Author: Denevell
+
 
     cat textfile | cut -d$'\t' -f1
 

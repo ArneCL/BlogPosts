@@ -1,5 +1,8 @@
 Title: Tomcat 7: Testing REST interfaces with Jersey
-{{wl-tags:tomcat|java|jersey|REST|java-testing}}{{wl-publish: 2013-02-20 17:07:05 -0500 | Denevell }}
+Tags: tomcat|java|jersey|REST|java-testing
+Date: 2013-02-20 17:07:05 -0500 
+Author: Denevell
+
 
 You can test REST services with Jersey's client library easily enough.
 

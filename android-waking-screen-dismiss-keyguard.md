@@ -1,5 +1,8 @@
 Title: Android: Waking the screen, dismissing the keyguard
-{{wl-tags:android|android-wakelock|android-keyguard|android-windowflags}} {{wl-publish: 2012-12-03 06:54:54 -0500 | Denevell }}
+Tags: android|android-wakelock|android-keyguard|android-windowflags
+ Date: 2012-12-03 06:54:54 -0500 
+Author: Denevell
+
 
 You can wake and keep wake the screen using the old:
 

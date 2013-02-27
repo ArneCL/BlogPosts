@@ -1,5 +1,8 @@
 Title: Pidgin with Office Communicator - Sipe: Read Error
-{{wl-tags:unix|unix-pidgin}}{{wl-publish: 2012-12-12 05:47:23 -0500 | Denevell }}
+Tags: unix|unix-pidgin
+Date: 2012-12-12 05:47:23 -0500 
+Author: Denevell
+
 
 In Debian Wheezy, you can install the Lync / Office Communicator / Sipe plugin for Pidgin.
 

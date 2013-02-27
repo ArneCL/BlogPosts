@@ -1,4 +1,7 @@
-{{wl-tags: android|robolectric|robolectric-setup|android-testing}}{{wl-publish: 2012-11-21 16:15:10 -0500 | Denevell }}
+Tags:  android|robolectric|robolectric-setup|android-testing
+Date: 2012-11-21 16:15:10 -0500 
+Author: Denevell
+
 
 Setting up Robolectric is such a ballache.
 

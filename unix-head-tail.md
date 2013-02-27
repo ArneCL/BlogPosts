@@ -1,5 +1,8 @@
 Title: Unix command: head and tail
-{{wl-tags:unix|unix-head|unix-tail}}{{wl-publish: 2012-12-02 10:45:28 -0500 | Denevell }}
+Tags: unix|unix-head|unix-tail
+Date: 2012-12-02 10:45:28 -0500 
+Author: Denevell
+
 
     cat textfile | tail -n +2
 

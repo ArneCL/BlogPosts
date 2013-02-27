@@ -1,5 +1,8 @@
 Title: Ant: Replacing text
-{{wl-tags:ant|ant-replace}}{{wl-publish: 2012-12-07 14:15:59 -0500 | Denevell }}
+Tags: ant|ant-replace
+Date: 2012-12-07 14:15:59 -0500 
+Author: Denevell
+
 
 You can use Ant to replace tokens in a file with values. With hello.txt as:
 

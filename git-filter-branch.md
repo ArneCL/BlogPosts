@@ -1,5 +1,8 @@
 Title: Git: Filter-branch
-{{wl-tags: git|git-filter-branch}}{{wl-publish: 2012-12-07 14:47:01 -0500 | Denevell }}
+Tags:  git|git-filter-branch
+Date: 2012-12-07 14:47:01 -0500 
+Author: Denevell
+
 
 If you have some file you want deleted from the entire history, use filter-branch.
 

@@ -1,5 +1,8 @@
 Title: Android: Intent Service
-{{wl-tags:android|android-service|android-intent-service}}{{wl-publish: 2013-01-09 15:11:48 -0500 | Denevell }}
+Tags: android|android-service|android-intent-service
+Date: 2013-01-09 15:11:48 -0500 
+Author: Denevell
+
 
 You can call a Intent service like so:
 

@@ -1,5 +1,8 @@
 Title: Unix: curl
-{{wl-tags: unix-curl|unix}}{{wl-publish: 2013-02-25 12:00:58 -0500 | Denevell }}
+Tags:  unix-curl|unix
+Date: 2013-02-25 12:00:58 -0500 
+Author: Denevell
+
 
 To use curl to simulate a GET request with custom headers, you use this. 
 

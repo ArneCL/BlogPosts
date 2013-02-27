@@ -1,5 +1,8 @@
 Title: SQL: Renaming columns in sqlite
-{{wl-tags:sqlite|sql|sql-renamecolumns}}{{wl-publish: 2013-02-18 17:50:09 -0500 | Denevell }}
+Tags: sqlite|sql|sql-renamecolumns
+Date: 2013-02-18 17:50:09 -0500 
+Author: Denevell
+
 
 You can't easily do this in sqlite. Say you have a table with a schema:
 

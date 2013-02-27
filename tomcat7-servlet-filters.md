@@ -1,5 +1,8 @@
 Title: Tomcat 7: Servlet filters
-{{wl-tags:tomcat|tomcat-filters}}{{wl-publish: 2013-02-20 19:24:59 -0500 | Denevell }}
+Tags: tomcat|tomcat-filters
+Date: 2013-02-20 19:24:59 -0500 
+Author: Denevell
+
 
 You can filter all servlet requests, including REST ones with Jersey, with a filter:
 

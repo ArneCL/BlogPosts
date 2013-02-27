@@ -1,5 +1,8 @@
 Title: Android: Actionbar setup
-{{wl-tags:android|android-actionbar}}{{wl-publish: 2012-12-12 16:18:07 -0500 | Denevell }}
+Tags: android|android-actionbar
+Date: 2012-12-12 16:18:07 -0500 
+Author: Denevell
+
 
 Create an options menu as normal. I.e. in your onCreate() method issue:
 
