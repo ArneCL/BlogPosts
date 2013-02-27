@@ -2,7 +2,6 @@ Tags:  ant|ant-javadoc
 Date: 2012-11-19 10:14:12 -0500 
 Author: Denevell
 
-
 These targets in your build.xml will one generate the javadoc in a directory and two put it in a jar for you.
 
         <target name="doc">

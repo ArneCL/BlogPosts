@@ -3,7 +3,6 @@ Tags: java|jpa|tomcat|jpa-databasemapping
 Date: 2013-02-18 18:11:16 -0500 
 Author: Denevell
 
-
 In your persistence.xml you can specify an XML mapping file. Anything in this will overrule whatever is in your annotations.
 
 Let's say the a column name is changed in a UAT database, but not in production. You can create a mapping file that remaps the annotation for the UAT database, by specifying this in your persistence.xml under the persistence-unit tag:

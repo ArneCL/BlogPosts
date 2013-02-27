@@ -3,7 +3,6 @@ Tags: unix|unix-debian-ia32|unix-debian
 Date: 2012-12-12 09:44:01 -0500 
 Author: Denevell
 
-
 To use a program compiled for 32 bit, the Android development tools for example, you need the ia32 compatibility package if you're using 64 bit.
 
 First add i386 to your list of architectures, update apt-get then install ia32

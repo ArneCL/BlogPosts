@@ -3,7 +3,6 @@ Tags: tomcat|java|jersey|REST|java-testing
 Date: 2013-02-20 17:07:05 -0500 
 Author: Denevell
 
-
 You can test REST services with Jersey's client library easily enough.
 
      public class RestTest {

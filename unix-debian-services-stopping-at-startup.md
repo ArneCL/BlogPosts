@@ -3,7 +3,6 @@ Tags: unix|unix-debian|unix-debian-services
 Date: 2012-12-23 08:17:29 -0500 
 Author: Denevell
 
-
 To remove a service, apache2 in this case, from running at all runlevels:
 
      update-rc.d -f apache2 remove

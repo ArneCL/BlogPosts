@@ -3,7 +3,6 @@ Tags: sqlite|sql|sql-renamecolumns
 Date: 2013-02-18 17:50:09 -0500 
 Author: Denevell
 
-
 You can't easily do this in sqlite. Say you have a table with a schema:
 
     CREATE TABLE ANOTHERTHING (ID NUMBER(10) NOT NULL, TEXT VARCHAR, PRIMARY KEY (ID));

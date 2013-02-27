@@ -3,7 +3,6 @@ Tags:  git|git-filter-branch
 Date: 2012-12-07 14:47:01 -0500 
 Author: Denevell
 
-
 If you have some file you want deleted from the entire history, use filter-branch.
 
      git filter-branch --index-filter 'git rm --cached --ignore-unmatch thefile'

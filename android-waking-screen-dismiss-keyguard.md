@@ -3,7 +3,6 @@ Tags: android|android-wakelock|android-keyguard|android-windowflags
  Date: 2012-12-03 06:54:54 -0500 
 Author: Denevell
 
-
 You can wake and keep wake the screen using the old:
 
      mPowerManager = (PowerManager) appContext.getSystemService(Context.POWER_SERVICE);

@@ -3,7 +3,6 @@ Tags: eclipse
 Date: 2012-12-18 04:39:25 -0500 
 Author: Denevell
 
-
 Shortcuts! I'm using Eclipse Juno in case that matters
 
 Changing file / view / perspective

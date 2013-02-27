@@ -3,7 +3,6 @@ Tags: ant|ant-inheritance|ant-target|ant-antcall
 Date: 2012-12-07 15:53:03 -0500 
 Author: Denevell
 
-
 You can call other targets using antcall:
 
      <target name="thetarget">

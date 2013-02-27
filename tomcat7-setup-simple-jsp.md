@@ -3,7 +3,6 @@ Tags: tomcat|tomcat-setup|ant
 Date: 2013-02-10 06:52:49 -0500 
 Author: Denevell
 
-
 First download Tomcat7. I used this to get it setup in Debian (https://wiki.bedis.eu/debian/squeeze_tomcat7_installation until Servlet installation). 
 
 Then create a working directory for your project. Here's the directory structure. Note we're not using the src/ directory just as yet.

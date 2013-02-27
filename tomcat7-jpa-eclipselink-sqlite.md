@@ -3,7 +3,6 @@ Tags: java|jpql|jpa|tomcat|sql
 Date: 2013-02-16 12:33:25 -0500 
 Author: Denevell
 
-
 Download EclipseLink, the reference implementation for JPA, from http://www.eclipse.org/eclipselink/downloads/ and copy the eclipselink.jar and javax_persistence_2.x.x.jar into your tomcat lib directory, /usr/share/tomcat7/lib in my case. You must have the sqlite library there too - see the last post. And restart tomcat.
 
 You have to have the old resource in the web/META-INF/context.xml file that references your sqlite datasource:

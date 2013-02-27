@@ -3,7 +3,6 @@ Tags: android|android-dialogues|android-fragments|android-dialogfragment
 Date: 2013-01-06 14:28:07 -0500 
 Author: Denevell
 
-
 You call a DialogFragment into existence by making a new dialogue object using a static constructor with its data (see below) and then issuing the show() method, passing in your FragmentManager and optional tag.
 
      newFragment = BasicDialogueFragment.newInstance("title", "message");

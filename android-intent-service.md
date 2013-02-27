@@ -3,7 +3,6 @@ Tags: android|android-service|android-intent-service
 Date: 2013-01-09 15:11:48 -0500 
 Author: Denevell
 
-
 You can call a Intent service like so:
 
      Intent intentService = new Intent(this, IntentServiceExample.class);

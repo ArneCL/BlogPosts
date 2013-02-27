@@ -3,7 +3,6 @@ Tags:  ant|ant-basic|ant-delete|ant-mkdir|ant-property|ant-javac|ant-jar
 Date: 2012-11-18 07:02:10 -0500 
 Author: Denevell
 
-
 Here's a fairly bare-bones ant example, the one I'm using for BriefWebServer. 
 
 It makes a jar in build/jar, and optionally run the jar.

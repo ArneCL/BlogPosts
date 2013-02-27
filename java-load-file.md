@@ -1,7 +1,6 @@
 Tags: java|java-io
 Date: 2012-12-17 08:54:56 -0500 
 Author: Denevell
-
 Title: Java: Loading a file from the classpath
 
 If you want to load a text file from the classpath, here's a simple way to do this horrid activity:

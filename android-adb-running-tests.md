@@ -3,7 +3,6 @@ Tags: android|android-adb|android-testing|ant|ant-exec
 Date: 2012-12-01 16:28:11 -0500 
 Author: Denevell
 
-
 Although you can run test through Eclipse and via Ant, running them directly though adb is often the best option since 
 
 * when you're running them on a build server Eclipse's method won't be available to you, and; 

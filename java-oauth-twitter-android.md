@@ -2,7 +2,6 @@ Tags: twitter|oauth|java
 Date: 2012-11-19 16:39:36 -0500 
 Author: Denevell
 
-
 The horror that is Twitter's API, since version 1.1, and OAuth make for an aneurysm-inducing combination.
 
 Here's how you start using 1.1 of their API using Scribe.

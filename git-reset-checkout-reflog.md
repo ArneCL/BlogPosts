@@ -3,7 +3,6 @@ Tags: git|git-reset|git-checkout|git-reflog
 Date: 2012-12-04 12:26:09 -0500 
 Author: Denevell
 
-
 f you want to remove all your changes you haven't committed:
 
      git reset --hard HEAD

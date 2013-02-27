@@ -3,7 +3,6 @@ Tags: android|android-networking
 Date: 2012-12-22 17:07:19 -0500 
 Author: Denevell
 
-
 You can create network latency on either the emulator via telnet. Telnetting to port 5554 on localhost will give you access to the first emulator connected. (http://developer.android.com/tools/devices/emulator.html#console see there for more information)
 
 Then type 'network status' to see what's currently set. 'network delay [num]' allows you to set it by a predefined about. 'newwork delay gprs' allows you to set the delay to the range gprs would give you.

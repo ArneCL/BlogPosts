@@ -3,7 +3,6 @@ Tags: jpa|java-testing|jpa-testing|tomcat|junit
 Date: 2013-02-17 10:09:09 -0500 
 Author: Denevell
 
-
 You can test your JPA code by setting aside another folder structure, test/ for example, with a META-INF/ directory with a new persistence.xml file there pointing to a different database.
 
 Here's new new persistence.xml:

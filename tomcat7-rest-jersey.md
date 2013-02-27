@@ -3,7 +3,6 @@ Tags: tomcat|jersey|java|REST
 Date: 2013-02-19 19:35:05 -0500 
 Author: Denevell
 
-
 First download Apache Jersey. I downloaded the archive with the follow jars in them and placed them in /usr/share/tomcat7/lib and restarted tomcat.
 
      asm-3.1.jar

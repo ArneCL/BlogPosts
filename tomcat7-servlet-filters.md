@@ -3,7 +3,6 @@ Tags: tomcat|tomcat-filters
 Date: 2013-02-20 19:24:59 -0500 
 Author: Denevell
 
-
 You can filter all servlet requests, including REST ones with Jersey, with a filter:
 
      public class HelloFilter implements Filter {

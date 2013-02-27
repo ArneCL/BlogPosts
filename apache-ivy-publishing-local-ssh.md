@@ -3,7 +3,6 @@ Tags:  ant|ivy|ivy-publishing
 Date: 2012-11-17 06:00:51 -0500 
 Author: Denevell
 
-
 Apache Ivy can publish a set a files to a machine somewhere and then someone else can fetch them down with a command in an Apache Ant build script.
 
 For example, Developer A publishes a jar and javadoc of Project Z at version 1.0. Developer B pull that down to use. Meanwhile, Developer A adds new features to Project Z as version 1.1. Developer B can take down those changes whenever ready.

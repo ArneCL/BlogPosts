@@ -2,7 +2,6 @@ Tags:  json|android|gson|java
 Date: 2012-11-23 16:13:11 -0500 
 Author: Denevell
 
-
 First download Google's Gson.
 
 This example will simply convert some JSON into a an object, where the JSON's properties equal the fields in the object:

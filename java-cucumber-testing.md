@@ -4,7 +4,6 @@ Tags: java|ant|java-testing|cucumber
 Date: 2013-01-16 10:40:49 -0500 
 Author: Denevell
 
-
 Make a product directory with bin/ and lib/ directories within.
 
 You need the cucumber-jvm (https://github.com/cucumber/cucumber-jvm) libs in the lib/ folder. You need:
