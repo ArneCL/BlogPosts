@@ -1,5 +1,4 @@
 Tags:  ant|ivy|ivy-publishing
-
 Date: 2012-11-17 06:00:51 -0500 
 Author: Denevell
 

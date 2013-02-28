@@ -1,6 +1,5 @@
 Title: JPA: Named queries
 Tags: jpa|java|tomcat|jpa-namedqueries
-
 Date: 2013-02-17 09:39:07 -0500 
 Author: Denevell
 

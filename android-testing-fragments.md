@@ -1,6 +1,5 @@
 Title: Android: Testing fragments
 Tags: android|android-testing|android-fragments
-
 Date: 2012-12-18 11:53:37 -0500 
 Author: Denevell
 
