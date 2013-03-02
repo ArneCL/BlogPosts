@@ -8,12 +8,12 @@ These dependencies seem to reside in .m2/repository. You get a few default ones,
 
 You need to tell you pom.xml if your project depends on them:
 
-    <dependency>
-  		<groupId>junit</groupId>
-  		<artifactId>junit</artifactId>
-  		<version>3.8.1</version>
-  		<scope>test</scope>
-  	</dependency>
+        <dependency>
+      		<groupId>junit</groupId>
+      		<artifactId>junit</artifactId>
+      		<version>3.8.1</version>
+      		<scope>test</scope>
+      	</dependency>
 
 The groupId is the directory .m2/repository. artifactId is the final directory. Then the version number comes after that.
 
