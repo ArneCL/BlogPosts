@@ -16,7 +16,8 @@ This example will simply convert some JSON into a an object, where the JSON's pr
         }
       }
 
-  new Gson().fromJson("{'text':'text'}", Example.class);
+     new Gson().fromJson("{'text':'text'}", Example.class);
+  
 To do the same this with arrays, just pass in a JSON array and set the class type to be an array (I used a traditional Example[] object).
 
 To create custom mappings between JSON properties and object class fields, you need to register a type adapter:
