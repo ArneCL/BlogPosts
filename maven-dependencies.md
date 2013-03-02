@@ -1,6 +1,6 @@
-title: Maven p3: Depedencies
-date: 2012-2-24 16:59:08
-tags: maven
+Title: Maven p3: Depedencies
+Date: 2012-2-24 16:59:08
+Tags: maven
 
 You can tell maven that your project depends on project x, like a unit testing library. 
 
