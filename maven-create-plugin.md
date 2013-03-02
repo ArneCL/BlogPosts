@@ -4,7 +4,7 @@ tags: maven,maven-plugins
 
 Doing any compilation that's custom, that's not provided for using other plugins, requires writing your own. First create a 'archetype' of a plugin; that is, create the template:
 
-  	mvn archetype:create \
+		mvn archetype:create \
 			-DgroupId=org.denevell.mavenplugins \
 			-DartifactId=some_plugin \
 			-DarchetypeGroupdId=org.apache.maven.archetypes \
