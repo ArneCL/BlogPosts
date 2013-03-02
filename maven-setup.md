@@ -6,7 +6,7 @@ So, after one has installed maven, and put it in one's path, you can start by si
 
 In that directory, you need a pom.xml.
 
-  <project>
+  	<project>
 		<modelVersion>4.0.0</modelVersion>
 		<groupId>a.group</groupId>
 		<artifactId>test</artifactId>
