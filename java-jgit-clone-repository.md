@@ -1,10 +1,10 @@
 Tags:  java|jgit
 Title: Java: Using JGit to clone a repository
 
-		Git.cloneRepository()
-			.setURI(remoteRepo)
-			.setDirectory(dir)
-			.call();
+	Git.cloneRepository()
+		.setURI(remoteRepo)
+		.setDirectory(dir)
+		.call();
 
 remoteRepo will be something like "git@github.com:denevell/BlogPosts.git" and dir is a File object stating where to put the new repository.
 
