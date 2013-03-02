@@ -7,19 +7,19 @@ If you want to load a text file from the classpath, here's a simple way to do th
 
      public class TextFileLoader {
          public static String getFileFromClasspath(final String path) {
-         final URL r = TextFileLoader.class.getResource(path);
-         String result = "";
-         try {
-             final InputStream is = (InputStream) r.getContent();
-             final BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-             String l = null;
-             while((l=reader.readLine())!=null) {
-               result+=l;
-             }
-         } catch (final Exception e) {
-             e.printStackTrace();
-             return null;
-         }
-         return result;
-       }
-}
+              final URL r = TextFileLoader.class.getResource(path);
+              String result = "";
+              try {
+                  final InputStream is = (InputStream) r.getContent();
+                  final BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+                  String l = null;
+                  while((l=reader.readLine())!=null) {
+                    result+=l;
+                  }
+              } catch (final Exception e) {
+                  e.printStackTrace();
+                  return null;
+              }
+              return result;
+          }
+     }
