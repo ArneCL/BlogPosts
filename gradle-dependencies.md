@@ -27,4 +27,4 @@ You can make eclipse's .classpath reference the libs by first putting this at th
 
     apply plugin: 'eclipse'
 
-And then by running' gradle eclipse' on the command line.
+And then by running 'gradle eclipse' on the command line.
