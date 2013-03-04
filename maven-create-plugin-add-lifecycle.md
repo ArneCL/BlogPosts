@@ -6,7 +6,7 @@ Lifecycles package types are the values inbetween the packaging tags underneath 
 
 In src/main/resources/META-INF/plexus/components.xml create
 
-  	<component-set>
+  		<component-set>
 			<components>
 				<component>
 					<role>org.apache.maven.lifecycle.mapping.LifecycleMapping</role>
