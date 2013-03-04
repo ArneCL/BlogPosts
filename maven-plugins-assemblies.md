@@ -6,7 +6,7 @@ Assemblies are archives Maven produces, a zipped up source folder, an execuatble
 
 Here's how to create a bundle of the source tree. Under project, build, plugins, place this:
 
-  	<plugin>
+  		<plugin>
 			<artifactId>maven-assembly-plugin</artifactId>
 			<version>2.2-beta-2</version>
 			<executions>
