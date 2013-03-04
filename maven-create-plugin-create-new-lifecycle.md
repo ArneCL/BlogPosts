@@ -6,7 +6,7 @@ We can also define custom lifecycles, that are run via a mojo plugin. These are 
 
 Create src/main/resources/META-INF/maven/lifecycle.xml:
 
-  	<lifecycles>
+  		<lifecycles>
 		    <lifecycle>
 			<id>customlifecycle</id>
 			<phases>
