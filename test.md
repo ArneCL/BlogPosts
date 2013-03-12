@@ -8,3 +8,5 @@ tags: blar
 # blar
 ## blar
 ### blar
+
+[This link](http://www.google.com "Some Title") should work. 
