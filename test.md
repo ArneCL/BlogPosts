@@ -1,7 +1,7 @@
 title: Some test
 tags: blar
 
-**Hiya**
+**A test - a simple test some may say - to see if automatic publishing works.**
 
     TEEEST?
 
