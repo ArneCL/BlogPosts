@@ -14,3 +14,9 @@ You can call this via:
     List<AnotherThing> results = q.getResultList();
     for (AnotherThing thing : results) {
     }
+    
+If, in the NamedQuery, you put parameters like ':username', then your code will look like:
+
+    em.createNamedQuery("nameOfQuery")
+        .setParameter("username", "Luke Vibert")
+        .getResultList();
