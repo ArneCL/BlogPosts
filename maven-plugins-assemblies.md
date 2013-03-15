@@ -6,7 +6,7 @@ Assemblies are archives Maven produces, a zipped up source folder, an execuatble
 
 Here's how to create a bundle of the source tree. Under project, build, plugins, place this:
 
-  		<plugin>
+		<plugin>
 			<artifactId>maven-assembly-plugin</artifactId>
 			<version>2.2-beta-2</version>
 			<executions>
@@ -34,29 +34,29 @@ Now, if you run mvn package, you'll see the archives of the source tree in /targ
 Another plugin type creates a executable-jar for you:
 
 		<plugin>
-		     <artifactId>maven-assembly-plugin</artifactId>
-		     <version>2.2-beta-2</version>
-		     <executions>
-		        <execution>
-		                <id>create-executable-jar</id>
-		                <phase>package</phase>
-		                <goals>
-		                        <goal>single</goal>
-		                </goals>
-		                <configuration>
-		                        <descriptorRefs>
-		                                <descriptorRef>
-		                                        jar-with-dependencies
-		                                </descriptorRef>
-		                        </descriptorRefs>
-		                        <archive>
-		                                <manifest>
-		                                        <mainClass>Hello</mainClass>
-		                                </manifest>
-		                        </archive>
-		                </configuration>
-		        </execution>
-		     </executions>
+			<artifactId>maven-assembly-plugin</artifactId>
+			<version>2.2-beta-2</version>
+			<executions>
+				<execution>
+					<id>create-executable-jar</id>
+					<phase>package</phase>
+					<goals>
+					<goal>single</goal>
+					</goals>
+					<configuration>
+						<descriptorRefs>
+							<descriptorRef>
+							jar-with-dependencies
+							</descriptorRef>
+						</descriptorRefs>
+						<archive>
+							<manifest>
+								<mainClass>Hello</mainClass>
+							</manifest>
+						</archive>
+					</configuration>
+				</execution>
+			</executions>
 		</plugin>
 
 The only differences, except for the id, are the descriptorRef saying create an executable jar, and the artchive configuration, stating the class to execute when it's run.
