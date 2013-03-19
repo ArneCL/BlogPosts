@@ -1,4 +1,4 @@
-title: J2EE6 p1: Getting started with Java EE
+title: Glassfish setup
 date: 2012-04-07 18:30:13
 tags: java glassfish glassfish-setup
 
