@@ -1,4 +1,5 @@
 title: Gradle: Running tests
+tags: gradle,gradle-tests
 
 Gradle will automatically run tests in
 
