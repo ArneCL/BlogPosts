@@ -1,4 +1,4 @@
-title: Gradle: Createing multiple wAR files
+title: Gradle: Createing multiple WAR files
 tags: gradle,gradle-war,tomcat
 
 If you want to create a different type of WAR, with different resource files in this case you can create a task that is of type War type.
