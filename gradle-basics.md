@@ -1,5 +1,5 @@
 Title: Gradle basics
-Tags: gradle, groovy
+Tags: gradle, groovy, gradle-basics
 
 You run grade tasks on the command line with
 
