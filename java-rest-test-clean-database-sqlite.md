@@ -33,3 +33,5 @@ Add yourself to the tomcat7 user group and give yourself write access to the dir
 		sudo chmod g+w /var/lib/tomcat7/dbs
 		(now logout and in again to ensure you're added to the correct groups)
 		(now attempt to run the above rm command)
+
+If you're running your tests from Eclipse, ensure you run eclipse with a refreshed login so it has the correct group rights. You may need to logout of your window manager session.
