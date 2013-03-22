@@ -5,18 +5,7 @@ Author: Denevell
 
 Download EclipseLink, the reference implementation for JPA, from http://www.eclipse.org/eclipselink/downloads/ and copy the eclipselink.jar and javax_persistence_2.x.x.jar into your tomcat lib directory, /usr/share/tomcat7/lib in my case. You must have the sqlite library there too - see the last post. And restart tomcat.
 
-You have to have the old resource in the web/META-INF/context.xml file that references your sqlite datasource:
-
-      <Context>
-        <Resource name="jdbc/sqlite" 
-                  type="javax.sql.DataSource" 
-                  driverClassName="org.sqlite.JDBC"
-                  url="jdbc:sqlite:/var/lib/tomcat7/dbs/test.db"
-                  >
-        </Resource>
-      </Context> 
-
-And a persistence.xml in src/META-INF/persistence.xml (Yes, you now have two META-INF directories). 
+In persistence.xml in src/META-INF/persistence.xml (Yes, you now have two META-INF directories). 
 
       <?xml version="1.0" encoding="UTF-8" ?>
       <persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -35,7 +24,7 @@ And a persistence.xml in src/META-INF/persistence.xml (Yes, you now have two MET
         </persistence-unit>
      </persistence>
 
-The persistence-unit name will be how we will grab a hold of our persistence entity manager factory. The transaction-type say we're using a local database. If it said JTA it would mean we'd have support for transactions over multiple datasources (Tomcat doesn't support this out of the box). We next tell it about the provider, EclipseLink, in our case. Then the class that will be persisted. Then we set properties to tell it about our driver, our jdbc url (as defined above), the logging level and how we will generate the database.
+The persistence-unit name will be how we will grab a hold of our persistence entity manager factory. The transaction-type say we're using a local database. If it said JTA it would mean we'd have support for transactions over multiple datasources (Tomcat doesn't support this out of the box). We next tell it about the provider, EclipseLink, in our case. Then the class that will be persisted. Then we set properties to tell it about our driver, our jdbc url, the logging level and how we will generate the database.
 
 We could set eclipselink.ddl-generation to 'drop-and-create-tables' if we want to destroy the database everytime. In a later tutorial we'll detail how to work with an existing database without automatically doing anything, since the eclipselink.ddl-generation is only really useful during development.
 
