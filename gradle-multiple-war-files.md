@@ -3,7 +3,7 @@ tags: gradle,gradle-war,tomcat
 
 If you want to create a different type of WAR, with different resource files in this case you can create a task that is of type War type.
 
-    task createIntegrationWar(type: War, dependsOn: classes) {
+    task createFunctionalWar(type: War, dependsOn: classes) {
         sourceSets.main.resources.srcDirs = ['src/test/resources']
         classifier = 'Functional'
     }
