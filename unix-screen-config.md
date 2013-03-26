@@ -1,5 +1,5 @@
 title: Unix: GNU screen config
-tag: unix,unix-gnu-screen,unix-gnu-screen-config
+tags: unix,unix-gnu-screen,unix-gnu-screen-config
 
 In your .screenrc file:
 
