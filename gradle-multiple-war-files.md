@@ -4,10 +4,14 @@ tags: gradle,gradle-war,tomcat
 If you want to create a different type of WAR, with different resource files in this case you can create a task that is of type War type.
 
     task createFunctionalWar(type: War, dependsOn: classes) {
-        sourceSets.main.resources.srcDirs = ['src/test/resources']
+        from('src/test/resources/META-INF'){ 
+                into('WEB-INF/classes/META-INF') 
+                include 'persistence.xml' 
+        } 
+        rootSpec.exclude 'META-INF/persistence.xml'
         classifier = 'Functional'
     }
 
-In this task, we change the resources source test to come from our test directory. And we give it a 'Functional' classifier.
+In this task, we exclude a file from the WAR and replace it with one in our test directory. And we give it a 'Functional' classifier.
 
 It will now reside in build/libs/ProjectName-Functional.war
