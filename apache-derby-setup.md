@@ -8,7 +8,7 @@ First download Apache Derby from its website. And put the both to the unzipped f
 
 You also need to set the derby property to say the database is on localhost for the 'ij' property:
 
-		set DERBY_OPTS=-Dij.protocol=jdbc:derby://localhost/
+		export DERBY_OPTS=-Dij.protocol=jdbc:derby://localhost/
 
 Now you should be able to run the 'ij' program. Exit it via issuing 'quit;'.
 
