@@ -13,7 +13,9 @@ You can shut it down with:
 
 		java -jar /path/to/derby/lib/derbyrun.jar server shutdown
 
-Once you start it, the databases will live in the location where you started derby. And you can connect to it via:
+Once you start it, the databases will live in the location where you started derby. 
+
+And you can connect to it to create a database via:
 
 		ij> connect 'jdbc:derby://localhost:1527/somedb;create=true';
 
