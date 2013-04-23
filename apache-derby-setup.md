@@ -39,3 +39,5 @@ Since ij doesn't have a command history, you may want to issue the commands from
 		hello                                                                                                                           
 
 		1 row selected
+
+Note we are using the embedded version of Derby. You can access the same database simultaneously. My other post on the network server will help you there.
