@@ -1,4 +1,4 @@
-Title: Debian: Setting Postgresql 9.1 on Debian Squeeze
+Title: Debian: Setting up Postgresql 9.1 on Debian Squeeze
 Tags: unix,unix-debian,postgresql
 
 First add the squeeze backports to /etc/apt/sources.list:
