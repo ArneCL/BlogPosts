@@ -1,4 +1,4 @@
-Title: JSP scriptlet basics
+Title: JSP: Scriptlet basics
 Tags: java,jsp,jsp-scriptlets
 
 If you've a penchant for unmaintainable hacked-up horrors, then scriptlets are for you!
