@@ -70,3 +70,19 @@ Then we print out the version we set above in the jspInit method. We also get th
 Finally we use the implicit request object to get the current paramter for the value 'thing'. A requst of hello.boom?thing=hiya would make that value 'hiya'.
 
 There's also a application implicit object that sets values thoughout all the application.
+
+If you set a error page directives:
+
+		<%@ page errorPage="e.jsp" %>
+
+Then as soon as you do something stupid, like below, you'll go the the e.jsp page.
+
+		<% String hello = null;
+		hello.toString();
+		%>
+
+You can include a file though a simple declaration:
+
+		<%@ include file="/page.jsp" %>
+
+And this will include a file called page.jsp belong the WEB-INF folder.
