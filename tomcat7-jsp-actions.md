@@ -14,6 +14,22 @@ You can import a Java bean (a getter and setter object with an empty constructor
 		<%@ page import="thing.Hello" %>
 		<jsp:useBean id="bean" class="thing.Hello" />
 
+The actual bean is this is simple enough:
+
+		package thing;
+		public class Bean {
+
+			private String thing = "";
+
+			public String getThing() {
+				return thing;
+			}
+
+			public void setThing(String thing) {
+				this.thing = thing;
+			}
+		}
+
 Now you can access it using a scriptlet using the variable 'bean'. You can also use the getProperty and setProperty action:
 
 		<jsp:setProperty name="bean" property="thing" value="SAAATTAAAN" />
