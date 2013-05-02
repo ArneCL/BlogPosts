@@ -1,5 +1,6 @@
 Title: Unix shell: For loop 
-Tags: unix,unix-shell,unix-zsh,unix-bash,tomcat
+date: 2013-03-29 20:44:44
+Tags: unix,unix-for-loop,unix-zsh,unix-bash
 
 To loop over a set of words, issuing a command for each word do:
 
