@@ -1,5 +1,6 @@
 title: JSF2: Databinding with ManagedBeans
-tags: java,tomcat,jsf,jsf-resource-bundle
+tags: java,jsf,jsf-resource-bundle
+date: Tue Apr 2 20:23:15 2013
 
 First create a standard POJO with a @ManagedBean annotation so it can be accesssed via databinding. Give it a @SessionScoped annotation to say it exists for the entirity of the user's session:
 
