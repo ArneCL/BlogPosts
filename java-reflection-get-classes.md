@@ -1,5 +1,5 @@
 title: Java: Get all classes in a package via reflection
-tag: java,java-reflection
+tags: java,java-reflection
 
 If you use the excellent Reflections java library, you can do this easily enough:
 
