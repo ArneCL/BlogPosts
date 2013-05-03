@@ -1,5 +1,5 @@
 title: JSF2: Composites 
-tags: java,jsf,jsf-composites
+tags: jsf,jsf-composites
 date: 2013-03-28 20:19:00
 
 You can also have a composite in a JSF, which is like a template but acts in its own namespace, with validators, listeners, etc, etc.
