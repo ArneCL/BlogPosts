@@ -1,5 +1,6 @@
 title: JSF2: InputText, CommandButton, Validator and Message
-tags: tomcat,tomcat-jsf,jsf-inputtext,jsf-commandbutton,jsf-validators,jsf-message,jsf
+tags: jsf-inputtext,jsf-commandbutton,jsf-validators,jsf-message,jsf
+date: 2013-03-23 10:41:00
 
 If you html tag, assign these new namespaces to access jsf functionality:
 
