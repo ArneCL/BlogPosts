@@ -1,5 +1,5 @@
-Title: Tomcat 7: Servlet filters
-Tags: tomcat|tomcat-filters
+Title: Servlets: filtering
+Tags: servlet|servlet-filters
 Date: 2013-02-20 19:24:59 -0500 
 Author: Denevell
 

@@ -1,5 +1,6 @@
 title: Java: Testing a REST service with a clean database (using sqlite)
-tags: java,REST,java-testing,jersey,sqlite,tomcat,jpa
+tags: java,REST,java-testing,jersey,sqlite,jpa
+date: 2013-03-22 19:59:00
 
 You can test REST responses like so with Jersey's client api.
 
