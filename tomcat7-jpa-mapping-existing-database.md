@@ -1,5 +1,5 @@
 Title: JPA: Mapping to an existing database
-Tags: java|jpa|tomcat|jpa-databasemapping
+Tags: jpa|jpa-databasemapping
 Date: 2013-02-18 18:11:16 -0500 
 Author: Denevell
 

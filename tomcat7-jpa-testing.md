@@ -1,5 +1,5 @@
 Title: JPA: Testing
-Tags: jpa|java-testing|jpa-testing|tomcat|junit
+Tags: jpa|java-testing|jpa-testing|junit
 Date: 2013-02-17 10:09:09 -0500 
 Author: Denevell
 

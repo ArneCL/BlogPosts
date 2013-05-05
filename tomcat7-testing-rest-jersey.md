@@ -1,5 +1,5 @@
 Title: Tomcat 7: Testing REST interfaces with Jersey
-Tags: tomcat|java|jersey|REST|java-testing
+Tags: java|jersey|REST|java-testing
 Date: 2013-02-20 17:07:05 -0500 
 Author: Denevell
 

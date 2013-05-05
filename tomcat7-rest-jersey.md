@@ -1,5 +1,5 @@
 Title: Tomcat 7: REST services with Jersey
-Tags: tomcat|jersey|java|REST
+Tags: jersey|java|REST|servlet|tomcat
 Date: 2013-02-19 19:35:05 -0500 
 Author: Denevell
 
