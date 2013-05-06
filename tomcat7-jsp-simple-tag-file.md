@@ -12,10 +12,21 @@ Note the attribute directive. It's saying the tag requires a parameter called 'c
 
 You can also pass a 'type' to the attribute tag. This is for when you're passing an object, not a String. It must be the fully qualified class name.
 
+You can pass dynamic attributes, too. This means any attribute you specify on the calling tag will end up in a list of dynamic attributes that you can iterate over in your tag file:
+
+		<%@ tag dynamic-attributes="dynattrs" %>
+		...
+		<c:forEach var="a" items="${dynattrs}">
+			${a.key}="${a.value}"
+		</c:forEach>
+		...
+
+Now you're specifying, in the 'tag' directive, that all the dynamic attributes will be in a property called ${dynattrs}.
+
 Now reference this from your JSP file:
 
 		<%@ taglib tagdir="/WEB-INF/tags" prefix="mytag" %> 
-		<mytag:box colour="#ccc">
+		<mytag:box colour="#ccc" something="dynamic">
 			Hiya
 		</mytag:box>
 
