@@ -10,6 +10,8 @@ Put this in your WEB-INF/tags folder. It's called box.tag:
 
 Note the attribute directive. It's saying the tag requires a parameter called 'color' and we can add in run-time expressions if we won't (i.e. not static text only).
 
+You can also pass a 'type' to the attribute tag. This is for when you're passing an object, not a String. It must be the fully qualified class name.
+
 Now reference this from your JSP file:
 
 		<%@ taglib tagdir="/WEB-INF/tags" prefix="mytag" %> 
