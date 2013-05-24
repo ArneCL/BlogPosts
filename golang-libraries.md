@@ -29,4 +29,4 @@ Note the default name you reference the library name is the package name of the 
 
 Note: 
 
-A library can have only one main package, mylib in this case. So any files not in that package must be in subdirectories of the /src folder/
+A library can have only one main package, mylib in this case. So any files not in that package must be in subdirectories of the /src folder.
