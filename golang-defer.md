@@ -1,4 +1,4 @@
-Title: Golang: Defering statements
+Title: Golang: Deferring statements
 Tags: golang
 
 The defer keyword allows you to defer a statement executement until just before the function ends.
