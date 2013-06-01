@@ -1,4 +1,4 @@
-Title: Golang: Anonymous functions, function passing and closures
+Title: Golang: Passing anonymous functions and closures
 Tags: golang
 
 Golang can pass functions to other functions.
