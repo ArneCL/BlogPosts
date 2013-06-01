@@ -1,9 +1,9 @@
 Title: Golang: Anonymous functions, function passing and closures
 Tags: golang
 
-Golang support can pass functions and closures to other functions.
+Golang can pass functions to other functions.
 
-Here's an anonymous function that takes in a string and returns a string, which is passed to another function
+This anonymous function takes in a string and returns a string. It is passed to another function.
 
 		anon := func(s name) string {
 			return "Hiya, " + name
