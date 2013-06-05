@@ -1,11 +1,11 @@
 Tags: gradle,gradle-dependencies
 Title: Gradle: Project dependencies like in Eclipse
 
-One project may depend on another. And that other project may be at the same level, i.e. not a in a subdirectory. 
+One project may depend on another, which may be on the folder same level, i.e. not a in a subdirectory. 
 
-This is easily achieved in Eclipse. And also in Gradle.  Yout need Gradle's 'flat includes'.
+This is easily achieved in Eclipse. And also in Gradle.  You need Gradle's 'flat includes'.
 
-In your project, create a settings.gradle fil, with a 'includeFlat' directive inside.
+In your project, create a settings.gradle file, with a 'includeFlat' directive inside.
 
 		includeFlat 'AProject'
 
