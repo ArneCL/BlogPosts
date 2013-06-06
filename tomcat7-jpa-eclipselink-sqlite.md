@@ -1,11 +1,15 @@
 Title: Tomcat 7: JPA using EclipseLink and Sqlite
-Tags: java|jpql|jpa|tomcat|sql
+Tags: java|jpql|jpa|tomcat|sql|sqlite
 Date: 2013-02-16 12:33:25 -0500 
 Author: Denevell
 
-Download EclipseLink, the reference implementation for JPA, from http://www.eclipse.org/eclipselink/downloads/ and copy the eclipselink.jar and javax_persistence_2.x.x.jar into your tomcat lib directory, /usr/share/tomcat7/lib in my case. You must have the sqlite library there too - see the last post. And restart tomcat.
+Download EclipseLink, the reference implementation for JPA, from http://www.eclipse.org/eclipselink/downloads/ and the sqlite jdbc library, from https://bitbucket.org/xerial/sqlite-jdbc/downloads. 
 
-In persistence.xml in src/META-INF/persistence.xml (Yes, you now have two META-INF directories). 
+Copy, eclipselink.jar, javax_persistence_2.x.x.jar and the sqlite jdbc jar file into your tomcat lib directory, /usr/share/tomcat7/lib in my case.
+
+Now restart tomcat.
+
+In persistence.xml in src/META-INF/persistence.xml.
 
       <?xml version="1.0" encoding="UTF-8" ?>
       <persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -24,7 +28,9 @@ In persistence.xml in src/META-INF/persistence.xml (Yes, you now have two META-I
         </persistence-unit>
      </persistence>
 
-The persistence-unit name will be how we will grab a hold of our persistence entity manager factory. The transaction-type say we're using a local database. If it said JTA it would mean we'd have support for transactions over multiple datasources (Tomcat doesn't support this out of the box). We next tell it about the provider, EclipseLink, in our case. Then the class that will be persisted. Then we set properties to tell it about our driver, our jdbc url, the logging level and how we will generate the database.
+The persistence-unit name will be how we will grab a hold of our persistence entity manager factory. The transaction-type say we're using a local database. If it said JTA it would mean we'd have support for transactions over multiple datasources (Tomcat doesn't support this out of the box). 
+
+We next tell it about the provider, EclipseLink, in our case. Then the class that will be persisted. Then we set properties to tell it about our driver, our jdbc url, the logging level and how we will generate the database.
 
 We could set eclipselink.ddl-generation to 'drop-and-create-tables' if we want to destroy the database everytime. In a later tutorial we'll detail how to work with an existing database without automatically doing anything, since the eclipselink.ddl-generation is only really useful during development.
 
@@ -78,6 +84,10 @@ We can now talk to our JPA instance:
     em.close();
     factory.close();
 
-Note we're using our name of the persistence-unit above to get the entity manager factory. Then we get the entity manager (we should only have one of these). Then we create a new object as normal. Then start an entity transaction (we could use this to rollback if we wanted). Then we persist the object, committing the transaction.  Finally we use the JPQL syntax to get all the 'AnotherThing' objects in the database. Then we close the entity manager.
+Note we're using our name of the persistence-unit above to get the entity manager factory. Then we get the entity manager (we should only have one of these). Then we create a new object as normal. 
+
+We then start an entity transaction (we could use this to rollback if we wanted). Then we persist the object, committing the transaction. 
+
+Finally we use the JPQL syntax to get all the 'AnotherThing' objects in the database. Then we close the entity manager, and the entity manager factory.
 
 I did get some error about AnotherThing not being recognised. Unfortunatley I think this is a bug in Tomcat for the most part. Stopping and then starting Tomcat should resolve the problem.
