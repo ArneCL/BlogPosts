@@ -9,7 +9,7 @@ Copy, eclipselink.jar, javax_persistence_2.x.x.jar and the sqlite jdbc jar file 
 
 Now restart tomcat.
 
-In persistence.xml in src/META-INF/persistence.xml.
+Create persistence.xml in src/META-INF/persistence.xml.
 
       <?xml version="1.0" encoding="UTF-8" ?>
       <persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
