@@ -1,7 +1,7 @@
 title: Vim: Auto-insert closing bracket while coding
 tags: vim
 
-You can add a closing bracket when typing in code.
+You can automatically insert a closing bracket when typing in code.
 
 You can turn a 
 
@@ -19,9 +19,9 @@ You need a inoremap line in your .vimrc:
 
 It says when you type a opening bracket, then quickly press enter, it will:
 
-# insert a carriage return
-# a closing bracket
-# go into command mode and press 'O'
+* insert a carriage return
+* a closing bracket
+* go into command mode and press 'O'
 
 The final line means it will insert a new line on the line above.
 
