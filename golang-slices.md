@@ -1,7 +1,7 @@
 Title: Golang: Slices
 Tags: golang, golang-slices
 
-A slice is a data structure with three parts: A pointer to a place in an array, the length of the slice, and the capacity of the array.
+A slice is a data structure with three parts: A pointer to a place in an array, the length of the slice, and the capacity of the slice.
 
 A slice type looks like an array, but there is no size defintion:
 
@@ -44,3 +44,5 @@ You can find the capacity of a slice with the cap function:
 		slice = slice[0:cap(slice)]
 		fmt.Println(len(slice)) // 10
 		fmt.Println(cap(slice)) // 10
+
+You can use the range operator as with arrays to achieve a foreach type loop.
