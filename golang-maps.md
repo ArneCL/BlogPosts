@@ -1,7 +1,7 @@
 Title: Golang: Maps
 Tags: golang
 
-A map is a key value store of data. You define it using the map keyword, the type type in brackets, then the value type:
+A map is a key value store of data. You define it using the map keyword, the key type in brackets, then the value type:
 
 		var aMap map[string]string
 
@@ -30,9 +30,11 @@ If your values are slices, you can append an item, even if the value is nil, wit
 		myMap["a"] = append(myMap["a"], "z")
 		// At this point myMap["a"] is ["z"]
 
-Your key be any simple types and structs (containing only comparable types), interface types, channels and more.
+Your key be any simple type. In addition, structs (containing only comparable types), interface types, channels and more.
 
-You can use struct keys and simple values to simplify adding data to a map. With complex types as values, such as maps or slices, you will need to check they are not there and possibly allocate space. Instead use a key struct, encoding the data in that struct, and have the value as a simple type like a number.
+You can use struct keys and simple values to simplify adding data to a map. With complex types as values, such as maps or slices, you will need to check they are not there and possibly allocate space. 
+
+Instead use a key struct, encoding the data in that struct, and have the value as a simple type like a number.
 
 		aMap[SomeStruct{"hi", 123}]++
 		// The downside here is your lookup will need to have all that data inside
