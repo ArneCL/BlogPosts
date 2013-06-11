@@ -8,7 +8,7 @@ A slice type looks like an array, but there is no size defintion:
 		var anArray [10]string;
 		var aSlice []string;
 
-You can initialise a slice either using a literal, the make function or by using slice syntax:
+You can initialise a slice either using a literal, the make function, or by using slice syntax (on either arrays or other slices):
 
 		slice := []string {"a", "b"}     // Literal. Allocated an underlying array for you
 		slice := make([]string, 5, 5)    // Make args: a type or actual array, the length of slice and the optional capacity of slice (defaults to length)
