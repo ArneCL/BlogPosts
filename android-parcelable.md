@@ -1,7 +1,7 @@
 title: Android: Parcelable
 tags: android, android-parcelable
 
-Parcelable objects allow you to serialise and deserialise on activity stop / start. It's like Java's serialisable, but faster.
+Parcelable objects allow you to serialise and deserialise on activity or fragment stop / start. It's like Java's serialisable, but faster.
 
 Make sure your object implements Parcelable:
 
