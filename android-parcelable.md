@@ -1,4 +1,4 @@
-title: Android: using Parcelable objects
+title: Android: Parcelable objects tutorial
 tags: android, android-parcelable
 
 Parcelable objects allow you to serialise and deserialise on activity or fragment stop / start. It's like Java's serialisable, but faster.
