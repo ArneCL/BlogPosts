@@ -21,4 +21,4 @@ This means you must know what number the list is in your page -- which you may n
 
 Obviously if you just have one list, then this method works the best. 
 
-The source Robotium's method is at for such is at: hhttps://github.com/jayway/robotium/blob/master/robotium-solo/src/main/java/com/jayway/android/robotium/solo/Clicker.java
+The source of Robotium's method is at: https://github.com/jayway/robotium/blob/master/robotium-solo/src/main/java/com/jayway/android/robotium/solo/Clicker.java
