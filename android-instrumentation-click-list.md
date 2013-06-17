@@ -13,7 +13,7 @@ There are two ways to do this. The Andrioid instrumentation and the Robotium way
     
 You get a reference to the list view, and call performItemClick.
 
-Robotium is simpiler, using just 
+Robotium is simpler, using just 
 
     solo.clickInList(POSITION_IN_LIST, LIST_NUMBER_IN_PAGE); 
     
