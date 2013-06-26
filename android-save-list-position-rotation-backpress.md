@@ -5,7 +5,7 @@ You can restore the position and state of a ListView by saving the ListView's in
 
 You then restore it after the ListView's adapter is next set.
 
-### Restoring it after a rotation:
+### Restoring it after rotation:
 
 Save the ListView state on onSaveInstanceState:
 
@@ -29,7 +29,7 @@ Then, after the ListView's adapter is set, you can restore the instance state:
 
     mListView.onRestoreInstanceState(mListInstanceState);
     
-### Restoring it after a backpress
+### Restoring it after a backpress:
     
 If on after a backpresss your ListView is recreated via onResume(), then
 
