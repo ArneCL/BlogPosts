@@ -8,7 +8,7 @@ An interface{} type is a type that could be any value. It's like Object in Java.
 
 This means you can create a function that can accept any type, custom or internal.
 
-You can use a 'type conversion' here. You must use a type assertion:
+You can't use a 'type conversion' here since they're not similar types. You must use a type assertion:
 
                 aString := anything.(string)
 
