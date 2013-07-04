@@ -13,19 +13,22 @@ Just before doing so, all the functions in the stack are immediately exited just
                         fmt.Println("This will never be called")
                 }
 
-If the above was called from main(), then none of main's statements will be called either, except the deferred statements in main().
+If the above was called from main(), then none of main's statements after letUsPanic() would be called either, except any deferred statements in main().
 
 We can 'recover' from a panic, however, if we put a 'recover()' statement in a deferred statement.
 
-                func main() {
+                func letUsPanic() {
                         defer func() {
                                 if e := recover(); x != nil {
                                         // e is the interface{} typed-value we passed to panic()
                                         fmt.Println("Whoops: ", e) // Prints "Whoops: boom!"
                                 }
-                        }
-                        letUsPanic()
-                }
+                        }()
+                        panic("boom!")
+                        fmt.Println("This will never be called")
+                }                
+
+Now if we run letUsPanic() from main(), the methods below letUsPanic() would be called.
 
 It's bad style to use these. Go doesn't do exceptions as some languages do. Go uses errors and multiple return values.
 
