@@ -21,7 +21,7 @@ Its nine argument constructor can be divided into three parts:
     
 The first section is just the context. The second is the group data. The third is the child data. We'll look at the second section first.
 
-### Second section of parameters: group views
+**Second section of parameters: group views**
 
 The groupData is a list of maps. Each map represents a row of the list:
 
@@ -49,7 +49,7 @@ So the groupData will have a list of maps. In those maps there'll be a value wit
 
 Now we've done the group data. We'll do the child data:
 
-### Third section of parameters: child views
+**Third section of parameters: child views**
 
 Again we have a list of maps, a childGroup. Each childGroup item will relate to a child element of a tier one row. 
 
