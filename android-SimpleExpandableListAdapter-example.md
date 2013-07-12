@@ -49,7 +49,7 @@ So the groupData will have a list of maps. In those maps there'll be a value wit
 
 Now we've done the group data. We'll do the child data:
 
-### Thid section of parameters: child views
+### Third section of parameters: child views
 
 Again we have a list of maps, a childGroup. Each childGroup item will relate to a child element of a tier one row. 
 
