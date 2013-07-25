@@ -1,3 +1,6 @@
+title: Unix: Battery status from the command line
+tags: unix, unix-battery
+
 You can get your battery level from the command line with the 'acpi' command:
 
     % acpi
