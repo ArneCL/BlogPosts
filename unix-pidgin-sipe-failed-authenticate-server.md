@@ -1,4 +1,5 @@
 title: Pidgin with Office Communicator - Failed to authenticate to server
+tags: unix, unix-pidgin
 
 After upgrading Pidgin and Sipe on Debain wheezy I came across:
 
