@@ -19,7 +19,7 @@ We can 'recover' from a panic, however, if we put a 'recover()' statement in a d
 
                 func letUsPanic() {
                         defer func() {
-                                if e := recover(); x != nil {
+                                if e := recover(); e != nil {
                                         // e is the interface{} typed-value we passed to panic()
                                         fmt.Println("Whoops: ", e) // Prints "Whoops: boom!"
                                 }
