@@ -5,7 +5,7 @@ These dates look like this: 2013-12-25T23:59:59+01:00
 
 These can't be converted using SimpleDateFormat because of the timezone, '+01:00', that is a plus and a 'comma' in the timezone.
 
-This can also be 'Z' - just to mess with people trying to solve the problem using reg exs, I'd guess. See [https://en.wikipedia.org/wiki/ISO_8601#Time_zone_designators]
+This can also be 'Z' - just to mess with people trying to solve the problem using reg exs, I'd guess. See https://en.wikipedia.org/wiki/ISO_8601#Time_zone_designators
 
 'DatatypeFactory' has solved this problem for you, however.
 
