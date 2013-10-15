@@ -1,4 +1,4 @@
-title: Access piped parameter with xargs
+title: Unix: Access piped parameter with xargs
 tags: unix, unix-xargs
 
 When you pipe something to xargs you normally don't need to access its name, since it's added to the end of the command:
