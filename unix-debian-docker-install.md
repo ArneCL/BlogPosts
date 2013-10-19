@@ -9,18 +9,12 @@ You also need to have lxc and aufs-tools
 
     apt-get install lxc aufs-tools
 
-Then you need to setup your GOPATH environmental variable.
+Then you need to setup your GOPATH environmental variable, create the docker directory in the src directory and clone docker into that.
 
     export GOPATH=/your/go/directory
-    
-Then inside your $GOPATH, you need to create a src/github.com/dotcloud directory.
-
     cd $GOPAth
     mkdir -p src/github.com/dotcloud/
     cd src/github.com/dotcloud
-    
-It's into here that we'll pull the docker source from git.
-
     git clone https://github.com/dotcloud/docker
     
 Then cd into the docker directory to use golang to pull all the dependencies and install docker into your GOPATH's bin directory
