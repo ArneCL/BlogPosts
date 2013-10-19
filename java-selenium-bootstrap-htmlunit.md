@@ -5,6 +5,10 @@ If you using Selenium's HtmlUnit driver on a website with Bootstrap, you must di
 
     HtmlUnitDriver driver = new HtmlUnitDriver(false);
     
+Otherwise you'll find this exception
+
+    org.openqa.selenium.ElementNotVisibleException: You may only interact with visible elements
+    
 This is because HtmlUnit's Javascript support is patchy and doesn't seem to work well with Bootstrap's Javascript.
 
 (I'm using HtmlUnit 2.12)
