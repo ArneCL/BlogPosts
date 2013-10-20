@@ -35,7 +35,7 @@ Before you can run a docker image you need to mount cgroups. Put this in your /e
     
 And then run
 
-    mount -a
+    mkdir /cgroup && mount -a
     
 You also need to enable ipv4 forwarding else your container won't be able to talk to the outside world.
 
