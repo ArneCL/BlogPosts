@@ -55,7 +55,13 @@ Exit the container again. Now we'll run it again, but this time we'll forward po
     docker run -i -t -p 8080 ITS_NAME /bin/bash
     service tomcat7 start
     
-Now if you open another terminal and run docker ps you can see the forwarding in action.
+Now instead of existing the container, detach from it back to your terminal by typing:
+
+    ctrl-p then ctrl-q 
+    
+(If you're using gnu screen, remember it's ctrl-a a ctrl-p, then ctrl-q)
+    
+Now run docker ps you can see the forwarding in action.
 
     docker ps
     ID                  IMAGE               COMMAND             CREATED             STATUS              PORTS
@@ -63,7 +69,7 @@ Now if you open another terminal and run docker ps you can see the forwarding in
 
 Note it says we need connect to port 49173 to connect to the 8080 in the container. First we need ip address of docker however.
 
-Still in the other terminal, ifconfig -a should show you something like
+'ifconfig' should show you something like
 
     docker0   Link encap:Ethernet  HWaddr blar:blar:blar
               inet addr:172.17.42.1  Bcast:0.0.0.0  Mask:255.255.0.0
@@ -78,15 +84,11 @@ So you see you need to look at 172.17.42.1, in this machine's case, to connect t
 
     http://172.17.42.1:49173
 
-If you go back to the docker terminal, you can press 
-
-    ctrl-p then ctrl-q 
-    
-to detach from the running container (if you're in gnu screen remember it's ctrl-a ctrl-p). You can attach back to it via
+If you want to reattach to your container to run more services at the like use docker attach with your container's id.
 
     docker ps
     # look at the container id
     docker attach <the container id>
     # now run more command in bash if you wish
 
-You should next look at dockerfiles to automate all this
+You should next look at dockerfiles to automate all this.
