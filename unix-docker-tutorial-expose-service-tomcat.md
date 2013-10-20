@@ -84,7 +84,7 @@ So you see you need to look at 172.17.42.1, in this machine's case, to connect t
 
     http://172.17.42.1:49173
 
-If you want to reattach to your container to run more services at the like use docker attach with your container's id.
+If you want to reattach to your container to run more services, for example, use 'docker attach' with your container's id.
 
     docker ps
     # look at the container id
