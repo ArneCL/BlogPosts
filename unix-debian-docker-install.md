@@ -1,7 +1,7 @@
 title: Installing Docker in Debian (testing/Jessie)
 tags: unix, unix-debian, docker
 
-You need to be running a 3.10 kernel or above, hence the need for Jessie and the installation of that kernel.
+You need to be running a 3.8 kernel or above, hence the need for Jessie and the installation of that kernel.
 
 You need to install golang, and specially 1.2 or above else you'll get ipv6 errors, too. Get it from golang.org
 
