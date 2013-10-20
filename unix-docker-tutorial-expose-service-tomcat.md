@@ -34,7 +34,7 @@ If you run "docker ps -a" you'll get all the processes, even stopped ones, which
     9cfedc79aefb        ubuntu:12.04        /bin/bash              About an hour ago   Exit 127                                
     ...
     
-You can now commit all the changes to that container. YOu need to do this everytime you want to update your container for later use.
+You can now commit all the changes to that container. You need to do this everytime you want to update your container for later use.
 
     docker commit 9cfedc79aefb ITS_NAME
     
