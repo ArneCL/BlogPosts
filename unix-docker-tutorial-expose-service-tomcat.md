@@ -18,6 +18,7 @@ You're now in command prompt of your container. Let's use this time to install s
     echo "deb http://dk.archive.ubuntu.com/ubuntu/ precise-security main universe" >> /etc/apt/sources.list
     apt-get install python-software-properties 
     add-apt-repository ppa:webupd8team/java
+    apt-get update
     apt-get install oracle-java7-installer tomcat7 vim
     vim /etc/default/tomcat7
     # now ensure JAVA_HOME=/usr/lib/jvm/java-7-oracle
