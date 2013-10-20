@@ -55,7 +55,7 @@ Exit the container again. Now we'll run it again, but this time we'll forward po
     docker run -i -t -p 8080 ITS_NAME /bin/bash
     service tomcat7 start
     
-Now instead of existing the container, detach from it back to your terminal by typing:
+Now instead of exiting the container, detach from it back to your terminal by typing:
 
     ctrl-p then ctrl-q 
     
