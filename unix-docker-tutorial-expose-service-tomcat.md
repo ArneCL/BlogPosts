@@ -1,7 +1,7 @@
-title: Docker tutorial: expose a service
+title: Docker tutorial: Expose a service (tomcat)
 tags: unix, docker
 
-Once you've got docker running, you can start a service and expose it to the outside world.
+Once you've got docker (I'm on 0.6.4) running, you can start a service and expose it to the outside world.
 
 We'll do this for tomcat7.
 
@@ -48,6 +48,8 @@ You can start this container up again by running 'docker run -t -i ITS_NAME /bin
 
 Notice that only the filesystem changes persist, not the running processes. So your tomcat7 service is no longer running. 
 
+You can get around this by detaching from a running container--although when your container stops so do your services.
+
 Exit the container again. Now we'll run it again, but this time we'll forward port 8080 on the container, and we'll start tomcat7.
 
     docker run -i -t -p 8080 ITS_NAME /bin/bash
@@ -61,7 +63,7 @@ Now if you open another terminal and run docker ps you can see the forwarding in
 
 Note it says we need connect to port 49173 to connect to the 8080 in the container. First we need ip address of docker however.
 
-ifconfig -a should show you something like
+Still in the other terminal, ifconfig -a should show you something like
 
     docker0   Link encap:Ethernet  HWaddr blar:blar:blar
               inet addr:172.17.42.1  Bcast:0.0.0.0  Mask:255.255.0.0
@@ -76,6 +78,15 @@ So you see you need to look at 172.17.42.1, in this machine's case, to connect t
 
     http://172.17.42.1:49173
 
-If you want to be running multiple services and such like, you should look at dockerfiles to automate all this.
+If you go back to the docker terminal, you can press 
 
+    ctrl-p then ctrl-q 
+    
+to detach from the running container (if you're in gnu screen remember it's ctrl-a ctrl-p). You can attach back to it via
 
+    docker ps
+    # look at the container id
+    docker attach <the container id>
+    # now run more command in bash if you wish
+
+You should next look at dockerfiles to automate all this
