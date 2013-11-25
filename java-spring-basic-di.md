@@ -93,21 +93,21 @@ The full text of this would be:
 
 You can use Gradle -- I'm using 1.8 -- to run this:
 
-        apply plugin: 'java'
-        apply plugin: 'application'
-        apply plugin: 'eclipse'
-        
-        repositories {
-        	mavenCentral()
-        }
-        
-        dependencies {
-        	compile 'org.springframework:spring-core:3.2.5.RELEASE'
-        	compile 'org.springframework:spring-beans:3.2.5.RELEASE'
-        	compile 'org.springframework:spring-context:3.2.5.RELEASE'
-        }
-        
-        mainClassName = "Main"
+    apply plugin: 'java'
+    apply plugin: 'application'
+    apply plugin: 'eclipse'
+    
+    repositories {
+    	mavenCentral()
+    }
+    
+    dependencies {
+    	compile 'org.springframework:spring-core:3.2.5.RELEASE'
+    	compile 'org.springframework:spring-beans:3.2.5.RELEASE'
+    	compile 'org.springframework:spring-context:3.2.5.RELEASE'
+    }
+    	
+    mainClassName = "Main"
         
 Then 'gradle run' will produce:
 
