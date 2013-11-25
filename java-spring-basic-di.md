@@ -1,7 +1,7 @@
 title: Basic Dependency Injection with Spring (with Gradle)
 tags: java,spring,gradle
 
-Let's start with some simple setter injection with a XML-based configuration.
+Let's start with some simple setter injection with an XML-based configuration.
 
 First you need an WEB-INF/beans.xml, or whatever you want to call it, file. This will define the beans you will inject.
 
