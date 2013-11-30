@@ -1,4 +1,4 @@
-title: Android progress spinner
+title: Android progress spinner in Actionbar
 tags: android,android-progress
 
 You can get a indeterminate progress bar like http://i.stack.imgur.com/CY4Ss.png in your window or Actionbar easily enough:
@@ -12,9 +12,9 @@ You can get a indeterminate progress bar like http://i.stack.imgur.com/CY4Ss.png
             requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
             setContentView(R.layout.activity_main);
         
-            setProgressBarIndeterminateVisibility(false);
-            ...
             setProgressBarIndeterminateVisibility(true);
+            ...
+            setProgressBarIndeterminateVisibility(false);
         }
     
 You can also use this in ActionbarSherlock via setSupportProgressBarIndeterminateVisibility and using ABS's Window class for the feature instead.
