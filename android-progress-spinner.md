@@ -12,8 +12,9 @@ You can get a indeterminate progress bar like http://i.stack.imgur.com/CY4Ss.png
             requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
             setContentView(R.layout.activity_main);
         
+            // Turn it on
             setProgressBarIndeterminateVisibility(true);
-            ...
+            // And when you want to turn it off
             setProgressBarIndeterminateVisibility(false);
         }
     
