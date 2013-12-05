@@ -74,4 +74,16 @@ Now run it:
 
 	Total time: 14.871 secs
 
-I am not entirely sure you INSTRUMENTATION_STATUS_CODE return -1. Ho hum.
+Beware, that if you have no devices attached in debugging mode, it will just return
+
+	:uiInstall FAILED
+
+	FAILURE: Build failed with an exception.
+
+	* Where:
+	Build file '/home/user/workspace/Natch-Android/build.gradle' line: 12
+
+	* What went wrong:
+	Execution failed for task ':uiInstall'.
+	> exec returned: 1
+
