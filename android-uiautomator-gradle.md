@@ -31,3 +31,47 @@ UiAutomator does not directly support Gradle as yet, but you can get it to work 
 You should change the 'target' and 'source.dir' above to suit you.
 
 This means you do not need to put the uiautomator files in a different directory. I am running them in my main project, under the 'uiTests' directory.
+
+Now run it:
+
+		$ gradle uiRun
+		:uiBuild
+		Android SDK Tools Revision 22.3.0
+		Installed at /home/user/android-sdk-linux
+		Using latest Build Tools: 19.0.0
+		Project Target:   Android 4.4
+		API level:        19
+		input: /home/user/android-sdk-linux/tools/ant/bin/classes
+		No new compiled code. No need to convert bytecode to dalvik format.
+		:uiInstall
+		:uiRun
+		INSTRUMENTATION_STATUS: numtests=1
+		INSTRUMENTATION_STATUS: stream=
+		org.denevell.droidnatch.uitests._1_ListThreads:
+		INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+		INSTRUMENTATION_STATUS: test=testListThreads
+		INSTRUMENTATION_STATUS: class=Your.Test.Class
+		INSTRUMENTATION_STATUS: current=1
+		INSTRUMENTATION_STATUS_CODE: 1
+		// Any System.out.println you have set
+		INSTRUMENTATION_STATUS: numtests=1
+		INSTRUMENTATION_STATUS: stream=.
+		INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+		INSTRUMENTATION_STATUS: test=testListThreads
+		INSTRUMENTATION_STATUS: class=Your.Test.Class
+		INSTRUMENTATION_STATUS: current=1
+		INSTRUMENTATION_STATUS_CODE: 0
+		INSTRUMENTATION_STATUS: stream=
+		Test results for WatcherResultPrinter=.
+		Time: 11.565
+
+		OK (1 test)
+
+
+		INSTRUMENTATION_STATUS_CODE: -1
+
+		BUILD SUCCESSFUL
+
+		Total time: 14.871 secs
+
+I am not entirely sure you INSTRUMENTATION_STATUS_CODE return -1. Ho hum.
