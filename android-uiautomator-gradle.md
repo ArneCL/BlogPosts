@@ -6,8 +6,9 @@ UiAutomator does not directly support Gradle as yet, but you can get it to work 
 	ant.properties['sdk.dir']="$System.env.ANDROID_HOME"
 	ant.properties['target']='android-19'
 	ant.properties['out.filename']=project.name+'_tests.jar'
+	ant.properties['out.dir']=project.projectDir.toString()+'/bin/'
 	ant.properties['source.dir']=project.path+'uiTests' // Or wherever your tests are
-	ant.importBuild "$System.env.ANDROID_HOME"+'/tools/ant/uibuild.xml'
+
 
 	task uiBuild() << {
 		ant.project.executeTarget('build')
@@ -73,6 +74,8 @@ Now run it:
 	BUILD SUCCESSFUL
 
 	Total time: 14.871 secs
+
+Your new uiautormator jar will now be in your /bin directory. (You can change that in the above script).
 
 Beware, that if you have no devices attached in debugging mode, it will just return
 
