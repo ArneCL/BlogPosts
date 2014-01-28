@@ -14,7 +14,7 @@ Enums come by putting a bunch of consts in parens:
 			Three = 4
 		)
 
-You can use iota to create these values. Within a const group, it starts at 1, and then increments for each expression.
+You can use iota to create these values. Within a const group, it starts at 0, and then increments for each expression.
 
 		const ( 
 			One = 1 << iota // 1 (i.e. 1 << 0)
