@@ -17,9 +17,9 @@ Enums come by putting a bunch of consts in parens:
 You can use iota to create these values. Within a const group, it starts at 1, and then increments for each expression.
 
 		const ( 
-			One = 1 << iota // 1 (i.e. 1 << 1)
-			Two // 2 (i.e. 1 << 2)
-			Three // 4 (i.e 1 << 3)
+			One = 1 << iota // 1 (i.e. 1 << 0)
+			Two // 2 (i.e. 1 << 1)
+			Three // 4 (i.e 1 << 2)
 		)
 
 If you print a Two, for example, it will display 2.
@@ -32,8 +32,8 @@ Giving custom types methods is the OOP of golang. And will be discussed in later
 
 		const ( 
 			One Type = 1 << iota // 1
-			Two Type // 2 (i.e. 1 << 2)
-			Three Type // 4 (i.e 1 << 3)
+			Two Type // 2 (i.e. 1 << 1)
+			Three Type // 4 (i.e 1 << 2)
 		)
 
 		func (t Type) String() string {
