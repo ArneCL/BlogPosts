@@ -56,4 +56,4 @@ You must also call the measure(widthSpec, heightSpec) on the child views too.
         v.measure(widthSpec, heightSpec);
       }
       
-If you wanted to give each view the same measurements as its parents (BUY WHY???) you could give it its parent's measure specs, or create your own via the makeMeasureSpec above, perhaps by using the parent's getMeasuredWidth(), taking into account any padding using the getPadding*() methods.
+If you wanted to give each view the same measurements as its parents (BUY WHY???) you could give it its parent's measure specs, or create your own via the makeMeasureSpec above, perhaps by using a division of the parent's getMeasuredWidth(), taking into account any padding using the getPadding*() methods.
