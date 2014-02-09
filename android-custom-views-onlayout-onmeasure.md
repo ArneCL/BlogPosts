@@ -3,7 +3,7 @@ tags: android,android-custom-view
 
 If you want to layout a custom view's children yourself, as opposed to making the custom view extend LinearLayout or similar, you need to implement the onLayout and onMeasure methods of the ViewGroup class.
 
-## onLayout()
+### onLayout()
 
 Let's first look at onLayout(). This tells your custom view's children where they should lay themselves out:
 
@@ -30,7 +30,7 @@ If 'left' or 'top' are 0 this means right at the left and top edge of the parent
 
 If you have defined some padding on your custom view, you must include these in your layout call, otherwise the padding will be in front of the view.
 
-## onMeasure()
+### onMeasure()
 
 Before you can call methods such like getMeasuredWidth() on your ViewGroup's children, however, you must tell them how to measure themsevles in onMeasure:
 
