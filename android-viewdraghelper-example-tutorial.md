@@ -67,7 +67,7 @@ This has a sister, clampViewPositionHorizonal, that allows you to drag or constr
     		return parent.getMeasuredHeight()-child.getMeasuredHeight();
     	}
     	
-The above method is used to calculate the velocity internally, by knowing your view's dragging space. Again, it has a sister method, replacing Vertical for Horizonal.
+The above method is used to calculate the velocity internally, by knowing your view's dragging space. Again, it has a sister method, replacing Vertical for Horizontal.
     	
     	@Override
     	public void onViewReleased(View releasedChild, float xvel, float yvel) {
