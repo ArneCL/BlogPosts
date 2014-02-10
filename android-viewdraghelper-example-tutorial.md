@@ -34,7 +34,6 @@ Next we use the onTouchEvent() method to make the view drag helper process this 
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-    	Log.d("DRAG on touch", event.toString());
     	mDragHelper.processTouchEvent(event);
     	return true;
     }
