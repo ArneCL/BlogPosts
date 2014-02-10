@@ -87,7 +87,7 @@ If it's positive, i.e. we're dragging down, we take the released view and tell i
 
 We finally call invalidate so the animation can begin. There are other methods we can call on the drag helper, like smoothSlideViewTo, but settleCatpuredViewAt takes into account the current velocity.
 
-### Ensureing the animation continues
+### Ensuring the animation continues
 
 After we call the settleCapturedViewAt or similar methods above, we need to ensure the animatin continues. In the computeScroll() method on our ViewGroup or similar we have the following:
 
