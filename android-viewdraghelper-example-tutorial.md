@@ -39,6 +39,8 @@ Next we use the onTouchEvent() method to make the view drag helper process this 
     	return true;
     }
     
+### ViewDragHelper callbacks
+    
 Now we have the MotionEvents being passed correctly to our ViewDragHelper instance, we can look at the callbacks.
 
     new ViewDragHelper.Callback() {
