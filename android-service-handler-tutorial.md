@@ -3,14 +3,14 @@ tags: android, android-service
 
 Services are long running processes, longer than say simply downloading something, that you tend to interact with, which more defines a long running process than allows it, since you still have to implement the threading of the service yourself, unless you use IntentService.
 
-It runs in the same process as our application, unless stated, and is stopped when our Application is, unless run via startForground() in onCreate() with a Notifcation (see end of article).
+It runs in the same process as our application, unless stated, and is stopped when our application is, unless run via startForground() in onCreate() with a Notifcation (see end of article).
 
 First use the 'Service' as your base class (we're not dealing with IntentService in this tutorial).
 
     public class OurService extends Service {
 
 
-Then the onCreate() method is called when the user called Context.startService(itsIntent), and no matter how many times the user calls this, only one onCreate is called while the service lives.
+Then the onCreate() method is called when the user called Context.startService(itsIntent), and, no matter how many times the user calls this, only one onCreate is called while the service lives.
 
       @Override
       public void onCreate() {
@@ -30,7 +30,7 @@ The flags paramter can be START_FLAG_REDELIVERY, which is used in the case the s
         return Service.START_STICKY;
       }
     
-The return value can be START_STICK, if we want to restart this if killed during processing although the Intent won't be redelivered, START_NON_STICK, if we don't want it automatically restarted once killed, START_REDILIVER_INTENT which is like START_STICKY but the Intent is redilivered.
+The return value can be START_STICKY, if we want to restart this if killed during processing although the Intent won't be redelivered, START_NON_STICKY, if we don't want it automatically restarted once killed, START_REDILIVER_INTENT which is like START_STICKY but the Intent is redelivered.
     
 When we want to kill the service we call Service.onStopResult(startId). Each time onStartCommand() is called we get a latest startId, so we if we call stopSelfResult with the latest id, the service will stop. If we call it with an old one it will not. This also mean we're using multiple threads we must be make sure to call this method in the correct order, or the service will be stopped prematurely.
 
@@ -69,7 +69,7 @@ Now we're got a Looper we'll pass it to a Handler that sequentially processes me
       }
     }
     
-This class simply takes in our looper, and then in handleMessage looks at a Messag arg, extracts from arguments from that, does some process, and then stops the service via the startId passed into the Messager.
+This class simply takes in our looper, and then in handleMessage looks at the Message argument, extracts from arguments from that, does some process, and then stops the service via the startId passed into the Messager.
 
 So let's look at our onCreate() method before we move on:
 
@@ -111,12 +111,11 @@ With this is our AndroidManifest.xml under the Application tag:
   
 If we did want this service to run after our application has been stopped we call startForground() in our Service's onCreate() method and give it a Notification to show.
 
-		Notification notification = new Notification.Builder(context)
-			.setSmallIcon(R.drawable.something)
-			.setContentText("Content")
-			.setContentTitle("Title")
-			.getNotification();
-		return notification;
+    Notification notification = new Notification.Builder(context)
+      .setSmallIcon(R.drawable.something)
+      .setContentText("Content")
+      .setContentTitle("Title")
+      .getNotification();
     startForeground(17, notification); // Because it can't be zero...
     
-    
+
