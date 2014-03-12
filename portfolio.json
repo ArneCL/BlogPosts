@@ -1,0 +1,32 @@
+[
+
+   {
+      "title":"androidmanchester.co.uk Android app",
+      "description":"Wrote the forum application for androidmanchester.co.uk. Used to discuss Android coding and receive notices about the group."
+      "features":
+        [
+          "Push notifications with Google Cloud Messaging",
+          "Add/Delete/Edit threads and posts",
+          "Login and Register",
+          "Interfaces with JSON from a RESTful backend",
+          "Dependency injection used throughout",
+          "Custom Views used throughout"
+        ],
+      "keywords": ["Android", "REST", "GCM", "Push", "JSON"]
+   },
+   {
+      "title":"androidmanchester.co.uk RESTful services and Java JSP website",
+      "description":"Wrote website and RESTful backend to the androidmanchester.co.uk app."
+      "features":
+        [
+          "Service orientated architecture (SOA)",
+          "RESTful services using Jersey",
+          "SimpleTags for component designed JSP architecture",
+          "Add/Delete/Edit threads and posts",
+          "Login and Register",
+          "Push notifications with Google Cloud Messaging"
+        ],
+      "keywords": ["Java", "JSP", "GCM", "Push", "REST", "JSON", "JavaEE", "J2EE", "SOA", "SimpleTags", "Push"]
+   }   
+  
+]
