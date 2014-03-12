@@ -10,9 +10,12 @@
           "Login and Register",
           "Interfaces with JSON from a RESTful backend",
           "Dependency injection used throughout",
-          "Custom Views used throughout"
+          "Custom Views used throughout",
+          "UI tests using Espresso",
+          "Unit tests using Robolectric and Junit",
+          "Continuous integration environment using Docker"
         ],
-      "keywords": ["Android", "REST", "GCM", "Push", "JSON"]
+      "keywords": ["Android", "REST", "GCM", "Push", "JSON", "Docker", "Unit tests", "UI tests", "Espresso"]
    },
    {
       "title":"androidmanchester.co.uk RESTful services and Java JSP website",
@@ -21,12 +24,17 @@
         [
           "Service orientated architecture (SOA)",
           "RESTful services using Jersey",
+          "Using a PostgresSQL database",
+          "Continuous integration environment using Docker",
+          "UAT and live environments",
           "SimpleTags for component designed JSP architecture",
           "Add/Delete/Edit threads and posts",
           "Login and Register",
           "Push notifications with Google Cloud Messaging"
+          "Unit tests",
+          "Selenium UI tests"
         ],
-      "keywords": ["Java", "JSP", "GCM", "Push", "REST", "JSON", "JavaEE", "J2EE", "SOA", "SimpleTags", "Push"]
+      "keywords": ["Java", "JSP", "GCM", "Push", "REST", "JSON", "JavaEE", "J2EE", "SOA", "SimpleTags", "Push", "Selenium", "Unit tests", "junit", "Docker", "UI tests"]
    }   
   
 ]
