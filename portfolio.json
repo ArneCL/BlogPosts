@@ -18,7 +18,7 @@
       "keywords": ["Android", "REST", "GCM", "Push", "JSON", "Docker", "Unit tests", "UI tests", "Espresso"]
    },
    {
-      "title":"androidmanchester.co.uk RESTful services and Java JSP website",
+      "title":"androidmanchester.co.uk RESTful services, Java JSP website and database",
       "description":"Wrote website and RESTful backend to the androidmanchester.co.uk app."
       "features":
         [
@@ -26,11 +26,11 @@
           "RESTful services using Jersey",
           "Using a PostgresSQL database",
           "Continuous integration environment using Docker",
-          "UAT and live environments",
+          "UAT and live environments,"
           "SimpleTags for component designed JSP architecture",
           "Add/Delete/Edit threads and posts",
           "Login and Register",
-          "Push notifications with Google Cloud Messaging"
+          "Push notifications with Google Cloud Messaging",
           "Unit tests",
           "Selenium UI tests"
         ],
