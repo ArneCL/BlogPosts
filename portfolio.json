@@ -15,7 +15,8 @@
           "Unit tests using Robolectric and Junit",
           "Continuous integration environment using Docker"
         ],
-      "keywords": ["Android", "REST", "GCM", "Push", "JSON", "Docker", "Unit tests", "UI tests", "Espresso"]
+      "keywords": ["Android", "REST", "GCM", "Push", "JSON", "Docker", "Unit tests", "UI tests", "Espresso"],
+      "images": ["http://placekitten.com/g/200/200", "http://placekitten.com/g/200/200", "http://placekitten.com/g/200/200"]
    },
    {
       "title":"androidmanchester.co.uk RESTful services, Java JSP website and database",
@@ -34,7 +35,8 @@
           "Unit tests",
           "Selenium UI tests"
         ],
-      "keywords": ["Java", "JSP", "GCM", "Push", "REST", "JSON", "JavaEE", "J2EE", "SOA", "SimpleTags", "Push", "Selenium", "Unit tests", "junit", "Docker", "UI tests"]
+      "keywords": ["Java", "JSP", "GCM", "Push", "REST", "JSON", "JavaEE", "J2EE", "SOA", "SimpleTags", "Push", "Selenium", "Unit tests", "junit", "Docker", "UI tests"],
+      "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
    }   
   
 ]
