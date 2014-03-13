@@ -2,7 +2,7 @@
 
    {
       "title":"androidmanchester.co.uk Android app",
-      "description":"Wrote the forum application for androidmanchester.co.uk. Used to discuss Android coding and receive notices about the group."
+      "description":"Wrote the forum application for androidmanchester.co.uk. Used to discuss Android coding and receive notices about the group.",
       "features":
         [
           "Push notifications with Google Cloud Messaging",
@@ -19,14 +19,14 @@
    },
    {
       "title":"androidmanchester.co.uk RESTful services, Java JSP website and database",
-      "description":"Wrote website and RESTful backend to the androidmanchester.co.uk app."
+      "description":"Wrote website and RESTful backend to the androidmanchester.co.uk app.",
       "features":
         [
           "Service orientated architecture (SOA)",
           "RESTful services using Jersey",
           "Using a PostgresSQL database",
           "Continuous integration environment using Docker",
-          "UAT and live environments,"
+          "UAT and live environments",
           "SimpleTags for component designed JSP architecture",
           "Add/Delete/Edit threads and posts",
           "Login and Register",
