@@ -37,6 +37,67 @@
         ],
       "keywords": ["Java", "JSP", "GCM", "Push", "REST", "JSON", "JavaEE", "J2EE", "SOA", "SimpleTags", "Push", "Selenium", "Unit tests", "junit", "Docker", "UI tests"],
       "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
-   }   
+   },
+   {
+      "title":"Kiddicare.com Android application",
+      "description":"A shopping application for the Kiddicare.com brand",
+      "features":
+        [
+          "Browse and checkout",
+          "RESTful JSON services"
+        ],
+      "keywords": ["Android", "JSON", "RESTful", "UI tests", "Unit tests", "Robolectric"],
+      "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+   },
+   {
+      "title":"Dell Mobile Print",
+      "description":"Android wireless printing application for Dell, supporting 1.6 upwards, including tablets. Using custom styles and views and a service layer interacting with a proprietary API.",
+      "features":
+        [
+          "Feature"
+        ],
+      "keywords": ["Android", "Java", "Perfoce", "Jenkins", "Ant"],
+      "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+   },
+   {
+      "title":"Dial00 - Wifi Dialler",
+      "description":"An Android VOIP app, communicating with an open source C/C++ SIP stack via an Android service.",
+      "features":
+        [
+          "Feature"
+        ],
+      "keywords": ["Android", "Perforce", "Wifi"],
+      "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+   },
+   {
+      "title":"Just Connect - Greetings Cards",
+      "description":"A nAndroid image and text card sender, via Twitter, G+, Facebook, Email, MMS et al. Uses remote JSON to update the images in the app.",
+      "features":
+        [
+          "Feature"
+        ],
+      "keywords": ["Android", "Twitter", "Facebook"],
+      "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+   },
+   {
+      "title":"VocabTwist",
+      "description":"First Android project, which uses a custom path-finding algorithm to maximise the number of places that can be used to create words. Helps the user build their vocabulary. ",
+      "features":
+        [
+          "Feature"
+        ],
+      "keywords": ["Android", "game"],
+      "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+   },
+   {
+      "title":"Podifi White Label apps",
+      "description":"A white-label Android application and portable Java SDK that connects wirelessly to a portible Linux device to redeem vochures.",
+      "features":
+        [
+          "Feature"
+        ],
+      "keywords": ["Android", "SVN", "wifi", "Linux", "SDK"],
+      "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+   }
   
 ]
