@@ -19,7 +19,7 @@
          {"link": "http://google.com", "description":"blar"}
       ],
       "keywords": ["Android", "REST", "GCM", "Push", "JSON", "Docker", "Unit tests", "UI tests", "Espresso"],
-      "images": ["http://placekitten.com/g/200/200", "http://placekitten.com/g/200/200", "http://placekitten.com/g/200/200"]
+      "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/200/200", "http://placekitten.com/g/198/198"]
    },
    {
       "title":"androidmanchester.co.uk RESTful services, Java JSP website and database",
