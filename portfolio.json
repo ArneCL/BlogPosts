@@ -69,7 +69,7 @@
          {"link": "https://play.google.com/store/apps/details?id=com.dell.mobileprint", "description":"Google Play Store", "image":"img"}
       ],
       "keywords": ["Android", "Java", "Perfoce", "Jenkins", "Ant"],
-      "images": ["http://portfolio.denevell.org/images/dell.jpg", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+      "images": ["http://portfolio.denevell.org/images/dell.jpg"]
    },
    {
       "title":"Dial00 - Wifi Dialler",
@@ -83,7 +83,7 @@
          {"link": "http://itunes.apple.com/us/app/dial-00/id548287481?mt=8", "description":"iTunes store"}
       ],
       "keywords": ["Android", "Perforce", "Wifi"],
-      "images": ["http://portfolio.denevell.org/images//voip.png", "http://portfolio.denevell.org/images//voip-and.jpg", "http://placekitten.com/g/198/198"]
+      "images": ["http://portfolio.denevell.org/images//voip.png", "http://portfolio.denevell.org/images//voip-and.jpg"]
    },
    {
       "title":"Just Connect - Greetings Cards",
@@ -96,7 +96,7 @@
          {"link": "https://play.google.com/store/apps/details?id=uk.co.sugarushuk", "description":"Google play store"}
       ],
       "keywords": ["Android", "Twitter", "Facebook"],
-      "images": ["http://portfolio.denevell.org/images//sugarushstore.jpg", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+      "images": ["http://portfolio.denevell.org/images//sugarushstore.jpg"]
    },
    {
       "title":"VocabTwist",
@@ -109,7 +109,7 @@
          {"link": "http://google.com", "description":"blar"}
       ],
       "keywords": ["Android", "game"],
-      "images": ["http://portfolio.denevell.org/images//devicesmalldisplay.png", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+      "images": ["http://portfolio.denevell.org/images//devicesmalldisplay.png"]
    },
    {
       "title":"Podifi White Label apps",
@@ -123,7 +123,7 @@
          {"link": "https://play.google.com/store/apps/details?id=com.twoergo.podifi.client.whitelabel.wonderworld", "description":"blar"}
       ],
       "keywords": ["Android", "SVN", "wifi", "Linux", "SDK"],
-      "images": ["http://portfolio.denevell.org/images//tiktap_small.jpg", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+      "images": ["http://portfolio.denevell.org/images//tiktap_small.jpg"]
    }
   
 ]
