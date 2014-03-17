@@ -53,7 +53,7 @@
           "RESTful JSON services"
         ],
       "links": [
-         {"link": "http://google.com", "description":"blar"}
+         {"link": "http://google.com", "description":"Visit website"}
       ],
       "keywords": ["Android", "JSON", "RESTful", "UI tests", "Unit tests", "Robolectric"],
       "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
@@ -87,7 +87,7 @@
    },
    {
       "title":"Just Connect - Greetings Cards",
-      "description":"A nAndroid image and text card sender, via Twitter, G+, Facebook, Email, MMS et al. Uses remote JSON to update the images in the app.",
+      "description":"An Android image and text card sender, via Twitter, G+, Facebook, Email, MMS et al. Uses remote JSON to update the images in the app.",
       "features":
         [
           "Feature"
