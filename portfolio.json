@@ -16,7 +16,7 @@
           "Continuous integration environment using Docker"
         ],
       "links": [
-         {"link": "http://google.com", "description":"blar"}
+         {"link": "http://google.com", "description":"Install on Google Play"}
       ],
       "keywords": ["Android", "REST", "GCM", "Push", "JSON", "Docker", "Unit tests", "UI tests", "Espresso"],
       "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/200/200", "http://placekitten.com/g/198/198"]
@@ -39,7 +39,7 @@
           "Selenium UI tests"
         ],
       "links": [
-         {"link": "http://google.com", "description":"blar"}
+         {"link": "http://google.com", "description":"Visit website"}
       ],
       "keywords": ["Java", "JSP", "GCM", "Push", "REST", "JSON", "JavaEE", "J2EE", "SOA", "SimpleTags", "Push", "Selenium", "Unit tests", "junit", "Docker", "UI tests"],
       "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
@@ -66,7 +66,7 @@
           "Feature"
         ],
       "links": [
-         {"link": "https://play.google.com/store/apps/details?id=com.dell.mobileprint", "description":"Google Play Store", "image":"img"}
+         {"link": "https://play.google.com/store/apps/details?id=com.dell.mobileprint", "description":"Install on Google Play", "image":"img"}
       ],
       "keywords": ["Android", "Java", "Perfoce", "Jenkins", "Ant"],
       "images": ["http://portfolio.denevell.org/images/dell.jpg"]
@@ -93,7 +93,7 @@
           "Feature"
         ],
       "links": [
-         {"link": "https://play.google.com/store/apps/details?id=uk.co.sugarushuk", "description":"Google play store"}
+         {"link": "https://play.google.com/store/apps/details?id=uk.co.sugarushuk", "description":"Install on Google Play"}
       ],
       "keywords": ["Android", "Twitter", "Facebook"],
       "images": ["http://portfolio.denevell.org/images//sugarushstore.jpg"]
@@ -106,7 +106,7 @@
           "Feature"
         ],
       "links": [
-         {"link": "http://google.com", "description":"blar"}
+         {"link": "http://google.com", "description":"Install on Google Play"}
       ],
       "keywords": ["Android", "game"],
       "images": ["http://portfolio.denevell.org/images//devicesmalldisplay.png"]
@@ -119,8 +119,8 @@
           "Feature"
         ],
       "links": [
-         {"link": "http://www.tiktap.com/", "description":"blar"},
-         {"link": "https://play.google.com/store/apps/details?id=com.twoergo.podifi.client.whitelabel.wonderworld", "description":"blar"}
+         {"link": "http://www.tiktap.com/", "description":"Visit TikTab website"},
+         {"link": "https://play.google.com/store/apps/details?id=com.twoergo.podifi.client.whitelabel.wonderworld", "description":"Install one client on Google Play"}
       ],
       "keywords": ["Android", "SVN", "wifi", "Linux", "SDK"],
       "images": ["http://portfolio.denevell.org/images//tiktap_small.jpg"]
