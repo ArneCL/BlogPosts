@@ -83,7 +83,7 @@
          {"link": "http://itunes.apple.com/us/app/dial-00/id548287481?mt=8", "description":"iTunes store"}
       ],
       "keywords": ["Android", "Perforce", "Wifi"],
-      "images": ["http://portfolio.denevell.org/images//voip.png", "http://portfolio.denevell.org/images//voip-and.jpg"]
+      "images": ["http://portfolio.denevell.org/images//voip.png", "res/wd1.jpg", "res/wd2.jpg"]
    },
    {
       "title":"Just Connect - Greetings Cards",
