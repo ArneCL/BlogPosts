@@ -120,10 +120,11 @@
         ],
       "links": [
          {"link": "http://www.tiktap.com/", "description":"Visit TikTab website"},
-         {"link": "https://play.google.com/store/apps/details?id=com.twoergo.podifi.client.whitelabel.wonderworld", "description":"Install one client on Google Play"}
+         {"link": "https://play.google.com/store/apps/details?id=com.twoergo.podifi.client.whitelabel.wonderworld", "description":"Install one client on Google Play"},
+         {"link": "https://play.google.com/store/apps/details?id=com.twoergo.tiktap", "description":"Install another client on Google Play"}
       ],
       "keywords": ["Android", "SVN", "wifi", "Linux", "SDK"],
-      "images": ["http://portfolio.denevell.org/images//tiktap_small.jpg"]
+      "images": ["res/pd1.jpg", "res/pd2.jpg", "res/pd3.jpg"]
    }
   
 ]
