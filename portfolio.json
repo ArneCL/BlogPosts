@@ -80,7 +80,8 @@
         ],
       "links": [
          {"link": "https://play.google.com/store/apps/details?id=com.apadmi.panaram.dial00&hl=en", "description":"Install on Google Play"},
-         {"link": "http://itunes.apple.com/us/app/dial-00/id548287481?mt=8", "description":"iTunes store"}
+         {"link": "http://itunes.apple.com/us/app/dial-00/id548287481?mt=8", "description":"iTunes store"},
+         {"link": "http://panaram.com/", "description": "Visit website"}
       ],
       "keywords": ["Android", "Perforce", "Wifi"],
       "images": ["http://portfolio.denevell.org/images//voip.png", "res/wd1.jpg", "res/wd2.jpg"]
