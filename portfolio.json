@@ -22,6 +22,20 @@
       "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/200/200", "http://placekitten.com/g/198/198"]
    },
    {
+      "title":"Kiddicare.com Android application",
+      "description":"A shopping application for the Kiddicare.com brand",
+      "features":
+        [
+          "Browse and checkout",
+          "RESTful JSON services"
+        ],
+      "links": [
+         {"link": "http://google.com", "description":"Visit website"}
+      ],
+      "keywords": ["Android", "JSON", "RESTful", "UI tests", "Unit tests", "Robolectric"],
+      "images": ["res/kc1.png", "res/kc2.png", "res/kc3.png", "res/kc4.png", "res/kc5.png", "res/kc6.png", "res/kc7.png", "res/kc9.png", "res/kc10.png", "res/kc11.png"]
+   },   
+   {
       "title":"androidmanchester.co.uk RESTful services, Java JSP website and database",
       "description":"Wrote website and RESTful backend to the androidmanchester.co.uk app.",
       "features":
@@ -43,20 +57,6 @@
       ],
       "keywords": ["Java", "JSP", "GCM", "Push", "REST", "JSON", "JavaEE", "J2EE", "SOA", "SimpleTags", "Push", "Selenium", "Unit tests", "junit", "Docker", "UI tests"],
       "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
-   },
-   {
-      "title":"Kiddicare.com Android application",
-      "description":"A shopping application for the Kiddicare.com brand",
-      "features":
-        [
-          "Browse and checkout",
-          "RESTful JSON services"
-        ],
-      "links": [
-         {"link": "http://google.com", "description":"Visit website"}
-      ],
-      "keywords": ["Android", "JSON", "RESTful", "UI tests", "Unit tests", "Robolectric"],
-      "images": ["res/kc1.png", "res/kc2.png", "res/kc3.png", "res/kc4.png", "res/kc5.png", "res/kc6.png", "res/kc7.png", "res/kc9.png", "res/kc10.png", "res/kc11.png"]
    },
    {
       "title":"Dell Mobile Print",
