@@ -106,10 +106,10 @@
           "Feature"
         ],
       "links": [
-         {"link": "http://google.com", "description":"Install on Google Play"}
+         {"link": "https://play.google.com/store/apps/details?id=air.VocabTwist", "description":"Install on Google Play"}
       ],
       "keywords": ["Android", "game"],
-      "images": ["http://portfolio.denevell.org/images//devicesmalldisplay.png"]
+      "images": ["res/vt1.jpg", "res/vt2.jpg", "res/vt3.jpg"]
    },
    {
       "title":"Podifi White Label apps",
