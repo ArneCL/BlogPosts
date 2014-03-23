@@ -19,7 +19,7 @@
          {"link": "http://google.com", "description":"Install on Google Play"}
       ],
       "keywords": ["Android", "REST", "GCM", "Push", "JSON", "Docker", "Unit tests", "UI tests", "Espresso"],
-      "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/200/200", "http://placekitten.com/g/198/198"]
+      "images": ["res/m1.png", "res/m2.png", "res/m3.png", "res/m4.png"]
    },
    {
       "title":"Kiddicare.com Android application",
