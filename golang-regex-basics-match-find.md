@@ -28,6 +28,6 @@ The Find methods -- and others -- confirm to this general pattern.
 * If you have the word Index at the end it will return a int slice with the starting and ending point of the match, including groups
 
 		rp := regexp.MustCompile("([a-z])([a-z])[a-z]+")
-		rp.FindAllStringSubmatch("abc") // [0, 3, 0, 1, 1, 2]
+		rp.FindAllStringSubmatchIndex("abc") // [0, 3, 0, 1, 1, 2]
 
 The first two ints are the start and end of the match. The next two are the next group match. The next two likewise. 
