@@ -56,7 +56,7 @@
          {"link": "http://google.com", "description":"Visit website"}
       ],
       "keywords": ["Android", "JSON", "RESTful", "UI tests", "Unit tests", "Robolectric"],
-      "images": ["res/kc1.png", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+      "images": ["res/kc1.png", "res/kc2.png", "res/kc3.png", "res/kc4.png", "res/kc5.png", "res/kc6.png", "res/kc7.png", "res/kc9.png", "res/kc10.png", "res/kc11.png"]
    },
    {
       "title":"Dell Mobile Print",
