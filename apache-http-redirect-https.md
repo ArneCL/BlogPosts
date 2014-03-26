@@ -10,7 +10,7 @@ If you want all the HTTP traffic to be rerouted through HTTPS, you need to speci
      RewriteRule ^/(.*) https://%{HTTP_HOST}/$1 [NC,R=301,L]
     </VirtualHost>
 
-This is saying take all trafic going to port 80 that's that on port 443 (yeah...) and rewrite it to now go to a https:// url, ignoring case (NC), sending a moved permanently error message (R=301).
+This is saying take all traffic going to port 80 that's not on port 443 (yeah...) and rewrite it to a https:// url, ignoring case (NC), sending a moved permanently error message (R=301).
 
 Now specify the vhost entry for HTTPS:
     
