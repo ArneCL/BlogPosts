@@ -26,13 +26,24 @@
       "description":"A shopping application for the Kiddicare.com brand",
       "features":
         [
-          "Browse and checkout",
+          "Browse products",
+          "Add to basket",
+          "Checkout",
+          "Store finder",
+          "Google maps",
+          "Image Gallery",
+          "Sort",
+          "Search",
+          "Login",
+          "Register",
+          "Unit tests",
+          "Functional tests",
           "RESTful JSON services"
         ],
       "links": [
          {"link": "http://www.kiddicare.com", "description":"Visit website"}
       ],
-      "keywords": ["Android", "JSON", "RESTful", "UI tests", "Unit tests", "Robolectric"],
+      "keywords": ["Android", "JSON", "RESTful", "Maps", "UI tests", "Unit tests", "Robolectric"],
       "images": ["res/kc1.png", "res/kc2.png", "res/kc3.png", "res/kc4.png", "res/kc5.png", "res/kc6.png", "res/kc7.png", "res/kc9.png", "res/kc10.png", "res/kc11.png"]
    },   
    {
