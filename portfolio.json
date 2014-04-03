@@ -74,13 +74,19 @@
       "description":"Android wireless printing application for Dell, supporting 1.6 upwards, including tablets. Using custom styles and views and a service layer interacting with a proprietary API.",
       "features":
         [
-          "Feature"
+          "Jenkins for Contintous Integration",
+          "Interacts with WIFI printers",
+          "Print PDF, Office documents",
+          "Print websites",
+          "Print preview",
+          "Interacts with external programs",
+          "Uses third-party libraries"
         ],
       "links": [
          {"link": "https://play.google.com/store/apps/details?id=com.dell.mobileprint", "description":"Install on Google Play", "image":"img"}
       ],
       "keywords": ["Android", "Java", "Perfoce", "Jenkins", "Ant"],
-      "images": ["https://lh5.ggpht.com/5322kMPiHCqAN0biK0emSDC3qG-oj396zzrdGm-CZOAm469TxEZsGhYHCRCEwsZfTQ=h310", "https://lh5.ggpht.com/R25lx1eM47HRBxUcVBK1Lvdr75cYjqjbsRXG1fq3v2dNPvFzBvQ9SFlb7gigMdSkAg=h310", "https://lh6.ggpht.com/wIzNeUKLfDIpoM0Th_EXMoUUwtmFi5CUFCMcS8K4wE85h_O2zjdcinKnFn047qaDwTM=h310"]
+      "images": ["https://lh5.ggpht.com/5322kMPiHCqAN0biK0emSDC3qG-oj396zzrdGm-CZOAm469TxEZsGhYHCRCEwsZfTQ=h310", "https://lh5.ggpht.com/R25lx1eM47HRBxUcVBK1Lvdr75cYjqjbsRXG1fq3v2dNPvFzBvQ9SFlb7gigMdSkAg=h310", "https://lh6.ggpht.com/wIzNeUKLfDIpoM0Th_EXMoUUwtmFi5CUFCMcS8K4wE85h_O2zjdcinKnFn047qaDwTM=h310", "https://lh6.ggpht.com/_uP-AcQ4CisDJ3fJ3Hf7m9YzpTyFwCSt5utF5kq9MBLMHdlyRy8xSEV-fnFxOtJbQgY=h310"]
    },
    {
       "title":"Dial00 - Wifi Dialler",
