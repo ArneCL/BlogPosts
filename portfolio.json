@@ -113,12 +113,18 @@
       "description":"An Android image and text card sender, via Twitter, G+, Facebook, Email, MMS et al. Uses remote JSON to update the images in the app.",
       "features":
         [
-          "Feature"
-        ],
+          "Selects predefined card image",
+          "Integrates with Facebook and Twitter",
+          "Add a personal message to card",
+          "Email card to contact",
+          "Send card via Twitter, Facebook",
+          "Send card via MMS",
+          "Uses JSON to store card and images data"
+      ],
       "links": [
          {"link": "https://play.google.com/store/apps/details?id=uk.co.sugarushuk", "description":"Install on Google Play"}
       ],
-      "keywords": ["Android", "Twitter", "Facebook"],
+      "keywords": ["Android", "Twitter", "Facebook", "Images", "JSON"],
       "images": ["res/js1.jpg", "res/js2.jpg", "res/js3.jpg"]
    },
    {
@@ -126,12 +132,17 @@
       "description":"First Android project, which uses a custom path-finding algorithm to maximise the number of places that can be used to create words. Helps the user build their vocabulary. ",
       "features":
         [
-          "Feature"
+          "Uses custom path finding algorithm",
+          "Learn new vocabulary",
+          "Unit tests",
+          "Gives user hints",
+          "Allows user to lookup definitions",
+          "Saves vocabulary list"
         ],
       "links": [
          {"link": "https://play.google.com/store/apps/details?id=air.VocabTwist", "description":"Install on Google Play"}
       ],
-      "keywords": ["Android", "game"],
+      "keywords": ["Android", "Game"],
       "images": ["res/vt1.jpg", "res/vt2.jpg", "res/vt3.jpg"]
    },
    {
@@ -139,7 +150,11 @@
       "description":"A white-label Android application and portable Java SDK that connects wirelessly to a portible Linux device to redeem vochures.",
       "features":
         [
-          "Feature"
+          "Connects to hardware device over WIFI",
+          "Browse vochures",
+          "Redeem vochures",
+          "Uses external library to connect to hardware device",
+          "Interacts with RESTful JSON services"
         ],
       "links": [
          {"link": "http://www.tiktap.com/", "description":"Visit TikTab website"},
