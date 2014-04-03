@@ -93,14 +93,19 @@
       "description":"An Android VOIP app, communicating with an open source C/C++ SIP stack via an Android service.",
       "features":
         [
-          "Feature"
+          "VOIP calls",
+          "Uses third-party SIP library",
+          "C / C++ library",
+          "Replaces Android dialler",
+          "Starts on boot",
+          "Long running service to receive calls"
         ],
       "links": [
          {"link": "https://play.google.com/store/apps/details?id=com.apadmi.panaram.dial00&hl=en", "description":"Install on Google Play"},
          {"link": "http://itunes.apple.com/us/app/dial-00/id548287481?mt=8", "description":"iTunes store"},
          {"link": "http://panaram.com/", "description": "Visit website"}
       ],
-      "keywords": ["Android", "Perforce", "Wifi"],
+      "keywords": ["Android", "Perforce", "Wifi", "SIP", "Android service"],
       "images": ["http://portfolio.denevell.org/images//voip.png", "res/wd1.jpg", "res/wd2.jpg"]
    },
    {
