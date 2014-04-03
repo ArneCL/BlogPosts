@@ -2,7 +2,7 @@
 
    {
       "title":"androidmanchester.co.uk Android app",
-      "description":"Wrote the forum application for androidmanchester.co.uk. Used to discuss Android coding and receive notices about the group.",
+      "description":"Wrote the forum application for android-manchester.co.uk. Used to discuss Android coding and receive notices about the group.",
       "features":
         [
           "Push notifications with Google Cloud Messaging",
@@ -49,8 +49,8 @@
       "images": ["res/kc1.png", "res/kc2.png", "res/kc3.png", "res/kc4.png", "res/kc5.png", "res/kc6.png", "res/kc7.png", "res/kc9.png", "res/kc10.png", "res/kc11.png"]
    },   
    {
-      "title":"androidmanchester.co.uk RESTful services, Java JSP website and database",
-      "description":"Wrote website and RESTful backend to the androidmanchester.co.uk app.",
+      "title":"android-manchester.co.uk RESTful services, Java JSP website and database",
+      "description":"Website and RESTful backend to the android-manchester.co.uk app.",
       "features":
         [
           "Service orientated architecture (SOA)",
@@ -64,6 +64,7 @@
           "Push notifications with Google Cloud Messaging",
           "Unit tests",
           "Selenium UI tests",
+          "Jersey",
           "Pagination"
         ],
       "links": [
