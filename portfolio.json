@@ -56,7 +56,7 @@
          {"link": "http://www.android-manchester.co.uk", "description":"Visit website"}
       ],
       "keywords": ["Java", "JSP", "GCM", "Push", "REST", "JSON", "JavaEE", "J2EE", "SOA", "SimpleTags", "Push", "Selenium", "Unit tests", "junit", "Docker", "UI tests"],
-      "images": ["http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198", "http://placekitten.com/g/198/198"]
+      "images": ["res/ams1.png", "res/ams2.png", "res/ams3.png", "res/ams4.png"]
    },
    {
       "title":"Dell Mobile Print",
