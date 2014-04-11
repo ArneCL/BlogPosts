@@ -50,7 +50,7 @@
    },   
    {
       "title":"android-manchester.co.uk RESTful services, Java JSP website and database",
-      "description":"Website and RESTful backend to the android-manchester.co.uk app.",
+      "description":"Responsive website and RESTful backend to the android-manchester.co.uk app.",
       "features":
         [
           "Service orientated architecture (SOA)",
