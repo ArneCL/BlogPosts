@@ -2,7 +2,7 @@
 
    {
       "title":"androidmanchester.co.uk Android app",
-      "description":"Wrote the forum application for android-manchester.co.uk. Used to discuss Android coding and receive notices about the group.",
+      "description":"Forum app for android-manchester.co.uk. Used to discuss Android coding and receive push notifications about the group.",
       "features":
         [
           "Push notifications with Google Cloud Messaging",
@@ -20,7 +20,7 @@
          {"link": "https://play.google.com/store/apps/details?id=com.newfivefour.android.manchester", "description":"Install on Google Play"}
       ],
       "keywords": ["Android", "REST", "GCM", "Push", "JSON", "Docker", "Unit tests", "UI tests", "Espresso"],
-      "images": ["https://lh6.ggpht.com/vaop1eua_7JZxMzZ7B3LhUQAY7kUtH3m9AHnDYDnPxh3dUyEVf3MVaDGSFdOAF8n4L4=h310", "https://lh3.ggpht.com/1n3kvhgWTMToZNA_xING7Gzv2TJmlvTPTFhKxTROi4BpqebonkAjYCEm2b9BF5KArAA=h310", "https://lh3.ggpht.com/M0DZY2-PiB9w0p88fJnDOotpcAFaENlMj1jWYlErzhrN_qVGZfZeTzoczVNhsk0CAg=h310", "https://lh6.ggpht.com/5HrQtIlXdaUXH8U7GgzhWkJU9ooHX320zo6tTCP_RaT-D-HL23mK536lPZ2qLv4fxy8d=h310", "https://lh4.ggpht.com/FN6ytvhma50OstXzbL6ONhnRBh_IO8_urjJeXBCICEtQLhVEqB2bBium9dKMd1NHqUs=h310", "https://lh3.ggpht.com/974lGD-7aUNoo09oQjf5cgihw7UHudClb2xb5OsJkiVmvwonm8rYDuylLEVDII-9p_I=h310", "https://lh6.ggpht.com/WFQcskaE-q0CNGXcs4ciYRKjZaxkgMbtqjN_K862RDxDbqpmKryXmjt1ewGudnhp1nQ=h310"]
+      "images": ["https://lh6.ggpht.com/vaop1eua_7JZxMzZ7B3LhUQAY7kUtH3m9AHnDYDnPxh3dUyEVf3MVaDGSFdOAF8n4L4=h310", "https://lh3.ggpht.com/1n3kvhgWTMToZNA_xING7Gzv2TJmlvTPTFhKxTROi4BpqebonkAjYCEm2b9BF5KArAA=h310", "https://lh4.ggpht.com/qGHOqsFS_koUwgzH6lk01ASKTKWnD_FL6eIK2eaWfpOqzeyqgOjfzPPAlbhYiH2M1To=h310", "https://lh6.ggpht.com/5HrQtIlXdaUXH8U7GgzhWkJU9ooHX320zo6tTCP_RaT-D-HL23mK536lPZ2qLv4fxy8d=h310", "https://lh4.ggpht.com/FN6ytvhma50OstXzbL6ONhnRBh_IO8_urjJeXBCICEtQLhVEqB2bBium9dKMd1NHqUs=h310", "https://lh3.ggpht.com/974lGD-7aUNoo09oQjf5cgihw7UHudClb2xb5OsJkiVmvwonm8rYDuylLEVDII-9p_I=h310", "https://lh6.ggpht.com/WFQcskaE-q0CNGXcs4ciYRKjZaxkgMbtqjN_K862RDxDbqpmKryXmjt1ewGudnhp1nQ=h310"]
    },
    {
       "title":"Kiddicare.com Android application",
