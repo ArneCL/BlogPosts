@@ -13,9 +13,9 @@ Each runlevel defines its services in /etc/rc[RUNLEVELHERE].d/ as symlinks to th
 
 Services on debain are managed by the update-rc.d program.
 
-To add a service symlinks to the default run levels, ie. K01tomcat7 in /etc/rc[0,1,6].d/ and S01tomcat7 in the other, /etc/rc[2-5] directories, run
+* To add a service symlinks to the default run levels, ie. K01tomcat7 in /etc/rc[0,1,6].d/ and S01tomcat7 in the other, /etc/rc[2-5] directories, run
 
-	update-rc.d tomcat7 defaults
+		update-rc.d tomcat7 defaults
 
 * To remove the service symlinks from the runlevel directories, run
 
@@ -25,7 +25,7 @@ Note that on updating the package, it will re-run update-rc.d to reinsert the li
 
 * To disable a service from the runlevels, run
 
-	update-rc.d -f tomcat7 disable
+		update-rc.d -f tomcat7 disable
 
 This will turn all the S16tomcat7 links in the runlevels to K01tomcat7 links, thereby disabling the service.
 
@@ -33,7 +33,7 @@ You'll get a warning about the service being disabled, when the LSB headers in t
 
 * To enable a service, run
 
-	update-rc.d -f tomcat7 enable
+		update-rc.d -f tomcat7 enable
 
 This will ensure all the links in the rc[2-5].d/ are in the form S14tomcat7, thereby starting the service in those levels. If the service itself tells you what runlevels to start and stop in its script, update-rc.d will use that.
 
