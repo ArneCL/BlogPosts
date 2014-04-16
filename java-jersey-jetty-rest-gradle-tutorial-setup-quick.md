@@ -118,6 +118,6 @@ Build the project, which creates a WAR file, and then use the runner to run it o
     gradle build
     java -jar jetty-runner-9.1.0.M0.jar --port 8081 build/libs/YOUR_PROJECT_DIR.war
      
-Now you should be able to see your rest by visiting its url.
+Now you should be able envoke the re quest you defined earlier by visiting its url (and check the log file after you do so).
 
     http://localhost:8081/YOUR_PATH/example/some_text
