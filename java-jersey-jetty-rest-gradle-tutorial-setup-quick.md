@@ -116,6 +116,6 @@ Build the project, which creates a WAR file, download the jetty runner, and then
     wget http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.1.0.M0/jetty-runner-9.1.0.M0.jar
     java -jar jetty-runner-9.1.0.M0.jar --port 8081 build/libs/YOUR_PROJECT_DIR.war
      
-Now you should be able envoke the re quest you defined earlier by visiting its url (and check the log file after you do so).
+Now you should be able envoke the request you defined earlier by visiting its url (and check the log file after you do so).
 
     http://localhost:8081/YOUR_PATH/example/some_text
