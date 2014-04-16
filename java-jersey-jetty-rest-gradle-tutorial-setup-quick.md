@@ -66,7 +66,7 @@ Next create the web.xml file starting Jersey by pointing to a yet-to-be-created 
     </web-app>
     ' > src/main/webapp/WEB-INF/web.xml
     
-Now create that JerseyApplication file we referred to.
+Now create that JerseyApplication file we referred to. (Specifying the JerseyApplication isn't strictly necessary, nor is registering Jackson for this setup, but if we're using JSON later on, it will be)
 
     echo "
     package com.example.YOURPROJECT;
@@ -109,13 +109,11 @@ Now create a simple Jersey request.
     }
     ' > src/main/java/com/example/YOURPROJECT/ExampleRequest.java
     
-Get the jetty runner down.
 
-    wget http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.1.0.M0/jetty-runner-9.1.0.M0.jar
-    
-Build the project, which creates a WAR file, and then use the runner to run it on port 8081.
+Build the project, which creates a WAR file, download the jetty runner, and then use the runner to run the WAR on port 8081.
 
     gradle build
+    wget http://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.1.0.M0/jetty-runner-9.1.0.M0.jar
     java -jar jetty-runner-9.1.0.M0.jar --port 8081 build/libs/YOUR_PROJECT_DIR.war
      
 Now you should be able envoke the re quest you defined earlier by visiting its url (and check the log file after you do so).
