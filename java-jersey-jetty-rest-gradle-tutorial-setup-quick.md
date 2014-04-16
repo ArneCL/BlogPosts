@@ -119,3 +119,5 @@ Build the project, which creates a WAR file, download the jetty runner, and then
 Now you should be able envoke the request you defined earlier by visiting its url (and check the log file after you do so).
 
     http://localhost:8081/YOUR_PATH/example/some_text
+
+If you want to use this project in Eclipse, run 'gradle eclipse' and import the project into Eclipse.
