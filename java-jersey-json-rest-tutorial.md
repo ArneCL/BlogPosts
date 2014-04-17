@@ -39,7 +39,6 @@ Now create a POJO which we'll use for transmitting the JSON. (Note the @XMLRootE
 
 Now let's create a new request that will return an array of these objects.
 
-
     echo '
     package com.example.YOURPROJECT;
     
@@ -54,21 +53,20 @@ Now let's create a new request that will return an array of these objects.
     @Path("example_json")
     public class ExampleJSONRequest {
     
-    	@GET
-    	@Produces(MediaType.APPLICATION_JSON)
-    	public List<ExampleResource> example() {
-    		ArrayList<ExampleResource> resList = new ArrayList<ExampleResource>();
-    		ExampleResource exampleItem = new ExampleResource();
-    		exampleItem.setStuff("Some stuff");
-    		resList.add(exampleItem);
-    		ExampleResource exampleItem1 = new ExampleResource();
-    		exampleItem1.setStuff("Some more stuff");
-    		resList.add(exampleItem1);
-    		return resList;
-    	}
-    
+        @GET
+        @Produces(MediaType.APPLICATION_JSON)
+        public List<ExampleResource> example() {
+            ArrayList<ExampleResource> resList = new ArrayList<ExampleResource>();
+            ExampleResource exampleItem = new ExampleResource();
+            exampleItem.setStuff("Some stuff");
+            resList.add(exampleItem);
+            ExampleResource exampleItem1 = new ExampleResource();
+            exampleItem1.setStuff("Some more stuff");
+            resList.add(exampleItem1);
+            return resList;
+        }
     }
-    ' > src/main/java/com/example/YOURPROJECT/ExampleResource.java
+    ' > src/main/java/com/example/YOURPROJECT/ExampleJSONRequest.java
 
 The differences from our previous request are that the @Path has changed, we're not longer concerned about a @PathParam, and the @Produces method now says we're returning JSON, not plain text.
 
@@ -76,5 +74,8 @@ Let's now build it, run it and look at the response.
 
     gradle build
     java -jar jetty-runner-9.1.0.M0.jar --port 8081 build/libs/YOUR_PROJECT_DIR.war
-    curl http://localhost:8081/YOUR_PATH/example_json && echo
-    [{"stuff":"Some stuff"},{"stuff":"Some more stuff"}]
+     
+Then if you go to the url below you will see [{"stuff":"Some stuff"},{"stuff":"Some more stuff"}]
+
+    http://localhost:8081/YOUR_PATH/example_json
+    
