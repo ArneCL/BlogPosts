@@ -199,9 +199,9 @@ You should normally separate the database layer and entity adapters from the req
 
 We can again run the project to see it in action:
 
-gradle build
-java -jar jetty-runner-9.1.0.M0.jar --port 8081 build/libs/YOUR_PROJECT_DIR.war
-curl http://localhost:8081/YOUR_PATH/example_jpa/ONE && echo
-[{"stuff":"ONE"}]
-curl http://localhost:8081/YOUR_PATH/example_jpa/TWO && echo
-[{"stuff":"ONE"},{"stuff":"TWO"}]
+    gradle build
+    java -jar jetty-runner-9.1.0.M0.jar --port 8081 build/libs/YOUR_PROJECT_DIR.war
+    curl http://localhost:8081/YOUR_PATH/example_jpa/ONE && echo
+    [{"stuff":"ONE"}]
+    curl http://localhost:8081/YOUR_PATH/example_jpa/TWO && echo
+    [{"stuff":"ONE"},{"stuff":"TWO"}]
