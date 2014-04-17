@@ -16,6 +16,10 @@ Next create the Gradle build file, including the war and eclipse plugins, and th
     
     repositories {
         mavenCentral()
+        // Below needed in later tutorials
+        maven {
+            url 'http://download.eclipse.org/rt/eclipselink/maven.repo'
+        }
     }
     
     dependencies {
