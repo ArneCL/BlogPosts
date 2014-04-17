@@ -132,7 +132,6 @@ The comments should example the basics of JPA and EntityManagers.
     
     import java.util.ArrayList;
     import java.util.List;
-    
     import javax.persistence.EntityManager;
     import javax.persistence.EntityTransaction;
     import javax.persistence.Persistence;
@@ -142,9 +141,7 @@ The comments should example the basics of JPA and EntityManagers.
     import javax.ws.rs.PathParam;
     import javax.ws.rs.Produces;
     import javax.ws.rs.core.MediaType;
-    
     import org.apache.log4j.Logger;
-    
     
     @Path("example_jpa")
     public class ExampleJPARequest {
@@ -153,7 +150,6 @@ The comments should example the basics of JPA and EntityManagers.
     	@GET
     	@Produces(MediaType.APPLICATION_JSON)
     	public List<ExampleResource> example(@PathParam("example") String example) {
-    		
     		// Get the EntityManager by creating an EntityManagerFactory via the persistence-unit name we provided.
     		EntityManager entityManager = Persistence.createEntityManagerFactory("PERSISTENCE_UNIT_NAME").createEntityManager();   		
     		// Start a transaction - not needed in this case, but useful to see.
@@ -161,16 +157,14 @@ The comments should example the basics of JPA and EntityManagers.
     		List<ExampleEntity> list  = null;
     		try {
     			transaction.begin();
-    			
     			// Add an entity
     			ExampleEntity entity = new ExampleEntity();
     			entity.setTalky(example);			
     			entityManager.persist(entity);
-    			
     			// List entities, via the named query we defined in mapping.xml
     			TypedQuery<ExampleEntity> nq = entityManager.createNamedQuery("list", ExampleEntity.class);
     			list = nq.getResultList();
-    			
+    			// Commit the transaction
     			transaction.commit();
     		} catch (Exception e) {
     			Logger.getLogger(getClass()).error("Problem persisting", e);
@@ -188,10 +182,8 @@ The comments should example the basics of JPA and EntityManagers.
     			exampleItem.setStuff(exampleEntity.getTalky());
     			resList.add(exampleItem);
     		}
-    		
     		return resList;
     	}
-    
     }
     ' > src/main/java/com/example/YOURPROJECT/ExampleJPARequest.java
     
