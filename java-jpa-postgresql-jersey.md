@@ -25,10 +25,9 @@ Now we need to create a Postgresql database user and database to talk to. We'd n
     psql -c "create database test_database owner test_username"
     (logout from postgres and root)
     
-Now we can create the persistence.xml file that tells JPA how to connect to our database.
+Now we can create the persistence.xml file that tells JPA how to connect to our database. (Ensure there's no whitespace at the start of the file)
 
-    echo '
-    <?xml version="1.0" encoding="UTF-8" ?>
+    echo '<?xml version="1.0" encoding="UTF-8" ?>
     <persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
       version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
@@ -84,10 +83,9 @@ Next we'll create a simple Object, or Entity, which we'll persist in the databas
     
 We could use annotations on the object to map it to the database, and leave JPA to sort out the tables etc, but that always leads to pain.
 
-So we're creating the mapping.xml file we referred to earlier. 
+So we're creating the mapping.xml file we referred to earlier. (Ensure there's no whitespace at the start of the file)
 
-    echo '
-    <?xml version="1.0" encoding="UTF-8" ?>
+    echo '<?xml version="1.0" encoding="UTF-8" ?>
     <entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm    
@@ -151,15 +149,14 @@ The comments should example the basics of JPA and EntityManagers.
     	@Produces(MediaType.APPLICATION_JSON)
     	public List<ExampleResource> example(@PathParam("example") String example) {
     		// Get the EntityManager by creating an EntityManagerFactory via the persistence-unit name we provided.
-    		EntityManager entityManager = Persistence.createEntityManagerFactory("PERSISTENCE_UNIT_NAME").createEntityManager();   		
-    		// Start a transaction - not needed in this case, but useful to see.
-    		EntityTransaction transaction = entityManager.getTransaction();
+    		EntityManager entityManager = Persistence.createEntityManagerFactory("PERSISTENCE_UNIT_NAME").createEntityManager();
+    		EntityTransaction transaction = entityManager.getTransaction(); // Not useful here, but useful to see
     		List<ExampleEntity> list  = null;
     		try {
     			transaction.begin();
     			// Add an entity
     			ExampleEntity entity = new ExampleEntity();
-    			entity.setTalky(example);			
+    			entity.setTalky(example);
     			entityManager.persist(entity);
     			// List entities, via the named query we defined in mapping.xml
     			TypedQuery<ExampleEntity> nq = entityManager.createNamedQuery("list", ExampleEntity.class);
@@ -169,7 +166,7 @@ The comments should example the basics of JPA and EntityManagers.
     		} catch (Exception e) {
     			Logger.getLogger(getClass()).error("Problem persisting", e);
     			transaction.rollback();
-    			throw e; // Ergo showing a 500 error. You may want to throw an exception that's not detailing stuff about your JPA connection
+    			throw e; // Ergo showing a 500 error. You may want to throw an exception that is not detailing stuff about your JPA connection
     		} finally {
     			entityManager.clear(); // Clears all the entities from the EntityManager
     			entityManager.close();
@@ -193,7 +190,15 @@ We can again run the project to see it in action:
 
     gradle build
     java -jar jetty-runner-9.1.0.M0.jar --port 8081 build/libs/YOUR_PROJECT_DIR.war
-    curl http://localhost:8081/YOUR_PATH/example_jpa/ONE && echo
-    [{"stuff":"ONE"}]
-    curl http://localhost:8081/YOUR_PATH/example_jpa/TWO && echo
+    
+If you visit 
+    
+    http://localhost:8081/YOUR_PATH/example_jpa/ONE
+    
+and then visit
+    
+    http://localhost:8081/YOUR_PATH/example_jpa/TWO
+
+You should see the JSON
+
     [{"stuff":"ONE"},{"stuff":"TWO"}]
