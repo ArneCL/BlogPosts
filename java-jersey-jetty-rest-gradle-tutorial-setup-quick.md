@@ -1,5 +1,7 @@
-title: Quick start a RESTful project with Jersey, Jetty and Gradle
-Tags: jersey,java,jetty,gradle,java-quick-start
+title: PART 1: Quick start a RESTful project with Jersey, Jetty and Gradle
+Tags: jersey,java,jetty,gradle,java-web-quick-start
+
+(This is part of a series http://blog.denevell.org/category_java-web-quick-start.html)
 
 Make the project directory and the directory structure for Gradle:
 
@@ -19,8 +21,12 @@ Next create the Gradle build file, including the war and eclipse plugins, and th
     dependencies {
         compile 'log4j:log4j:1.2.7'
         compile 'org.slf4j:slf4j-log4j12:1.6.6'
-        compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.6'
         compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.6'
+        // Following aren't needed atm, but will be in later parts.
+        compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.6'
+        compile 'org.eclipse.jetty:jetty-jsp:9.1.0.M0'
+        compile 'postgresql:postgresql:9.1-901-1.jdbc4'
+        compile 'org.eclipse.persistence:eclipselink:2.4.0'        
     }" > build.gradle
     
 Next create the log4j.properties file.
