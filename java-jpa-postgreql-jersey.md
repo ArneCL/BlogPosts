@@ -115,7 +115,7 @@ This is saying:
 * Specifying the entity you created above
 * Specifying the database table where this entity lives
 * Creating a named query called 'list' that lists all the entities
-* Defining an primary key id attribute, relating to 'id' in entity, that is an automatically generated value in the database, letting JPA specify the stragey for creating that
+* Defining an primary key id attribute, relating to 'id' in entity, that is an automatically generated value in the database, using the AUTO strategy (see http://www.objectdb.com/java/jpa/entity/generated)
 * Defining an talky attribute, relating to 'talky' in the entity, which is the 'talky' column in the database which cannot be null.
 
 We'd normally use a database migration to ensure the table 'example' above exists, but in our case here, let's just create it in the database directly. We're also creating a sequence table so JPA can create unique primary keys.
