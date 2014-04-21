@@ -37,6 +37,18 @@ Now let's move the JPA stuff into its own model. In this case we're also using a
     
     import java.util.List;
     
+    public interface AddListModel {
+        List<ExampleEntity> addAndList(String someString);
+    }
+    ' > src/main/java/com/example/YOURPACKAGE/AddListModel.java
+
+And now for the implementation of the interface.
+
+    echo '
+    package com.example.YOURPROJECT;
+    
+    import java.util.List;
+    
     import javax.persistence.EntityManager;
     import javax.persistence.EntityTransaction;
     import javax.persistence.Persistence;
