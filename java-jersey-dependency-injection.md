@@ -19,7 +19,7 @@ Let's start with a simple object that will adapt the list of JPA entities into a
     	
     	public List<ExampleResource> adapt(List<ExampleEntity> list) { 
     		ArrayList<ExampleResource> resList = new ArrayList<ExampleResource>();
-    		for (ExampleEntity exampleEntity : list) {
+    		for (ExampleEntity exampleEExntity : list) {
     			ExampleResource exampleItem = new ExampleResource();
     			exampleItem.setStuff(exampleEntity.getTalky());
     			resList.add(exampleItem);
@@ -28,7 +28,7 @@ Let's start with a simple object that will adapt the list of JPA entities into a
     	}
     
     }
-    ' > src/main/java/com/example/YOURPACKAGE/ExampleResourceAdapter.java
+    ' > src/main/java/com/example/YOURPACKAGE/ExampleResourcesAdapter.java
     
 Now let's move the JPA stuff into its own model. In this case we're also using an interface, although we don't have to for the DI to work. (Same  JPA code as before, but without the comments)
 
