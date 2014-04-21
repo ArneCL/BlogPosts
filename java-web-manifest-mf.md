@@ -1,4 +1,4 @@
-title: Java: accessing MANIFEST.MF fields in web projects
+title: Java: Accessing MANIFEST.MF fields in web projects
 tags: java,java-manifest
 
 Let's say you have a MANIFEST.MF file of the form
@@ -6,7 +6,7 @@ Let's say you have a MANIFEST.MF file of the form
     Manifest-Version: 1.0
     SomeVar: SomeValue
     
-In a directory such as src/main/resoures/META-INF, in the case of War projects files in Gradle, then when your WAR file is compiled it'll be in WEB-INF/classes/META-INF/.
+In a directory such as src/main/resources/META-INF, in the case of War projects files in Gradle, then when your WAR file is compiled it'll be in WEB-INF/classes/META-INF/.
 
 When your application starts you can start a listener that parses this file, e.g. in your web.xml file define a listener that starts a class, which should be the first listener incase any subsequent listeners want to use the parsed variables:
 
