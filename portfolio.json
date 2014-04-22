@@ -8,6 +8,8 @@
           "Push notifications with Google Cloud Messaging",
           "Add/Delete/Edit threads and posts",
           "Login and Register",
+          "Change password",
+          "Forgotten password",
           "Interfaces with JSON from a RESTful backend",
           "Dependency injection used throughout",
           "Custom Views used throughout",
@@ -26,7 +28,8 @@
       "https://lh6.ggpht.com/5HrQtIlXdaUXH8U7GgzhWkJU9ooHX320zo6tTCP_RaT-D-HL23mK536lPZ2qLv4fxy8d=h310", 
       "https://lh4.ggpht.com/aXmKCTKO_yNJqLqjPCL-VuFjzIGtoNRLhppAzGpTk_8Ye3rIBehnfLbiQOpaZv0K3Dg=h310",
       "https://lh6.ggpht.com/ImcakQBxSYU3ga4ZV3qXNUo-DtyoJXK8UkgoRZMHjBGZesRR5010qnfNLL0aO6zlp4g=h310", 
-      "https://lh6.ggpht.com/WFQcskaE-q0CNGXcs4ciYRKjZaxkgMbtqjN_K862RDxDbqpmKryXmjt1ewGudnhp1nQ=h310"]
+      "https://lh6.ggpht.com/WFQcskaE-q0CNGXcs4ciYRKjZaxkgMbtqjN_K862RDxDbqpmKryXmjt1ewGudnhp1nQ=h310",
+      "https://lh3.ggpht.com/0YNjBbtudflBqxNYNsCQvvaZVh1RcU6X_qmEUKX93pXq3GEkid_G75QiTGcR3kzbQBWi=h310"]
    },
    {
       "title":"Kiddicare.com Android application",
