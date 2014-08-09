@@ -5,16 +5,15 @@ If you're using Refrofit with OkHTTP, or just OkHTTP on its own, you can set it 
 
 This is an example in OkHTTP 2.0.
 
-    OkHttpClient http_client = new OkHttpClient();
+    OkHttpClient ok = new OkHttpClient();
     try {
         Cache responseCache = new Cache(context.getCacheDir(), SIZE_OF_CACHE);
-        http_client.setCache(responseCache);
+        ok.setCache(responseCache);
     } catch (Exception e) {
         Log.d(TAG, "Unable to set http cache", e);
     }
-    http_client.setReadTimeout(30, TimeUnit.SECONDS);
-    http_client.setConnectTimeout(30, TimeUnit.SECONDS);
-    return new OkClient(http_client);
+    ok.setReadTimeout(30, TimeUnit.SECONDS);
+    ok.setConnectTimeout(30, TimeUnit.SECONDS);
 
 If you cache is large enough, OkHTTP will start to cache your responses. And if your server uses Etags or similar, it will returned cached responses on 304s.
 
