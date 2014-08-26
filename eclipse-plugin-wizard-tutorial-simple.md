@@ -12,7 +12,7 @@ First, create a new plugin project,
     File -> New -> Other -> Plugin Development -> Plug-in Project 
     -> [Enter project name, accept defaults on this screen] 
     -> [Accept default on next screen] 
-    -> [Unclick "Create a plugin using one of the templates] 
+    -> [Unclick "Create a plugin using one of the templates"] 
     -> Finish
     
 Now you have a blank plugin project.
