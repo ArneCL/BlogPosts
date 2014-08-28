@@ -106,8 +106,13 @@ The adPages() method makes us create a new page, in this case we've just added a
 
 Finally, performFinish() is called when the user presses the 'Finish' button in the wizard.
 
+Installation
+============
+
 Now, if you right click on the plugin project, and run as Eclipse Application, you'll get a new instance of Eclipse with the plugin loaded. 
 
 Now create a new Java project. Then on the 'src' directory, for example, right click -> New -> Other. Now you can find your plugin.
 
 It does nothing! Glorious!
+
+You can export the plugin by right clicking on the project and exporting as plugin fragment. This will create a .jar file you can put in [eclipse path]/dropins that will become active once you restart eclipse.
