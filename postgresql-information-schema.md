@@ -11,10 +11,12 @@ The above lists all the tables, excluding schema_version since we don't care abo
 
     SELECT columns.table_name,
       columns.column_name,
-      columns.data_type
+      columns.data_type,
+      columns.column_default,
+      columns.is_nullable
      FROM information_schema.columns;
 
-The above lists all the coumns in your database along with their type.
+The above lists all the column names in your database, their type, the column default (you can work out if it's got a sequence etc) and if they're nullable
 
     SELECT kcu.constraint_name,
         kcu.table_name,
