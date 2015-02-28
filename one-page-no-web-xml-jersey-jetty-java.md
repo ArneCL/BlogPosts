@@ -46,8 +46,6 @@ Then, in that directory, App.java:
       @Path("example")
       public static class Hello {
         
-          public Hello() {}
-    
           @GET
           @Produces(MediaType.APPLICATION_JSON)
           public List<String> example() {
