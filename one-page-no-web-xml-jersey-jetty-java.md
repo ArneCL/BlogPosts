@@ -1,4 +1,5 @@
 title: A one page Java/Jetty/Jersey REST app with no web.xml descriptor
+tags: jetty, jersey, gradle, java
 
 First create the build.gradle file in your directory:
 
