@@ -58,19 +58,13 @@ Then, in that directory, App.java:
       
     }
 
-Create the war file with gradle:
+Now 1) create the war file with gradle, 2) download the Jetty runner jar, 3) run the war file with the jetty runner (takes about 15 seconds to init usually) and 4) use curl to test the app:
 
     gradle build war
-    
-Download the Jetty Runner:
-
     wget http://central.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.3.0.M1/jetty-runner-9.3.0.M1.jar
-    
-Now run the application (wait about 20 seconds for it to init):
-
     java -jar jetty-runner-9.3.0.M1.jar --port 8081 build/libs/your-directory-name.war
-    
-Now you can run curl to see the output of our rest endpoint above:
-
     curl localhost:8081/rest/example && echo
+    
+The above curl command should print:
+
     ["one","two"]
