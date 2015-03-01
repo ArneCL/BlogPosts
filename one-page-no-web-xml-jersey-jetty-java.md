@@ -20,11 +20,7 @@ First create the build.gradle file in your directory:
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     
-Then create the directory structure for gradle:
-
-    mkdir -p src/main/java/com/example
-    
-Then, in that directory, App.java:
+Then, in `src/main/java/com/example`, create App.java:
 
     package com.example;
     
@@ -58,13 +54,20 @@ Then, in that directory, App.java:
       
     }
 
-Now 1) create the war file with gradle, 2) download the Jetty runner jar, 3) run the war file with the jetty runner (takes about 15 seconds to init usually) and 4) use curl to test the app:
+Now 
+
+0. Create the war file with gradle 
+0. Download the Jetty runner jar
+0. Run the war file with the jetty runner (takes about 15 seconds to init usually)
+0. Use curl to test the app
+ 
+From the command line:
 
     gradle build war
     wget http://central.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.3.0.M1/jetty-runner-9.3.0.M1.jar
     java -jar jetty-runner-9.3.0.M1.jar --port 8081 build/libs/your-directory-name.war
     curl localhost:8081/rest/example && echo
-    
+        
 The above curl command should print:
 
     ["one","two"]
