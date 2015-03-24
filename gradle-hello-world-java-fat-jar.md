@@ -26,7 +26,7 @@ Create your build.gradle with your dependencies and a jar section that collects 
 
 Now create a basic hello world, using the library we imported:
 
-import org.mindrot.jbcrypt.BCrypt;
+    import org.mindrot.jbcrypt.BCrypt;
 
     public class Main {
             public static void main(String[] args) {
