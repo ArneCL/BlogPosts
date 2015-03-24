@@ -39,4 +39,4 @@ Now build and run your jar:
 
     $ gradle clean build && java -jar build/libs/THE_NAME_OF_YOUR_JAR.jar
     ...
-    $2a$11$R6q8LOed8LqXCOIhBnzhMecyebv/8v1urKjU76JMJGUctnZ8VkyZu
+    $2a$10$R6q8LOed8LqXCOIhBnzhMecyebv/8v1urKjU76JMJGUctnZ8VkyZu
