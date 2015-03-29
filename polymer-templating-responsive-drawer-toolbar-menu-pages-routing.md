@@ -161,8 +161,8 @@ Now finally onto routing (to be placed in your head tag).
 
     <more-routing-config driver="hash"></more-routing-config>
     <more-route name="one" path="/one"></more-route>
-    <more-route name="two" path="/two">
-        <more-route name="two-inner" path="/:name"></more-route>
+    <more-route path="/two">
+        <more-route name="two" path="/:name"></more-route>
     </more-route>
 
 This sets routing to a use a #!/name url scheme, sets two urls with the name 'one' and 'two' and accordingly named urls, and gives the 'two' route to take a param like /#!/two/somenamehere.
@@ -171,25 +171,27 @@ More-route-selector works cleverly with anything that extends core-selector, i.e
 
     <more-route-selector>
       <core-menu selected="0">
-        <core-item route="one">One</core-item>
-        <core-item route="two">Two</core-item>
+        <core-item route="{{urlFor('one')}}">One</core-item>
+        <core-item route="{{urlFor('two', {name: 'sup'})}}">Two</core-item>
       </core-menu>
     </more-route-selector>
 
 and the new core-pages:
 
-    <more-route-selector>
+    <more-route-selector selectedParams="{{params}}">
       <core-pages selected="0">
         <section route="one">
           <div> Page one </div>
         </section>
         <section route="two">
-          <div> Page two </div>
+          <div> Page two: {{params.name}} </div>
         </section>
       </core-pages>
     </more-route-selector>
 
-We're using the "0" selected attribute now, since the routes will be selecting the pages so we may as well just show the first menu/page initially. (We can also remote the tmpl.selected line in our javascript too).
+We're using the "0" selected attribute now, since the routes will be selecting the pages so we may as well just show the first menu/page initially. (We can also remove the tmpl.selected line in our javascript too).
+
+The selectedParams line on more-router-selector gives us the attributes that were created in the urlFor method in the core-item above.
 
 Now if we click on the menu, not only with the pages change, but the url will change too. And if we go to your_url#!/two it will go to the second page automatically.
 
