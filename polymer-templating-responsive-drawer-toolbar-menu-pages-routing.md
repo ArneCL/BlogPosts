@@ -32,6 +32,9 @@ Let's assume this is your header and footer of the page, setting the app to not 
             <link rel="import" href="bower_components/more-routing/more-routing.html"> 
             <link rel="import" href="bower_components/core-elements/core-elements.html"> 
             <style>
+                core-header-panel {
+                    background-color: white;
+                }
                 a {
                     color: black;
                     text-decoration: none;
