@@ -206,8 +206,8 @@ Here's the final code for the body (remember to put the above more-routing stuff
             </core-toolbar>
             <more-route-selector>
               <core-menu selected="0">
-                <core-item route="one">One</core-item>
-                <core-item route="two">Two</core-item>
+                <core-item route="{{urlFor('one')}}">One</core-item>
+                <core-item route="{{urlFor('two', {name: 'sup'})}}">Two</core-item>
               </core-menu>
             </more-route-selector>
           </core-header-panel>
@@ -218,13 +218,13 @@ Here's the final code for the body (remember to put the above more-routing stuff
               <span flex></span>
               <core-icon-button icon="search"></core-icon-button>
             </core-toolbar>
-            <more-route-selector>
+            <more-route-selector selectedParams="{{params}}">
               <core-animated-pages selected="0">
                 <section route="one">
                   <div> Page one </div>
                 </section>
                 <section route="two">
-                  <div> Page two </div>
+                  <div> Page two: {{params.name}} </div>
                 </section>
               </core-animated-pages>
             </more-route-selector>
