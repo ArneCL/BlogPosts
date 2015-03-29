@@ -99,16 +99,16 @@ We use a core-menu, which is has its selected attribute bound to a template vari
 
 Pages:
 
-    <core-pages selected="{{selected}}" valueattr="pagename">
+    <core-animated-pages selected="{{selected}}" valueattr="pagename">
       <section pagename="one">
         <div> Page one </div>
       </section>
       <section pagename="two">
         <div> Page two </div>
       </section>
-    </core-pages>
+    </core-animated-pages>
 
-The core-pages will only show one of its sections, named by the pagename attribute (set by valueattr). We specify the selected page by the bound template variable, which the core-menu above will accordingly set.
+The core-animated-pages will only show one of its sections, named by the pagename attribute (set by valueattr). We specify the selected page by the bound template variable, which the core-menu above will accordingly set. (Note: we use core-animated-pages since core-pages is broken for scrolling in some cases...)
 
 So we now have a menu in our drawer that controls what page to show. Here's the full body code:
 
@@ -131,14 +131,14 @@ So we now have a menu in our drawer that controls what page to show. Here's the 
               <span flex></span>
               <core-icon-button icon="search"></core-icon-button>
             </core-toolbar>
-            <core-pages selected="{{selected}}" valueattr="pagename">
+            <core-animated-pages selected="{{selected}}" valueattr="pagename">
               <section pagename="one">
                 <div> Page one </div>
               </section>
               <section pagename="two">
                 <div> Page two </div>
               </section>
-            </core-pages>
+            </core-animated-pages>
           </core-header-panel>
         </core-drawer-panel>
       </template>
@@ -214,14 +214,14 @@ Here's the final code for the body (remember to put the above more-routing stuff
               <core-icon-button icon="search"></core-icon-button>
             </core-toolbar>
             <more-route-selector>
-              <core-pages selected="0">
+              <core-animated-pages selected="0">
                 <section route="one">
                   <div> Page one </div>
                 </section>
                 <section route="two">
                   <div> Page two </div>
                 </section>
-              </core-pages>
+              </core-animated-pages>
             </more-route-selector>
           </core-header-panel>
         </core-drawer-panel>
