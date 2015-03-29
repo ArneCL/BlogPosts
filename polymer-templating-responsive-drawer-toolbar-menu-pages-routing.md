@@ -167,22 +167,22 @@ This sets routing to a use a #!/name url scheme, sets two urls with the name 'on
 More-route-selector works cleverly with anything that extends core-selector, i.e. core-menu and core-pages. We can get rid of the valueattr stuff and just give each core-item and section withing core-pages a route attribute instead that is named after the routes defined above:
 
     <more-route-selector>
-        <core-menu selected="0">
-            <core-item route="one">One</core-item>
-            <core-item route="two">Two</core-item>
-        </core-menu>
+      <core-menu selected="0">
+        <core-item route="one">One</core-item>
+        <core-item route="two">Two</core-item>
+      </core-menu>
     </more-route-selector>
 
 and the new core-pages:
 
     <more-route-selector>
       <core-pages selected="0">
-          <section route="one">
-              <div> Page one </div>
-          </section>
-          <section route="two">
-              <div> Page two </div>
-          </section>
+        <section route="one">
+          <div> Page one </div>
+        </section>
+        <section route="two">
+          <div> Page two </div>
+        </section>
       </core-pages>
     </more-route-selector>
 
@@ -200,10 +200,10 @@ Here's the final code for the body (remember to put the above more-routing stuff
               <span>Menu</span>
             </core-toolbar>
             <more-route-selector>
-                <core-menu selected="0">
-                    <core-item route="one">One</core-item>
-                    <core-item route="two">Two</core-item>
-                </core-menu>
+              <core-menu selected="0">
+                <core-item route="one">One</core-item>
+                <core-item route="two">Two</core-item>
+              </core-menu>
             </more-route-selector>
           </core-header-panel>
           <core-header-panel  main>
@@ -215,12 +215,12 @@ Here's the final code for the body (remember to put the above more-routing stuff
             </core-toolbar>
             <more-route-selector>
               <core-pages selected="0">
-                  <section route="one">
-                      <div> Page one </div>
-                  </section>
-                  <section route="two">
-                      <div> Page two </div>
-                  </section>
+                <section route="one">
+                  <div> Page one </div>
+                </section>
+                <section route="two">
+                  <div> Page two </div>
+                </section>
               </core-pages>
             </more-route-selector>
           </core-header-panel>
