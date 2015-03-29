@@ -1,7 +1,7 @@
 Title: Polymer: Tutorial for responsive drawer, toolbar, menu, pages, routing and templating
 Tags: polymer
 
-This is for 0.5.5. It'll likely change for 0.8 (yet to be released). This is  re-hash of the Polymer tutorial on youtube by Rob Dobson for reference.
+This is for 0.5.5. It'll likely change for 0.8 (yet to be released). This is  re-hash of the Polymer polycast videos on youtube by Rob Dodson for reference.
 
 First create the below basic bower file.
 
