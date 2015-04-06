@@ -1,4 +1,4 @@
-title: Android: Flexbox simple explainer
+title: CSS: Flexbox simple explainer
 tags: css, flexbox
 
 Although flexbox is a rather lot to comprehend, it can be broken down into a bunch of questions asked to the layout items.
