@@ -3,7 +3,7 @@ tags: css, flexbox
 
 Although flexbox is a rather lot to comprehend, it can be broken down into a bunch of questions asked to the layout items.
 
-This should become clearing in the example afterward.
+Things should become clearing in the example afterward.
 
 Conversation
 ============
