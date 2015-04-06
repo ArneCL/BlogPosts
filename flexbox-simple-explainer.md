@@ -5,6 +5,9 @@ Although flexbox is a rather lot to comprehend, it can be broken down into a bun
 
 This should become clearing in the example afterward.
 
+Conversation
+============
+
 To the container:
 
 * "What axis do you want to place your items down?" (flex-direction)
@@ -19,7 +22,8 @@ To the individual items:
 * "While layout out down the flex-direction, should we grow your size to fill the space?" (flex-grow)
 * "While layout out down the flex-direction, should we shrink your size" (flex-shrink)
 
-Example:
+Example
+=======
 
 Let's say you've got a div that takes up the whole screen (height and width at 100%). And you want a collection of divs within to be placed at the bottom of the screen in the center.
 
