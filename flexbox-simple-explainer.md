@@ -18,7 +18,7 @@ To the container:
 To the individual items:
 
 * "Do you want to differ to the way you're being aligned, regarding the align-items propery?" (align-self)
-* "What's the minmum of your size down the flex-direction size (in px or percentage)?" (flex-basis)
+* "What's the basis of the size down the flex-direction before growing or shrinking the items (in px or percentage)?" (flex-basis)
 * "While layout out down the flex-direction, should we grow your size to fill the space?" (flex-grow)
 * "While layout out down the flex-direction, should we shrink your size" (flex-shrink)
 
@@ -37,7 +37,7 @@ To the items:
 
 You'd leave these blank, in this case.
 
-If you wanted to the last item to be aligned, not to the bottom, but to the middle, you could set align-self: center on that item. You could also use 'flex-basis' to give that item at least 50% of the space down the flex-direction axis
+If you wanted to the last item to be aligned, not to the bottom, but to the middle, you could set align-self: center on that item. You could also use 'flex-basis' to give it 50% of the space down the flex-direction axis
 
 If you played with any of the flex-grow or flex-shrink properties, it'd no longer be aligned down the middle of the flex-direction, since it'd start taking up all the space available in the case of flex-grow: 1, with flex-grow: 2 meaning take up twice as much room as the item with flex-grow: 1.
 
