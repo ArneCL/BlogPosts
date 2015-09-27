@@ -28,15 +28,15 @@ We could use this SQL to output salary averages of the departments.
      
 But we may not want to wind all the columns up, just diplay an average column after each row. In that case:
 
-  select name, department, salary, avg(salary) over (partition by department) from employees;
-   name  | department | salary |        avg         
-  -------+------------+--------+--------------------
-   chris | IT         |  30000 | 29000.000000000000
-   jason | IT         |  35000 | 29000.000000000000
-   kate  | IT         |  22000 | 29000.000000000000
-   david | sales      |  40000 | 45000.000000000000
-   matt  | sales      |  45000 | 45000.000000000000
-   james | sales      |  50000 | 45000.000000000000
+       select name, department, salary, avg(salary) over (partition by department) from employees;
+        name  | department | salary |        avg         
+       -------+------------+--------+--------------------
+        chris | IT         |  30000 | 29000.000000000000
+        jason | IT         |  35000 | 29000.000000000000
+        kate  | IT         |  22000 | 29000.000000000000
+        david | sales      |  40000 | 45000.000000000000
+        matt  | sales      |  45000 | 45000.000000000000
+        james | sales      |  50000 | 45000.000000000000
 
 We use the 'over' keyword to specify the column we want to partition our window by.
 
