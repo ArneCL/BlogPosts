@@ -5,7 +5,7 @@ The `group by` SQL statement winds up all rows based on a column. Then you use a
 
 Sometimes you don't want to wind up all the rows. You may want them to display as normal. But calculate a value on a load of rows (say, a 'window' of rows...).
 
-This is where `Window functions` come into play.They allow you to specify a load of (or window of) rows on which to use a aggregate function.
+This is where `Window functions` come into play. They allow you to specify a load of (or window of) rows on which to use a aggregate function.
 
 Let's say we have this table.
 
@@ -18,7 +18,7 @@ Let's say we have this table.
      matt  | sales      |  45000
      james | sales      |  50000
 
-We could use this SQL to output salary averages of the departments.
+We could use this group by SQL statement to output salary averages of the departments.
 
     select department, avg(salary) from employees group by department;
      department |        avg
