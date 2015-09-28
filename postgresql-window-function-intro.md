@@ -18,7 +18,7 @@ Let's say we have this table.
      matt  | sales      |  45000
      james | sales      |  50000
 
-We could use this group by SQL statement to output salary averages of the departments.
+We could use this `group by` SQL statement to output salary averages of the departments.
 
     select department, avg(salary) from employees group by department;
      department |        avg
