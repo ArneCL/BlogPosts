@@ -1,5 +1,5 @@
 title: Sanitizing CSV files with regex
-tags: unix,csv,regex
+tags: unix,csv,regex,vim
 
 Often, you want to use a CSV file, but commas within fields, double and single quotation marks can work trickily with some other programs.
 
