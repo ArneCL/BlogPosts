@@ -1,5 +1,5 @@
 title: Replacing commas in fields in CSV files with regex
-tags: sed, unix, csv, awk, regex
+tags: sed, unix, csv, awk, regex, vim
 
 Sometimes -- in Comma Separated Value files -- you have commas *inside* the fields themselves.
 
