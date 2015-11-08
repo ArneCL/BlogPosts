@@ -1,4 +1,4 @@
-title: Encapsulated custom element styles
+title: PolymerJS: Encapsulated custom element styles
 tags: polymer, polymer-styles
 
 In the last [example](http://blog.denevell.org/polymer-create-simple-custom-element.html) we created a simple custom component.
