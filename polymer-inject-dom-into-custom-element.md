@@ -1,4 +1,4 @@
-title: Injecting DOM into a custom element
+title: PolymerJS: Injecting DOM into a custom element
 tags: polymer, polymer-localdom
 
 We [previously](http://blog.denevell.org/polymer-create-simple-custom-element.html) created a simple custom element.
