@@ -1,4 +1,4 @@
-title: Event retargeting in Polymer 1.0
+title: PolymerJS: Event retargeting in Polymer 1.0
 tags: polymer,polymer-events
 
 Event retargeting makes an event from a custom element look like it's coming from the overall custom element tag, as opposed to an element within.
