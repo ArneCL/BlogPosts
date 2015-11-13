@@ -1,4 +1,4 @@
-title: Usage of element.updateStyles()
+title: PolymerJS: Usage of element.updateStyles()
 tags: polymer,polymer-styles
 
 The shim used for CSS variables is lightweight. 
