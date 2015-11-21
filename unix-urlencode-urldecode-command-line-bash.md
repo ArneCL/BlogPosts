@@ -23,3 +23,7 @@ If you want a native bash solution to urlencode and urldecode, put [this](https:
         local url_encoded="${1//+/ }"
         printf '%b' "${url_encoded//%/\\x}"
     }
+
+If you want to use this from xargs, you'll need to export the function via:
+
+    export -f urlencode
