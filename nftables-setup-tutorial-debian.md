@@ -32,7 +32,7 @@ The add table command is simple enough. Then the chain ``input`` is added to the
 
 Next let's add a rule to allow SSHon port 22:
 
-    nft add rule inet global input tcp dport 22 accept
+    # nft add rule inet global input tcp dport 22 accept
 
 Again, we're adding a rule to the global table and the input chain. We then use the accept on the tcp destination port 22. We can how list out commands: 
 
