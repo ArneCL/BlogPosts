@@ -12,7 +12,7 @@ For debian jessie, we'll need the nftables packages which resides in backports. 
 
 Then we can install nftables. Install apache or whatever also, so we can test out filtering.
 
-    # apt-get install nftables apaches
+    # apt-get install nftables apache2
 
 I'm using this version of nftables (Warning: things may change with later verseions)
 
