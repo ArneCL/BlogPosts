@@ -19,9 +19,9 @@ This is as before, except we're only allowing 1 a second.
 
 But there may be a problem if you also have ``ct state established accept`` anywhere in your table since now the echo-requests have an established state, for reasons of which I am not sure.
 
-To get over this, ensure after the rate limiting rule (position 32 is above the icmp rule in my case) we explicitly drop all icmp packets.
+To get over this, ensure after the rate limiting rule (position 32 is below the icmp rule in my case) we explicitly drop all icmp packets.
 
-    nft add rule inet global input position 32 ip protocol icmp \
+    nft insert rule inet global input position 32 ip protocol icmp \
         drop
 
 Notes:
