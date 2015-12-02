@@ -16,11 +16,11 @@ Now we can drop all the rest:
 
     nft add rule inet global input drop
 
-Let's insert an ESTABLISHED rule before the drop rule, or right at the top in our case, that allows our outcoming packets -- when we request a webpage for example -- to receive packets from the external server:
+Let's insert an ESTABLISHED rule before the drop rule, or right at the top in our case, that allows our incoming packets -- when we request a webpage for example -- to receive packets from the external server:
 
     nft insert rule inet global input ct state established accept
 
-(You may want to add ``related`` to the states to accept if you're using FTP etc)
+(You may want to add the ``related`` state to accept if you're using FTP etc)
 
 Finally let's insert some standard rules for allowing http etc. We'll use the positional handle indicators -- position 8 in my case -- for the insertion place via using ``nft list table inet global -a``.
 
