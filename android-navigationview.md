@@ -15,6 +15,8 @@ The `menu` attribute links to a normal menu. And the `headerLayout` points to a 
 
 If you enable to `checkable` attribute on your menu items, they stay highlighted after pressed, which is very nice in a drawer layout, obviously.
 
+The menu items can also have an `app:actionLayout` attribute, and a layout will be placed on the hard right of the menu. Useful for unread counts and so on and so forth.
+
 To do something when the navigation view's menu items are pressed, a normal listener is used. In our case we'll close our navigation drawer.
 
     mNavigationView = (NavigationView) findViewById(R.id.naviationview);
