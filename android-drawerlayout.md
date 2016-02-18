@@ -33,6 +33,9 @@ Then in your `onCreate`, first set our swish new `Toolbar` to be the actionbar, 
     mDrawerToggle = new ActionBarDrawerToggle(this, mDrawer, toolbar,
             R.string.drawer_open, R.string.drawer_close);
     mDrawerLayout.setDrawerListener(mDrawerToggle);
+    mDrawerToggle.syncState();
+    
+The final line ensure we actually see the toggle.
 
 There's various syncing and actions to be done on opening the drawer, but that's the minimum.
 
