@@ -24,6 +24,8 @@ Then your layout.xml should look something like this, with the height being the 
           >
       </android.support.v7.widget.Toolbar>
     </LinearLayout>
+    
+You can also use the popupTheme attribute of the Toolbar to style the items that popup in the menu on the right.
 
 Now the code for the initialisation in onCreate is simple enough, ensuring your Activity extends the right class, `AppCompatActivity` in my case:
 
