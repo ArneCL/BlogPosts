@@ -1,5 +1,5 @@
 title: Android Design Library: TabLayout, ViewPager and title icons
-tags: anddroid,android-tablayout,android-viewpager
+tags: android,android-tablayout,android-viewpager
 
 The TabLayout's XML is simple enough:
 
