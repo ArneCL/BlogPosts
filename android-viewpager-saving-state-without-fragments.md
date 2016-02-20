@@ -62,7 +62,11 @@ Here's an example implementation
             if(state==null) {
                 Log.d(SavingViewStateViewPager.class.getSimpleName(), "State for view restore was null");
             } else {
-                view.restoreHierarchyState(state);
+                try {
+                    view.restoreHierarchyState(state);
+                } catch(Exception e) {
+                    Log.d(SavingViewStateViewPager.class.getSimpleName(), "Unable to restore view: " + e.getMessage());
+                }                
             }
             setViewPositionTag(view, position);
         }
