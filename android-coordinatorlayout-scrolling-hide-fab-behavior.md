@@ -1,4 +1,4 @@
-title: Android: Hidingthe FAB and nested scroll events in CoordinatorLayout
+title: Android: Hiding the FAB and nested scroll events in CoordinatorLayout
 tags: android,android-coordinatorlayout
 
 The `CoordinatorLayout` helps you deal with nested scroll events from certain children, `RecyclerView` in our case.
