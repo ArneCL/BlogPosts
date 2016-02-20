@@ -1,4 +1,5 @@
 title: Android: A basic RecyclerView
+tags:android,android-recyclerview
 
 The RecyclerView is a more efficient version of GridView and ListView. With animated bells and whistles. And it works with CoordinatorLayout. You'll want to use it.
 
