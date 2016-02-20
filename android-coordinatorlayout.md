@@ -1,4 +1,4 @@
-title: Android Design Library: CoordinatorLayout basics
+title: Android Design Library: CoordinatorLayout basic setup
 tags: android,android-coordinatorlayout
 
 Now Android has the 'SnackBar' which popups up at the bottom of the screen, it may overlap some of your other elements. The Design library has introduced the CoordinatorLayout to deal with these situations
