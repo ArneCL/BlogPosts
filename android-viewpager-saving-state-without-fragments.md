@@ -1,4 +1,5 @@
 title: Android: Saving ViewPager layout state without fragments
+tags: android,android-viewpager
 
 If you want to save the state of your `Views` in a `ViewPager` you have to do the follow:
 
