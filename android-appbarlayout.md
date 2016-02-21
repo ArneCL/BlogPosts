@@ -42,3 +42,5 @@ The `app:layout_scrollFlags=` flags control how the views within will be scrolle
           android:layout_below="@+id/appbar"
           />
     </android.support.design.widget.CoordinatorLayout
+
+If you leave out the `scrollFlags` from the `TabLayout`, you can scroll away the `Toolbar` but leave the `TabLayout`. Scream if you want to go faster.
