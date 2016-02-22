@@ -3,7 +3,7 @@ tags: android,android-collapsingToolbarLayout
 
 Instead of using a plain `Toolbar` element in your `AppBarLayout`, you have achieve a nice parallax effect with `CollapsingToolbarLayout`.
 
-Replace the old Toolbar with a `CollapsingToolbarLayout` setting its height to be the full uncollapsed height, give it a `scroll|exitUntilCollapsed` as `layout_scrollflags`.
+Replace the old Toolbar with a `CollapsingToolbarLayout` setting its height to be the full uncollapsed height, give it a `layout_scrollflags=scroll|exitUntilCollapsed`. If you use `app:layout_scrollFlags="scroll|enterAlways"` it'll uncollapse as soon as your start scrolling up.
 
 Within such, place your old Toolbar, and give it a `layout_collapseMode` of `pin`, to say pin the Toolbar when it's all collapsed.
 
