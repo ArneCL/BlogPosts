@@ -40,6 +40,8 @@ What's the `target`? Well, since we're not loading directly into a `ImageView`, 
     
 We get a reference to the toolbar, and set the navigation icon, after first resizing the image.
 
+Actually, this may not be enough to ensure this isn't garbage collection. You could make it a field. Ensure you stop the Picasso loader it when your activity/fragment/dog dies.
+
 If you want to go wild, crazy, put it in a BindingAdapter:
 
     @BindingAdapter("app:loadingimage")
@@ -57,3 +59,5 @@ And then in your XML, with databinding, set it like this:
         android:background="?attr/colorPrimary"
         app:popupTheme="@style/AppTheme.PopupOverlay"
         />
+
+The *fun* thing about this is you may need to make the `Target` a static variable, else it may be garbage collected.
