@@ -3,7 +3,9 @@ tags: android,android-studio
 
 If you want to use lambdas in Android Development, you're out of luck natively, at the moment, since Android uses Java 7.
 
-However, you can use the RetroLambda library--I'm using it in Android Studio 2.0 beta 5---to achieve the same results. Here's the `build.gradle` file you'll need in your main app dir.
+However, you can use the RetroLambda library--I'm using it in Android Studio 2.0 beta 5---to achieve the same results. You must be using Java 8, however, as your JDK.
+
+Here's the `build.gradle` file you'll need in your main app dir.
 
     buildscript {
         repositories {
