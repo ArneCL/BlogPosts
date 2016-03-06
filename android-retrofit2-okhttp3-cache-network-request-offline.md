@@ -15,15 +15,11 @@ Here's the client.
         @Override public Response intercept(Chain chain) throws IOException {
           Request request = chain.request();
           if (App.isNetworkAvailable()) {
-            int maxAge = 60; // 1 minute
-            request.newBuilder().header("Cache-Control", "public, max-age=" + maxAge).build();
+            request = request.newBuilder().header("Cache-Control", "public, max-age=" + 60).build();
           } else {
-            int maxStale = 60 * 60 * 24 * 7; // 7 days
-            request.newBuilder().header("Cache-Control", "public, only-if-cached, max-stale=" + maxStale);
+            request = request.newBuilder().header("Cache-Control", "public, only-if-cached, max-stale=" + 60 * 60 * 24 * 7).build();
           }
-          Response originalResponse = chain.proceed(request);
-          return originalResponse.newBuilder()
-                                 .build();
+          return chain.proceed(request);
         }
       })
       .build();
