@@ -3,6 +3,8 @@ tags: android, android-retrofit, android-okhttp
 
 If you're using Refrofit with OkHTTP, or just OkHTTP on its own, you can set it up to cache your responses.
 
+Update: There's a [simpler version of this](/android-retrofit2-okhttp3-cache-network-request-offline.html) for OkHTTP3 and Retrofit 2, although this shows you how to directly access the cache, which you may not need.
+
 This is an example in OkHTTP 2.0.
 
     OkHttpClient ok = new OkHttpClient();
