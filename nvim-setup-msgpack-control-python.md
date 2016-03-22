@@ -11,7 +11,7 @@ Let's first install `nvim`.
     apt-get update
     apt-get install neovim
 
-It uses--for perfectly good reasons I'm sure--XDG the .config directory for its configuration. So move your .vimrc file to `~.config/neovim/init.vim` Or don't if you're only messing around: hello.
+It uses--for perfectly good reasons I'm sure--XDG the .config directory for its configuration. So move your .vimrc file to `~.config/nvim/init.vim` Or don't if you're only messing around: hello.
 
 *A useless aside: I really have no idea why we're using `.config` these days. Aren't all the directories prefixed with `.` for configuration? Anyway--as with all of life's great challenges--I guess I'll acclimatise.*
 
