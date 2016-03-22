@@ -24,10 +24,10 @@ Now we've got that address let's control neovim from python. Let's install pytho
     apt-get install python3-pip
     pip3 install neovim
 
-Now we've got python3 (python2 works as well I hear, but let's live on the bleeding edge), we can attach to the instance and send a command to nvim.
+Now we've got python3 (python2 works as well I hear, but let's live on the bleeding edge), we can attach to the instance and send a command to nvim. Run python3 and issue this load of commands:
 
->>> from neovim import attach
->>> nvim = attach('socket', path='WHATEVER THE ABOVE SOCKET NAME WAS')
->>> nvim.command('echo "yalright there eh"')
+    >>> from neovim import attach
+    >>> nvim = attach('socket', path='WHATEVER THE ABOVE SOCKET NAME WAS')
+    >>> nvim.command('echo "yalright there eh"')
 
-And, below, neovim is bidding our every command. REJOICE.
+And--behold--neovim is bidding our every command. REJOICE!
