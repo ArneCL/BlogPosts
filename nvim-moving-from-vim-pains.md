@@ -17,6 +17,6 @@ You can avoid all this by putting this in yout `.config/nvim/init.vim` file:
     set mouse=v
     set listchars=tab:-\ ,trail:-,nbsp:+,eol:$
 
-In addition, I swear the escape key is harder to press. Hmm.
+In addition, in gnu screen or tmux, the escape key is harder to press. You can put `maptimeout 10` in your .screenrc to fix in this gnu screen. It's something to do with nvim using a new library for user input, I believe.
 
 Anyway, we're on 0.1.3, so thing will change.
