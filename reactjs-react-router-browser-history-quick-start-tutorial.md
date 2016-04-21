@@ -114,6 +114,6 @@ which should output something like:
     bundle.js  858 kB       0  [emitted]  main
         + 228 hidden modules
 
-And now if you visit your index.html file on our web server, you should see the router in action, complete with browser history.
+And now if you visit your index.html file on your web server, you should see the router in action, complete with browser history.
 
-The first page will just be what we defined in our MainLayout. If you want a default component there, use `<IndexRoute component={Index} />` without your `Route` and create the `Index` component.
+The first page will just be what we defined in our MainLayout. If you want a default component there, use `<IndexRoute component={Index} />` within your `Route` and create the `Index` component.
