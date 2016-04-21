@@ -1,4 +1,4 @@
-title: Reactjs: Quick start tutorial with react-router with browser history
+title: Reactjs: Quick start tutorial for react-router with browser history
 tags: reactjs, react-router
 
 Let's first initialise our directory and install the modules. I'm using nodejs v5.10.1.  
