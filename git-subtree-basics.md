@@ -23,7 +23,7 @@ If you want to pull in any new commits to the subtree from the remote, issue the
 
     git subtree pull --prefix .vimrepo https://github.com/newfivefour/vimrc.git master --squash
 
-If you make a change to anything in `.vimrepo` the commit will be stored in the host repository and logs.
+If you make a change to anything in `.vimrepo` the commit will be stored in the host repository and its logs.
 
 That is the biggest change from submodules. 
 
