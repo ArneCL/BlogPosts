@@ -21,11 +21,11 @@ We then specify the file to server as the default file to load, `index.html` usu
       DirectoryIndex index.html
       DocumentRoot /dir/public
 
-Then specify the logging level and the location of the error log and the `CustomLog` which logs requests to the server.
+Then specify the logging level and the location of the error log and the `CustomLog` which logs requests to the server, and takes the param `combined` allowing you to see request headers if specified in the log format.
 
       LogLevel warn
       ErrorLog  /dir/log/error.log
-      CustomLog /dir/log/access.log
+      CustomLog /dir/log/access.log combined
 
 In full:
 
@@ -41,7 +41,7 @@ In full:
       # Log file locations
       LogLevel warn
       ErrorLog  /dir/log/error.log
-      CustomLog /dir/log/access.log
+      CustomLog /dir/log/access.log combined
     </VirtualHost>
 
 Finally, enable this site via `a2ensite whatever`. Then `service apache2 reload`.
