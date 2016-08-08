@@ -1,4 +1,4 @@
-title: Docker: install Java8 autoamtically on ubuntu/debian
+title: Docker: install Java8 automatically on ubuntu/debian
 tags: docker,java
 
 If you want to create a docker image with Java, then there's a problem: it'll ask you manually confirm that you agree to the terms and conditions.
