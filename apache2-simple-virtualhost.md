@@ -1,5 +1,5 @@
 title: Apache 2: A simple virtual host file
-tags: apache2
+tags: apache
 
 I'm on 2.4.18.
 
