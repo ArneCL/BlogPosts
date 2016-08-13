@@ -1,4 +1,4 @@
-title: Simpliest Jetty server in Scala
+title: Simplest Jetty server in Scala
 tags: scala,jetty
 
 Let's first download the jetty runner:
