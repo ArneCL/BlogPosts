@@ -52,3 +52,8 @@ Finally run the program with `scala -cp "dependencies/*" rest.scala`. You should
     2016-08-14 16:34:14.160:INFO:oejs.Server:main: jetty-9.2.14.v20151106
     2016-08-14 16:34:14.181:INFO:oejs.ServerConnector:main: Started ServerConnector@5efa40fe{HTTP/1.1}{0.0.0.0:9998}
     2016-08-14 16:34:14.182:INFO:oejs.Server:main: Started @1213ms
+
+You can test it via:
+
+    curl localhost:9998/hello
+    ["hmm"]
