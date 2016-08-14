@@ -23,7 +23,7 @@ Let's put it all together, in a file called `rest.scala`.
     
       @Path("/") class Hello {
         @Path("hello") @GET @Produces(Array(MediaType.APPLICATION_JSON))
-        // Returns ArrayList, not a scala List, since Jackson can't convert
+        // Returns ArrayList, not a scala List, since Jackson can't convert that
         def example() : ArrayList[String] = {
           var al = new ArrayList[String]()
           al.add("hmm")
