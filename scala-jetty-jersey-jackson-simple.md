@@ -4,7 +4,7 @@ tags: scala,jersey,jetty,jackson
 If you want a quick web service with Jersey in Jetty returning JSON, you must:
 
 * Define the basic Jersey class with annotations.
-* You then class the `JettyHttpContainerFactory` to start the Jetty service.
+* Use `JettyHttpContainerFactory` to start the Jetty service.
 
 Let's put it all together, in a file called `rest.scala`.
 
@@ -22,8 +22,8 @@ Let's put it all together, in a file called `rest.scala`.
     object rest {
     
       @Path("/") class Hello {
-        // Returns a Java ArrayList, and not a scala List since Jackson can't convert that into JSON.
         @Path("hello") @GET @Produces(Array(MediaType.APPLICATION_JSON))
+        // Returns ArrayList, not a scala List, since Jackson can't convert
         def example() : ArrayList[String] = {
           var al = new ArrayList[String]()
           al.add("hmm")
@@ -31,7 +31,7 @@ Let's put it all together, in a file called `rest.scala`.
         }
       }
     
-      // This is run from `main` in a `object` singleton, as opposed to in a scala script, since that has strange problems finding the class Hello
+      // Not run from a scala script, since that has strange problems finding the class Hello
       def main(args: Array[String]) : Unit = {
         JettyHttpContainerFactory.createServer(
           UriBuilder.fromUri("http://localhost/").port(9998).build(),
