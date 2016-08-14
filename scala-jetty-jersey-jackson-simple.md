@@ -31,7 +31,7 @@ Let's put it all together, in a file called `rest.scala`.
         }
       }
     
-      // Not run from a scala script, since that has strange problems finding the class Hello
+      // Not run from a scala script, since that strangely can't find Hello
       def main(args: Array[String]) : Unit = {
         JettyHttpContainerFactory.createServer(
           UriBuilder.fromUri("http://localhost/").port(9998).build(),
