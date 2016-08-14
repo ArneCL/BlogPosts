@@ -40,11 +40,21 @@ Let's put it all together, in a file called `rest.scala`.
       }
     }
 
-You need all the jackson, jersey and jetty dependencies. I use [this](https://newfivefour.com/gradle-copy-all-dependencies-into-dir.html) to download all the dependencies into the directory `dependencies`. Here they are:
+You need all the jackson, jersey and jetty dependencies. I use this gradle script below called with `gradle -b deps.gradle copyDependencies` to download them into `dependencies`:
 
-     compile 'org.glassfish.jersey.bundles:jaxrs-ri:2.23.1'
-     compile 'org.glassfish.jersey.containers:jersey-container-jetty-http:2.23.1'
-     compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.16'
+    apply plugin: 'java'
+    repositories {
+       mavenCentral()
+    }
+    dependencies {
+        compile 'org.glassfish.jersey.bundles:jaxrs-ri:2.23.1'
+        compile 'org.glassfish.jersey.containers:jersey-container-jetty-http:2.23.1'
+        compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.16'
+    }
+    task copyDependencies(type: Copy) {
+       from configurations.compile
+       into 'dependencies'
+    }
 
 Finally run the program with `scala -cp "dependencies/*" rest.scala`. You should see:
 
