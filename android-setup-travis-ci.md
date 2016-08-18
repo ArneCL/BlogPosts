@@ -37,3 +37,7 @@ Travis CI is a free continuous integration environment, i.e a container that dow
            - ./gradlew build
 
 Now refresh https://travis-ci.org/ and you should see your project building eventually.
+
+You can now add a fun button to your `README.md` showing your project has built via:
+
+      [![Build Status](https://travis-ci.org/YOURGHUSERNAMEr/YOURPROJECTNAME.svg?branch=master)](https://travis-ci.org/YOURGHUSERNAMEr/YOURPROJECTNAME)
