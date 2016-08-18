@@ -43,7 +43,7 @@ Travis CI is a free continuous integration environment--i.e a container that dow
          script:
            - ./gradlew build
 
-Now refresh https://travis-ci.org/ and you should see your project building eventually. Click on the `#5 started` or `#1` text and you'll be able to follow the console, watching your project build.
+Now refresh https://travis-ci.org/ and you should see your project building eventually. Click on the `#YOURBUILDNUMBER started` or `#YOURBUILDNUMBER` text and you'll be able to follow the console, watching your project build.
 
 You can now add a fun button to your `README.md` showing your project has built via:
 
