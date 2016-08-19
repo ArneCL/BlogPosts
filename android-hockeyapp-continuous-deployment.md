@@ -32,11 +32,11 @@ I'm going to assume you've got a basic Android App in development.
           ....
         }      
      
-     app/src/main/AndroidManifest.xml (within the application tag):
+   app/src/main/AndroidManifest.xml (within the application tag):
     
         <meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="${HOCKEYAPP_APP_ID}" />
         
-     In your Activity:
+   In your Activity:
      
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -78,7 +78,6 @@ I'm going to assume you've got a basic Android App in development.
         private void unregisterManagers() {
           UpdateManager.unregister();
         }
-        
 0. Now build and install that on your phone, and upload the APK to HockeyApp via the upload version button, clicking through all the dialog boxes until you can see the version on the Overview.
 0. Now change something in the app, like some text, and update the `versionCode` in `app/build.grade`.
    Build it, but *do not install this to your device* (so we can see automatic updates on our phone - you don't normally do this)
