@@ -9,7 +9,7 @@ I'm going to assume you've got a basic Android App in development.
 0. Click add new app, and choose to add it manually
 0. Give it the same package name as appears in your `AndroidManifest.xml`
 0. Now it's created, click on integrate HockeyApp quick tutorial. It will tell you add these parts to your app:
-     
+   
    app/build.gradle:
       
         repositories {
@@ -31,13 +31,13 @@ I'm going to assume you've got a basic Android App in development.
           compile 'net.hockeyapp.android:HockeySDK:4.0.1'
           ....
         }      
-     
+   
    app/src/main/AndroidManifest.xml (within the application tag):
-    
+   
         <meta-data android:name="net.hockeyapp.android.appIdentifier" android:value="${HOCKEYAPP_APP_ID}" />
-        
+   
    In your Activity:
-     
+   
         @Override
         public void onCreate(Bundle savedInstanceState) {
           super.onCreate(savedInstanceState);
