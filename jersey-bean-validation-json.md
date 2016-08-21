@@ -20,7 +20,7 @@ We need to turn bean validation error messages on in our ResourceConfig:
       property(ServerProperties.BV_SEND_ERROR_IN_RESPONSE, true)
     }
 
-We'll define a class with @NonNull contraints, specifying Jackon will deserialise looking at fields not getters and setters for convenience.
+We'll define a class with `@NonNull` contraints, specifying Jackon will deserialise looking at fields not getters and setters for convenience.
 
     @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
     class RegisterUser() {
