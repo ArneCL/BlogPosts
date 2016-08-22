@@ -40,10 +40,6 @@ Most of the values above are empty, except for `getInvalidValue`, `getMessage`, 
 
 The `getRootBean` gives us the name at the start of the `"path"` json reply. `getRootBeanClass` and `unwrap` need to be non-null but don't seem to affect the JSON output.
 
-We need to define the `iterator()` method, but we can make it a dummy one, as above. 
-
-The `toString` method will actually give us the output string seen in `"path"` in the JSON object, just after the class name for the object found via `ConstraintViolation`'s `getRootBean` method. 
-
 Let's put this altogether:
 
     // Dumpy Path object: we only want its "toString"
