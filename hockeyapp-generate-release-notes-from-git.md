@@ -19,6 +19,8 @@ Our plan will be
 
 Here's the entire commented shell script:
 
+    # We need an initial bullet point for our list of commit logs
+    echo -n "* "
     # Get the latest app uploads
     curl -H "X-HockeyAppToken: $HOCKEYAPP_TOKEN" \
     "https://rink.hockeyapp.net/api/2/apps/e1e4c963ad144f23a8787ac79c3d1954/app_versions?page=1" | \
@@ -41,6 +43,7 @@ Here's the entire commented shell script:
     echo -n "<br>(commit:" 
     git rev-parse HEAD | xargs echo -n
     echo -n ')'
+
 
 And when we upload to HockeyApp, via travis-ci, we can include it like so:
 
