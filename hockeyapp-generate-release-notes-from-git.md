@@ -23,7 +23,7 @@ Here's the entire commented shell script:
     echo -n "* "
     # Get the latest app uploads
     curl -H "X-HockeyAppToken: $HOCKEYAPP_TOKEN" \
-    "https://rink.hockeyapp.net/api/2/apps/e1e4c963ad144f23a8787ac79c3d1954/app_versions?page=1" | \
+    "https://rink.hockeyapp.net/api/2/apps/YOUR_HOCKEYAPP_APP_ID/app_versions?page=1" | \
     # Put every property on a separate line
     sed 's/,/\n/g' | \
     # Remove all the quotation marks
