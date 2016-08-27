@@ -36,24 +36,25 @@ Here's the entire commented shell script:
     sed -n 's/.*(commit:\([^)]*\)).*/\1/p' | \
     # Let's find all the logs since that commit
     xargs -I '{}' git log {}..HEAD --pretty=format:'%s' --no-merges | \
-    # Turn this newlines into <br>s since we need to pass this all as one line
-    sed ':a;N;$!ba;s/\n/<br><br>* /g'
+    # Add a star to each newline to make the list
+    sed ':a;N;$!ba;s/\n/\n* /g'
     # The end of the revision log must have the latest commit
     # This is so later we can do the above again
-    echo -n "<br>(commit:" 
+    echo
+    echo -n "* (commit:" 
     git rev-parse HEAD | xargs echo -n
     echo -n ')'
 
-
 And when we upload to HockeyApp, via travis-ci, we can include it like so:
 
-    - export RELEASE_NOTES=`bash release_notes_for_hockeyapp.sh`
+    - bash release_notes_for_hockeyapp.sh > release_notes
     - >
       curl
       -F "status=2"
       -F "notify=1"
-      -F "notes=$RELEASE_NOTES"
+      -F "notes=<release_notes"
       -F "notes_type=0"
-      -F "ipa=@app/build/outputs/apk/YOURAPP.apk"
+      -F "ipa=@app/build/outputs/apk/YOUR_APK.apk"
       -H "X-HockeyAppToken: $HOCKEYAPP_TOKEN"
       https://rink.hockeyapp.net/api/2/apps/upload
+
