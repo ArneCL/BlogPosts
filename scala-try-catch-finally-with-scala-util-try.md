@@ -36,9 +36,10 @@ Then we perform the code that was in the `finally` block after that.
 
 And then finally we match if the `Try` value is a success or failure.
 
-We've done a couple of things:
+We've done a few things:
 
 * The `finally` code is no longer indented
+* Our lines no longer starts with `{ keyword`
 * The code that either returns or fails is at the end now
 
 This arguable makes things more readable.
