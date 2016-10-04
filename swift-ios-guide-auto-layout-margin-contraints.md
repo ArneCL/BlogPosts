@@ -1,5 +1,5 @@
-title: Swift, Xcode 8 and iOS: Part 2: Auto layout and constraints
-tags: swift,ios,ios-storyboard
+title: Swift, Xcode 8 and iOS: Part 2: Auto layout and margin constraints
+tags: swift,ios,ios-storyboard,ios-autolayout
 
 Before we do any coding, we'll work out how to use auto layout. Auto layout is the ability to expand/pin elements to the width, height etc of the varying screen sizes of iOS devices.
 
@@ -17,4 +17,6 @@ Insert 16 in the left and right box and 20 in the bottom box. And click the litt
 
 Open the app in different screen sizes via the simulator. The button should now expand at the bottom of the screen.
 
-It will place it there irrespective of the actual width of the button that you set, or the vertical location: the auto layout constraints override that.
+It will place it there irrespective of the actual width of the button that you set, or the vertical location: the auto layout constraints override that. 
+
+You can also click on the button on next to `pin`, which gives you update frames and update constraints options, which updates the views based on the auto layout values.
