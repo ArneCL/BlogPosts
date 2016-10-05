@@ -1,5 +1,5 @@
 title: Swift, Xcode 8 and iOS: Part 2: Auto layout and margin constraints
-tags: swift,ios,ios-storyboard,ios-autolayout
+tags: ios,ios-storyboard,ios-autolayout
 
 Before we do any coding, we'll work out how to use auto layout. Auto layout is the ability to expand/pin elements to the width, height etc of the varying screen sizes of iOS devices.
 
