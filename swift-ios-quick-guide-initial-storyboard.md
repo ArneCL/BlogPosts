@@ -1,5 +1,5 @@
-title: Swift 3 and iOS: Part 1: Initial storyboard
-tags: swift,ios,ios-storyboard
+title: Swift 3, iOS and Xcode 8: Part 1: Initial storyboard
+tags: ios,ios-storyboard
 
 Open up Xcode. I'm on 8.0. Create a new project. Choose Single View Application. Why not? It's simple. We'll build up. And we'll learn more.
 
