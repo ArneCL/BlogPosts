@@ -1,5 +1,5 @@
 title: Swift 3, iOS and Xcode 8: Part 3: Autolayout and relative contraints
-tags:swift,ios,ios-storyboard,ios-autolayout
+tags:ios,ios-storyboard,ios-autolayout
 
 Previously, we constrained a button based on app margins. We can do the same with other elements.
 
