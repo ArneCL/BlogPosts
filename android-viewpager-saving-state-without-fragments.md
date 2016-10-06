@@ -27,7 +27,7 @@ Here's an example implementation
      * Saves the ViewPager's layout states.
      * 
      * In the adapter instantiateItem() method, you must call restoreViewState(). 
-     * And in the adapter destoryItem() method, you must call saveViewState()
+     * And in the adapter destroyItem() method, you must call saveViewState()
      */
     public class SavingViewStateViewPager extends ViewPager {
         public static final int TAG_RESTORE_VIEWPAGER_STATE_POS = "TAG_RESTORE_VIEWPAGER_STATE_POS".hashCode();
