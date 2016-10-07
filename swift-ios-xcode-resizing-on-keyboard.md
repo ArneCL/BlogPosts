@@ -26,7 +26,7 @@ Now in the `keyboardWillShowForResizing` function above, let's get the keyboard 
           if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
              let window = self.view.window?.frame {
               // We're not just minusing the kb height from the view height because
-              // the view could already have been resized for they keyboard before             
+              // the view could already have been resized for the keyboard before             
               self.view.frame = CGRect(x: self.view.frame.origin.x,
                                           y: self.view.frame.origin.y,
                                           width: self.view.frame.width,
