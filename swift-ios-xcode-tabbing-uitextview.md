@@ -1,4 +1,4 @@
-title: Swift 3, iOS and Xcode 8: Tabbing between text views.
+title: Swift 3, iOS and Xcode 8: Tabbing between text views
 tags: swift, ios
 
 The horror of development for iOS is that when you have a list of text views, and you press enter or whatever on one, it does not automatically tab to the next text view.
