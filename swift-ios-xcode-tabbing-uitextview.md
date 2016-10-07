@@ -3,9 +3,9 @@ tags: swift, ios
 
 The horror of development for iOS is that when you have a list of text views, and you press enter or whatever on one, it does not automatically tab to the next text view.
 
-You can set a delegate method for the text field that is called on return pressed, and then that gives focus to the next text field, but that is tedious. 
+You can set a delegate method for the text field that is called on return key pressed. That gives focus to each next text field. These next fields are defined and assigned manually in the view controller. And there are loads of if statements. And you do this for each view controller. But that is tedious.
 
-Let's look at this delegate method, called when enter or whatever is pressed, wrapped in an extension for UIViewController, instead:
+Let's instead look at this delegate method, called when enter or whatever is pressed, wrapped in an extension for UIViewController, instead:
 
     extension UIViewController {
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -20,7 +20,7 @@ Let's look at this delegate method, called when enter or whatever is pressed, wr
 
 It checks if the next field has a `nextField` property. If it does, it gives focus to that text field. If it has none, it resigns the first responder, thereby closing the keyboard.
 
-But `UITextField`'s don't have this `nextField` property. But we can make them do so with the code below.. This is another extension on a `UITextField` and it defines a new property, our `nextField` which is an `@IBOutlet` so we can assign to it in our storyboard.
+But `UITextField`'s don't have this `nextField` property. But we can make them do so with the code below. This is another extension on a `UITextField` and it defines a new property, our `nextField` which is an `@IBOutlet` so we can assign to it in our storyboard.
 
     extension UITextField {
         @IBOutlet var nextField: UITextField? {
