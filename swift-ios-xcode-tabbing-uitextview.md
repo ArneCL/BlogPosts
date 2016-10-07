@@ -3,7 +3,7 @@ tags: swift, ios
 
 The horror of development for iOS is that when you have a list of text views, and you press enter or whatever on one, it does not automatically tab to the next text view.
 
-You can set a delegate method on the text field that is called on return pressed, and then that gives focus to the next text field, but that is tedious. 
+You can set a delegate method for the text field that is called on return pressed, and then that gives focus to the next text field, but that is tedious. 
 
 Let's look at this delegate method, called when enter or whatever is pressed, wrapped in an extension for UIViewController, instead:
 
@@ -33,9 +33,9 @@ But `UITextField`'s don't have this `nextField` property. But we can make them d
         }
     }
 
-This is another extension on a `UITextField` and it defines a new property, our `nextField` which is an `@IBOutlet` so we can assign it in our story board.
+This is another extension on a `UITextField` and it defines a new property, our `nextField` which is an `@IBOutlet` so we can assign to it in our storyboard.
 
-Within each getter and setters we use `objc_{set,get}AssociatedObject`. This either gets or assigns our `nextField` to the object, using a key, which is just a `private var kAssociationKeyNextField: String = ""` living outside the extension which we use for a random address.
+Within each getter and setters we use `objc_{set,get}AssociatedObject`. This either gets or assigns our `nextField` to the our text field, using a key, which is just a `private var kAssociationKeyNextField: String = ""` living outside the extension which we use for a random address.
 
 Now if you set the TextField's delegate to be a UIViewController, and also set its new `nextField` property to point to the next text field in our storyboard, then all is well with the world.
 
