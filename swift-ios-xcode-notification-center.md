@@ -1,4 +1,4 @@
-Swift 3 and iOS: Using the notification center
+title: Swift 3 and iOS: Using the notification center
 tags: swift,ios,ios-notification-center
 
 The notification center allows you to send out events and receive them in methods. Let's say we've defined a notification like this: `let notif = Notification.Name.init(rawValue: "Ladies And Gentlemen We Are Floating In Space")`. We can create an observer for that via:
