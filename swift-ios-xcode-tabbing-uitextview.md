@@ -20,7 +20,7 @@ Let's look at this delegate method, called when enter or whatever is pressed, wr
 
 It checks if the next field has a `nextField` property. If it does, it gives focus to that text field. If it has none, it resigns the first responder, thereby closing the keyboard.
 
-But `UITextField`'s don't have this `nextField` property. But we can make them do so:
+But `UITextField`'s don't have this `nextField` property. But we can make them do so with the code below.. This is another extension on a `UITextField` and it defines a new property, our `nextField` which is an `@IBOutlet` so we can assign to it in our storyboard.
 
     extension UITextField {
         @IBOutlet var nextField: UITextField? {
@@ -32,8 +32,6 @@ But `UITextField`'s don't have this `nextField` property. But we can make them d
             }
         }
     }
-
-This is another extension on a `UITextField` and it defines a new property, our `nextField` which is an `@IBOutlet` so we can assign to it in our storyboard.
 
 Within each getter and setters we use `objc_{set,get}AssociatedObject`. This either gets or assigns our `nextField` to the our text field, using a key, which is just a `private var kAssociationKeyNextField: String = ""` living outside the extension which we use for a random address.
 
