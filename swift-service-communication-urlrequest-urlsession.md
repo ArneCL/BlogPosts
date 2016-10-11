@@ -28,3 +28,5 @@ The last parameter, which is via the funky closure syntax, is the callback that'
 It's given optionals of `data`, `response` and `error`. We'll use the optional let syntax to test if the optionals are there or not.
 
 All we're doing is printing the reponse, error and data if they're there. If data is there, we convert it to a string with `String.init`.
+
+You start this all by doing `d.resume()`.
