@@ -39,3 +39,5 @@ These are the bare bones of our RxSwift stuff, but we're not actually doing anyt
 Firstly, we're looking for an error, and if there's one, we return that, otherwise if we have a response, we look at the status codes, and return as appropriate.
 
 `Response` and `ResponseError` are simple data objects, and you probably want to do something with `Observable.onComplete`.
+
+This is mostly stolen from [here] (https://medium.com/@gonzalezreal/consuming-web-services-with-swift-and-rx-71b87b0f9a4e#.o2sjtb6jd).
