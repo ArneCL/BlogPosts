@@ -1,5 +1,5 @@
 title: Swift 3: Server communication with URLRequest and URLSession
-tags: swift,swift-urlrequest
+tags: swift,swift-urlrequest,ios
 
 Server and service communication is done with `URLRequest` and `URLSession`. We'll just download a simple webpage.
 
