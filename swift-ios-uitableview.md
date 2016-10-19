@@ -1,4 +1,4 @@
-title: Swift 3 and iOS: Using a UIViewTable
+title: Swift 3 and iOS: Using a UITableView
 tags: ios,ios-uiviewtable,swift
 
 First create a normal `UIViewController`. It could be a `UITableViewController`, but by using the `UITableViewDataSource` and `UITableViewDelegate` protocols we achieve the desired effect:
