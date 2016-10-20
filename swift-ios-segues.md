@@ -17,3 +17,5 @@ In your view controller from which you're leaving for the new one, add this:
 This says for the identifier `segue1` which we named above, cast the UIViewController to `SomeViewController`, the name of our destination view controller.
 
 Then set a property on that view controller, named simply via `var someValue = "blar"` for example in your destination controller.
+
+Note, as soon as you have `detailVC` in the example above, the view controller will be initialised and visible on the screen.
