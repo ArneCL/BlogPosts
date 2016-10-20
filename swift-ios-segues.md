@@ -8,7 +8,7 @@ Click on it, and in the attributes inspector tab, name its identifier `segue1`.
 In your view controller from which you're leaving for the new one, add this:
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "dashboardToDocuments") {
+        if (segue.identifier == "segue1") {
             let detailVC = segue.destination as! SomeViewController;
             detailVC.someValue = "JOHN COLTRANE"
         }
