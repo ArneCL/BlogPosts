@@ -1,11 +1,11 @@
-title: Swift and iOS: UINavigationController basics
+title: Swift 3, Xcode 8 and iOS: UINavigationController basics
 tags: swift,ios,ios-navigationcontroller
 
 The `UINavigationController` allows you to navigate back to a view controller from child view controllers using a back button.
 
-First create a `UIViewController` with a button. Then select this in the left hand side hierarchical pane, then click `Editor` in the window menu, `Embed in` and then choose `Navigation Controller`.
+First create a UIViewController with a button. Then select this in the left hand side hierarchical pane, then click `Editor` in the window menu, `Embed in` and then choose `Navigation Controller`.
 
-They'll be a new `UINavigationController`, with a `root view controller` relationship link from that to your first view controller. They'll be a styleable `UINavigationBar` within this `UINavigationController`.
+They'll be a new `UINavigationController`, with a `root view controller` relationship link from that to your first view controller. They'll be a styleable `UINavigationBar` within this UINavigationController.
 
 Create another view controller, and control drag from the button you created button in your first view controller to this new view controller, to create a show action segue.
 
