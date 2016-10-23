@@ -1,5 +1,8 @@
 Title: Polymer: Tutorial for responsive drawer, toolbar, menu, pages, routing and templating
 Tags: polymer
+Date: 2015-03-29 11:53:37 -0500 
+
+Update: This is very, very old. Check https://polymer-project.org for 2.0 and the new components.
 
 This is for 0.5.5. It'll likely change for 0.8 (yet to be released). This is  re-hash of the Polymer polycast videos on youtube by Rob Dodson for reference.
 
