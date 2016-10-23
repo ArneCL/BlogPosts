@@ -17,4 +17,4 @@ This other function would extract the function from `NetworkTime`, pass it an In
 
 This is essentially, and very, very basically, how effects modules in Elm work.
 
-Except the `NetworkTime` type is converted by the compiler, via `...where { command = NetworkTime` }, in the effects module to a `Cmd msg` type, so Elm's `update` function can accepet `Cmd AppType`, thereby hiding all the various different types in the various different effects modules.
+Except the `NetworkTime` type is converted by the compiler, via `...where { command = NetworkTime } ...` , in the effects module to a `Cmd msg` type, so Elm's `update` function can accepet `Cmd AppType`, thereby hiding all the various different types in the various different effects modules.
