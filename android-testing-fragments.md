@@ -1,7 +1,9 @@
 Title: Android: Testing fragments
 Tags: android|android-testing|android-fragments
 Date: 2012-12-18 11:53:37 -0500 
-Author: Denevell
+
+Update: I would not recomment this anymore. Although it may work, there are new mockito testing tutorials on the Android documentation site, which you should look at first. And, these days, I use the MVP architecture, allowing me to place all the logic in the presenter layer, which I then test via normal Java unit testing tools in isolation from the Android specfic code, and test the UI, including the fragments, with the UI testing library and framework, Espresso.
+
 
 If you want to test a fragment in isolation, you need to create a Test FragmentActivity so your test can use that. The test activity will look something like this. Remember to declare it in your application's manifest:
 
