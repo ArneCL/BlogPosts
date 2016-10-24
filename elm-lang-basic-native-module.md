@@ -3,7 +3,7 @@ tags: elm
 
 A native module is one that communicates with javascript. And it communicates with events, success and failure events. I'm using 0.17.
 
-In our normal Elm code, import our yet to be created native module, create our function that calls that function and create three union types that will receive the success, receive the failure and request the function be called:
+In our normal Elm code, import our yet to be created native module, create our function that calls the javascript function and create three union types that will receive the success, receive the failure and request the function be called:
 
     import Native.MyModule -- this can't be aliased, etc
 
