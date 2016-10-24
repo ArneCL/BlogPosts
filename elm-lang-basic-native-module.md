@@ -51,6 +51,6 @@ The variable `_user$project$` appears define the module for our local project. A
 
 It takes in a single variable and returns `_elm_lang$core$Native_Scheduler`, which relates to a javascript file you can find in your packages directory. We call `nativeBinding` function and pass in a function that takes a callback as a parameter.
 
-Within that function, we use the callback, again using the scheduler, but this time call `succeed`, which the parameter plus one. This will finally relate to the `GoodNative` type in your elm code, with the attached integer variable. 
+Within that function, we use the callback, again using the scheduler, but this time call `succeed`, with the parameter plus one. This will finally relate to the `GoodNative Int` type in your Elm code, with the attached integer variable. 
 
-In the same way, you could also use `_elm_lang$core$Native_Scheduler.fail(someValue)` which would then invoke `BadNative` 
+In the same way, you could also use `_elm_lang$core$Native_Scheduler.fail(someValue)` which would then invoke `BadNative Int` 
