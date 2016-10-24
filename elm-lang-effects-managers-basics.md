@@ -1,4 +1,4 @@
-title: Elm: The very basic concepts of effect managers in 0.17
+title: Elm-lang: The very basic concepts of effect managers in 0.17
 tags: elm
 
 Imagine we want use a network time server to retreive the time, and return that to the `update` function in our Elm app. (For the purposes of this explanation, ignore the fact we can use a http call for this.)
