@@ -22,7 +22,7 @@ So we're both have simple and complex decoders now. What can we do with them?
 
 `decodeString` will take a decoder such as the ones above and returns a `Result String a`. This returns either an error as a string or the value: a string value in the case of `decodeString`.
 
-For example, given the type `type alias Decoded = {id:String, company:String}` and the json:
+For example, given the type `type alias Decoded = {id:Int, company:String}` and the json:
 
     {
         "companies": [
