@@ -1,9 +1,9 @@
 title: Android: Passing objects to custom views with databinding
 tags: android,android-databinding,android-custom-views
 
-This is a bit voodoo, but that said... 
+Update: There's now a [much, much simplier version of this](https://newfivefour.com/android-databinding-binding-pass-object-to-customview.html).
 
-Let's say you include something like this as a static method anywhere in your codebase.
+This is a bit voodoo, but that said...  Let's say you include something like this as a static method anywhere in your codebase.
 
     @BindingAdapter("app:thing")
     public static void setThing(View v, Object s) {
