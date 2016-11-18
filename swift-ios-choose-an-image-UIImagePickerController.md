@@ -24,3 +24,9 @@ And we define two methods, one that dismisses the popup and another that grabs o
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
+
+If you want to use the camera instead of the photo album, change your initialisation code to:
+
+    picker.allowsEditing = false
+    picker.sourceType = .camera
+    picker.cameraCaptureMode = .photo
