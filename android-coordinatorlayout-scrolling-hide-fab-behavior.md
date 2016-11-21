@@ -48,7 +48,7 @@ Note the FAB has `app:layout_behavior` pointing to a class. Let's look at that n
           final FloatingActionButton child,
           final View target, final int dxConsumed, final int dyConsumed,
           final int dxUnconsumed, final int dyUnconsumed) {
-        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed,mdxUnconsumed, dyUnconsumed);
+        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed,dxUnconsumed, dyUnconsumed);
         if (dyConsumed > 0 && child.getVisibility() == View.VISIBLE) {
           child.hide();
         } else if (dyConsumed < 0 && child.getVisibility() != View.VISIBLE) {
