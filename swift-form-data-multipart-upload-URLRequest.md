@@ -42,7 +42,7 @@ Finally, it adds the image as data, with the filename, the mime-type and with th
         body.appendString("Content-Type: \(mimeType)\r\n\r\n")
         body.append(data)
         body.appendString("\r\n")
-        body.appendString(boundaryPrefix)
+        body.appendString("--".appending(boundary.appending("--")))
         
         return body as Data
     }
