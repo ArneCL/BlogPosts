@@ -1,4 +1,4 @@
-title: Linux: Disable your touchscreen and use TLP to save three hours of latop battery
+title: Linux: Disable your touchscreen and use TLP to save three hours of laptop battery
 tags: unix
 
 Disabling your touch screen is done via `xinput`. I disabled my touchscreen and touchscreen pen whatever that is.
