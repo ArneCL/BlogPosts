@@ -1,7 +1,7 @@
 title: Linux: Use TLP to save three hours of laptop battery
 tags: unix
 
-Install the `Linux Advanced Power Management`: 
+Install `Linux Advanced Power Management`: 
 
     add-apt-repository ppa:linrunner/tlp
     apt-get update
