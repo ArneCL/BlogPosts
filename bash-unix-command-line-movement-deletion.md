@@ -1,7 +1,7 @@
 title: Bash command line movement and deletion shortcuts
 tags: unix,bash
 
-If you have a just typed in
+If you have typed in
 
 ```
 Man I was mean, but I'm changing my scene
