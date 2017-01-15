@@ -9,6 +9,8 @@ Man I was mean, but I'm changing my scene
 
 And then press `alt shift b` (the shift may not be needed) twice the cursor will go back to the `m` of `my`. 
 
+(`alt shift f` moves in the opposite direction, incidentally)
+
 Press `alt shift d` it will delete the word `my`. Press it again and it will then delete `scene`.
 
 Press `ctl d` and you will delete not the word but a single character under the cursor.
