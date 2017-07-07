@@ -20,7 +20,7 @@ This method is called by the ViewGroup, passing in the parent's dimensions.
 
 The 'left' and 'top' is the left and right from the custom view's parent, this is normally zero unless you have set margins on your custom view.
 
-Then we get the number of children and are about to process eac hin the loop.
+Then we get the number of children and are about to process each in the loop.
 
 The method we must call on each of the views' in the loop is 
 
