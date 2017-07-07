@@ -32,7 +32,7 @@ If you have defined some padding on your custom view, you must include these in 
 
 ### onMeasure()
 
-Before you can call methods such like getMeasuredWidth() on your ViewGroup's children, however, you must tell them how to measure themsevles in onMeasure:
+Before you can call methods such like getMeasuredWidth() on your ViewGroup's children, however, you must tell them how to measure themselves in onMeasure:
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
