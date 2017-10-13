@@ -1,5 +1,5 @@
 Title: Unix: Basics of Gawk
-Tags: unix,unix-awk,unix-gawk
+Tags: unix,awk
 
 The basic syntax of this command is usually:
 
