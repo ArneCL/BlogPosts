@@ -1,5 +1,5 @@
 Title: Unix: Killing a process using ps, grep and nawk
-Tags: unix|unix-grep|unix-awk
+Tags: unix|unix-grep|awk
 Date: 2013-02-09 12:29:24 -0500 
 Author: Denevell
 
