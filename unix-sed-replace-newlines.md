@@ -1,5 +1,5 @@
 Title: Unix: Replace newlines with sed
-Tags: unix|unix-sed
+Tags: unix|sed
 
 Imagine we have this file 
 
