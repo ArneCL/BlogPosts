@@ -6,7 +6,8 @@ First make sure you have a client id through registering at https://api.imgur.co
 Then make a command to create an album:
 
 ```
-curl --request POST   --url https://api.imgur.com/3/album   --header 'authorization: Client-ID YOUR_CLIENT_ID'
+curl --request POST   --url https://api.imgur.com/3/album   
+--header 'authorization: Client-ID YOUR_CLIENT_ID'
 ```
 
 This will return an anonymous public album. Note the 'deletehash' id in the below:
@@ -20,7 +21,8 @@ The empty album is available at https://imgur.com/a/SOME_ID
 Now let's upload an image to that album. Because it's public and anonymous we need to use the `deletehash` as the album ID:
 
 ```
-curl --request POST   --url https://api.imgur.com/3/image   --header 'authorization: Client-ID YOUR_CLIENT_ID'   --header 'content-type: multipart/form-data;' -F "album=THE_DELETE_HASH" -F "image=@/PATH/TO/THE/IMAGE.png"
+curl --request POST   --url https://api.imgur.com/3/image   --header 'authorization: Client-ID YOUR_CLIENT_ID'   
+--header 'content-type: multipart/form-data;' -F "album=THE_DELETE_HASH" -F "image=@/PATH/TO/THE/IMAGE.png"
 ```
 
 The json returned should say everything is okay. Upload a couple of images to that album and you should be able to see them at https://imgur.com/a/SOME_ID.
