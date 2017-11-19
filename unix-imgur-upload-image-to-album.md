@@ -1,5 +1,5 @@
-title: Upload an image to an imgur album from the command line
-tags: unix,imgur
+title: Upload an image to an imgur album from the command line with curl
+tags: unix,imgur,curl
 
 First make sure you have a client id through registering at https://api.imgur.com/oauth2/addclient
 
