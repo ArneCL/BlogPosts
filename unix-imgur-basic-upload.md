@@ -1,5 +1,5 @@
-title: Upload to imgur from the unix command line
-tags: unix,imgur
+title: Upload to an image to imgur from the command line with curl
+tags: unix,imgur,curl
 
 First, go to https://api.imgur.com/oauth2/addclient and register as a client. Create a new client and you'll eventually get a Client ID and a Client secret.
 
