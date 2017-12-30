@@ -4,7 +4,7 @@ tags: wifi
 If you want to use the command line and `iwlist scan` to list all the open wifi networks you can:
 
 ```
-a=`iwlist wlan0 scan | grep 'ESSID\|key:' | sed 's/.*ESSID:"\(.*\)".*/\1/g' | sed 's/.*key:\(.*\).*/key:\1/g' | sed 's/\n//'`j`
+a=`iwlist wlan0 scan | grep 'ESSID\|key:' | sed 's/.*ESSID:"\(.*\)".*/\1/g' | sed 's/.*key:\(.*\).*/key:\1/g' | sed 's/\n//'`
 ```
 
 This first lists all the networks and grabs the network name and whether there's a key on this network.
