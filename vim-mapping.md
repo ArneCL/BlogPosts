@@ -8,7 +8,7 @@ The only problem with this is that you must first press control w, then shift, a
 Let's remap this Control w < to Control w ,. This will save us pressing the shift key.
 
 ```
-:nmap [press control v][press control w], [press control v][press control w]< ```
+:nmap [press control v][press control w], [press control v][press control w]<
 ```
 
 You can also put this in your .vimrc file for activation on startup. 
