@@ -1,9 +1,7 @@
 title: Javascript: Using XMLHTTPRequest
 tags: javascript
 
-Here's a utility method that you can use to simply use http requests:
-
-You use it like this:
+Here's a utility method to simply make http requests. You use it like this:
 
 ```
 http_request("http://your_url.com/service_url", {
