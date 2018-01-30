@@ -1,5 +1,5 @@
 title: Quick introduction leaflet.js
-tags: leaflet-js
+tags: leaflet-js,javascript
 
 Let's create a HTML file:
 
