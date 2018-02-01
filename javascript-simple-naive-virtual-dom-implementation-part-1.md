@@ -21,26 +21,26 @@ Let's convert that into:
 
 ```
 [{
+  "type": "node",
+  "name": "HTML",
+  "children": [{
     "type": "node",
-    "name": "HTML",
+    "name": "HEAD"
+  }, {
+    "type": "node",
+    "name": "BODY",
     "children": [{
-        "type": "node",
-        "name": "HEAD"
-    }, {
-        "type": "node",
-        "name": "BODY",
-        "children": [{
-            "type": "node",
-            "name": "DIV",
-            "attrs": [{
-                "id": "hi"
-            }],
-            "children": [{
-                "type": "text",
-                "value": "hi there"
-            }]
-        }]
+      "type": "node",
+      "name": "DIV",
+      "attrs": [{
+        "id": "hi"
+      }],
+      "children": [{
+        "type": "text",
+        "value": "hi there"
+      }]
     }]
+  }]
 }]
 ```
 
@@ -53,27 +53,27 @@ Here's the function that does that:
 ```
 function traverse(vd, ele) {
   do {
-    var nu = {}
-	  vd.push(nu)
-      if(ele.nodeType == 1) {
-        nu.type = "node"
-        nu.name = ele.nodeName
-        nu.attrs = []
-        for(var i = 0; i < ele.attributes.length; i++) {
-          var attr = {}
-          attr[ele.attributes[i].name] = ele.attributes[i].value;
-          nu.attrs.push(attr)
-        }
-      } else if (ele.nodeType = 3) {
-        nu.type = "text"
-        nu.value = ele.nodeValue
-      }
-    if(ele.hasChildNodes()) {
-        var child = []; nu.children = child
-	traverse(child, ele.firstChild)
+  	var nu = {}
+    vd.push(nu)
+    if(ele.nodeType == 1) {
+			nu.type = "node"
+			nu.name = ele.nodeName
+			nu.attrs = []
+			for(var i = 0; i < ele.attributes.length; i++) {
+	  		var attr = {}
+	  		attr[ele.attributes[i].name] = ele.attributes[i].value;
+	 		 	nu.attrs.push(attr)
+			}
+    } else if (ele.nodeType = 3) {
+    	nu.type = "text"
+    	nu.value = ele.nodeValue
     }
-  }
-  while (ele = ele.nextSibling)
+    if(ele.hasChildNodes()) {
+    	var child = []; 
+			nu.children = child
+			traverse(child, ele.firstChild)
+    }
+  } while (ele = ele.nextSibling)
 }
 ```
 
