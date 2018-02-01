@@ -53,7 +53,7 @@ Here's the function that does that:
 ```
 function traverse(vd, ele) {
   do {
-  	var nu = {}
+		var nu = {}
     vd.push(nu)
     if(ele.nodeType == 1) {
 			nu.type = "node"
