@@ -69,8 +69,8 @@ function traverse(vd, ele) {
         nu.value = ele.nodeValue
       }
     if(ele.hasChildNodes()) {
-        var child = []; nu["children"] = child
-		    traverse(child, ele.firstChild)
+        var child = []; nu.children = child
+	traverse(child, ele.firstChild)
     }
   }
   while (ele = ele.nextSibling)
