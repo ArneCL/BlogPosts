@@ -69,8 +69,7 @@ function traverse(vd, ele) {
   }
   nu.children = []
   for(var i = 0; i < ele.childNodes.length; i++) {
-    nu.children.push([])
-    traverse(nu.children[i], ele.childNodes[i])
+    traverse(nu.children, ele.childNodes[i])
   }
 }; 
 traverse(vd, document.documentElement); // vd is an empty array to be populated
