@@ -8,7 +8,7 @@ But when we traverse this structure we want to know what parts relate to which p
 Let's make a function that shows us where each javascript structure relates in the DOM tree: 
 
 ```
-function show_dom_location(v, v1, path) {
+function show_dom_location(v, path) {
     console.log(v.type, v.name, path)
     for(var i = 0; i < v.children.length; i++) {
       show_dom_location(v.children[i], path + "" + i)
@@ -16,7 +16,9 @@ function show_dom_location(v, v1, path) {
 }; compare(vd[0], "")
 ```
 
-`vd` is your virtual dom javascript structure from part 1 of this series. And we pass in a blank string. This will hold the location of each node.
+`vd` is your virtual dom javascript structure from part 1 of this series. We pass in `[0]` since we're starting at the root element of the structure.
+
+And we pass in a blank string. This will hold the location of each node.
 
 Each time we loop through a child element and recurse into the same function, we will add the loop iteration number. This seem strange but let's see the output:
 
