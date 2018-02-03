@@ -67,11 +67,14 @@ function traverse(vd, ele) {
     nu.type = "text"
     nu.value = ele.nodeValue
   }
+  nu.children = []
   for(var i = 0; i < ele.childNodes.length; i++) {
-    traverse(vd, ele.childNodes[i])
+    nu.children.push([])
+    traverse(nu.children[i], ele.childNodes[i])
   }
 }; 
 traverse(vd, document.documentElement); // vd is an empty array to be populated
+JSON.stringify(vd, null, 2)
 ```
 
 Next we should compare two of theses representations. And we will. Hopefully we will...
