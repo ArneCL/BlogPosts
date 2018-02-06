@@ -102,7 +102,10 @@ And this function:
 
 ```
 compare = function(v, v1, path) {
-    console.log(v.name)
+    if(v.type != v1.type) console.log(path, "type", v1.type)
+    if(v.name != v1.name) console.log(path, "name", v1.name)
+    if(JSON.stringify(v.attrs) != JSON.stringify(v1.attrs)) console.log(path, "attrs", v1.attrs)
+    if(v.value != v1.value) console.log(path, "value", v1.value)
     if(v1.children.length > 0) {
       var v_hashes = v.children.map(c => c.hashcode )
       var v1_hashes = v1.children.map(c => c.hashcode )
