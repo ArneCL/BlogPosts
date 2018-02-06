@@ -27,13 +27,10 @@ var positions = v1_hashes.map((h, i) => { return { v1_hash: h, pos_of_v1_in_v: v
 With this new structure we will loop over it. It will tell us if there's a new item in the `v1` virtual dom that's not in the `v` virtual dom, i.e. we find a -1 value.
 
 ```
-positions.forEach((p, v1_pos) => {
-  if(p.pos_of_v1_in_v == -1) {
-    console.log("insert " + p.v1_hash + " into " + v1_pos)
-    v.children.splice(v1_pos, 0, JSON.parse(JSON.stringify(v1.children[v1_pos])))
-  }
+positions.filter(p => p.pos_of_v1_in_v == -1).forEach((p, v1_pos) => {
+  console.log("insert " + p.v1_hash + " into " + v1_pos + " at " + path)
+  v.children.splice(v1_pos, 0, JSON.parse(JSON.stringify(v1.children[v1_pos])))
 })
-
 ```
 
 So we look for that -1, and then rearrange the original `v` array. This means, later, when we compare the two tree branches our compare function will see they're the same.
@@ -105,19 +102,14 @@ And this function:
 
 ```
 compare = function(v, v1, path) {
-    if(v.type != v1.type) console.log(path, "type", v1.type)
-    if(v.name != v1.name) console.log(path, "name", v1.name)
-    if(JSON.stringify(v.attrs) != JSON.stringify(v1.attrs)) console.log(path, "attrs", v1.attrs)
-    if(v.value != v1.value) console.log(path, "value", v1.value)
+    console.log(v.name)
     if(v1.children.length > 0) {
       var v_hashes = v.children.map(c => c.hashcode )
       var v1_hashes = v1.children.map(c => c.hashcode )
-      var positions = v1_hashes.map((h, i) => { return {v1_hash: h, pos_of_v1_in_v: v_hashes.indexOf(h) } } )
-      positions.forEach((p, v1_pos) => {
-        if(p.pos_of_v1_in_v == -1) {
-          console.log("insert " + p.v1_hash + " into " + v1_pos)
-          v.children.splice(v1_pos, 0, JSON.parse(JSON.stringify(v1.children[v1_pos])))
-        }
+      var positions = v1_hashes.map((h, i) => { return { v1_hash: h, pos_of_v1_in_v: v_hashes.indexOf(h) } } )
+      positions.filter(p => p.pos_of_v1_in_v == -1).forEach((p, v1_pos) => {
+        console.log("insert " + p.v1_hash + " into " + v1_pos + " at " + path)
+        v.children.splice(v1_pos, 0, JSON.parse(JSON.stringify(v1.children[v1_pos])))
       })
       for(var i = 0; i < v.children.length; i++) {
         compare(v.children[i], v1.children[i], path + "" + i)
