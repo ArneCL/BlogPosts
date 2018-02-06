@@ -14,7 +14,7 @@ var v1_hashes = v1.children.map(c => c.hashcode )
 
 Next we'll make an array of the positions of the `v1` hashes and whether they exist in the `v` hashes using `indexOf()`.
 
-Given the `v` hash array `[1111, 2222]` and the `v2` hash array `[3333, 1111, 2222]` we'll get `[-1, 0, 1]`.
+Given the `v` hash array `[1111, 2222]` and the `v1` hash array `[3333, 1111, 2222]` we'll get `[-1, 0, 1]`.
 
 `indexOf()` is telling us: the zeroth item in `v1` doesn't exist in `v` but the first is the zeroth element, and the second is the first element.
 
@@ -133,4 +133,4 @@ Will output only.
 insert -1348153726 into 0
 ```
 
-Next up, we'll look at how this also deals with moving child nodes.
+Next up, we'll look at how we can remove nodes.
