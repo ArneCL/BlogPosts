@@ -21,14 +21,15 @@ Given the `v` hash array `[1111, 2222]` and the `v1` hash array `[3333, 1111, 22
 We're also grabbing `v1`'s hash in the returning array for later reference.
 
 ```
-var positions = v1_hashes.map((h, i) => { return { v1_hash: h, pos_of_v1_in_v: v_hashes.indexOf(h)} } )
+var positions = v1_hashes.map((h, i) => v_hashes.indexOf(h) )
 ```
 
 With this new structure we will loop over it. It will tell us if there's a new item in the `v1` virtual dom that's not in the `v` virtual dom, i.e. we find a -1 value.
 
 ```
-positions.filter(p => p.pos_of_v1_in_v == -1).forEach((p, v1_pos) => {
-  console.log("insert " + p.v1_hash + " into " + v1_pos + " at " + path)
+positions.forEach((index_in_v, v1_pos) => {
+  if(index_in_v != -1) return
+  console.log("insert " + v1_hashes[v1_pos] + " into " + v1_pos + " at " + path)
   v.children.splice(v1_pos, 0, JSON.parse(JSON.stringify(v1.children[v1_pos])))
 })
 ```
@@ -102,20 +103,15 @@ And this function:
 
 ```
 compare = function(v, v1, path) {
-    if(v.type != v1.type) console.log(path, "type", v1.type)
-    if(v.name != v1.name) console.log(path, "name", v1.name)
-    if(JSON.stringify(v.attrs) != JSON.stringify(v1.attrs)) console.log(path, "attrs", v1.attrs)
-    if(v.value != v1.value) console.log(path, "value", v1.value)
     var v_hashes = v.children.map(c => c.hashcode )
     var v1_hashes = v1.children.map(c => c.hashcode )
-    var positions = v1_hashes.map((h, i) => { return { v1_hash: h, pos_of_v1_in_v: v_hashes.indexOf(h) } } )
-    positions.filter(p => p.pos_of_v1_in_v == -1).forEach((p, v1_pos) => {
-      console.log("insert " + p.v1_hash + " into " + v1_pos + " at " + path)
+    var positions = v1_hashes.map((h, i) => v_hashes.indexOf(h) )
+    positions.forEach((index_in_v, v1_pos) => {
+      if(index_in_v != -1) return
+      console.log("insert " + v1_hashes[v1_pos] + " into " + v1_pos + " at " + path)
       v.children.splice(v1_pos, 0, JSON.parse(JSON.stringify(v1.children[v1_pos])))
     })
-    for(var i = 0; i < v.children.length; i++) {
-      compare(v.children[i], v1.children[i], path + "" + i)
-    }
+    v.children.forEach((_, i) => compare(v.children[i], v1.children[i], path + "" + i) )
 }; 
 compare(JSON.parse(JSON.stringify(vd[0])), JSON.parse(JSON.stringify(vd1[0])), "")
 ```
