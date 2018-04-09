@@ -1,7 +1,7 @@
 title: Android: ViewDragHelper tutorial
 tags: android,android-viewdraghelper
 
-If you want to drag things around your screen, you'll want to use the compatability library's ViewDragHelper class.
+If you want to drag things around your screen, you'll want to use the compatability library's ViewDragHelper.
 
 You'll first need to make your own ViewGroup extending custom view, since we'll be intercepting MotionEvents.
 
