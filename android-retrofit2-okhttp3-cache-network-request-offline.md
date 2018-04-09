@@ -4,7 +4,7 @@ tags: android,android-retrofit,android-okhttp
 Let's first build a OKHTTP client with 
 
 0. a cache
-0. an interceptor that checks for connectivity and if none asks for cached data:
+0. an interceptor that checks for connectivity and, if none, asks for cached data:
 
 Here's the client.
 
