@@ -1,7 +1,7 @@
 title: Android: Custom View's onLayout and onMeasure methods
 tags: android,android-custom-view
 
-If you want to layout a custom view's children yourself, as opposed to making the custom view extend LinearLayout or similar, you need to implement the onLayout and onMeasure methods of the ViewGroup class.
+If you want to layout a custom view's children yourself, as opposed to making the custom view extend LinearLayout or similar, you need to implement the onLayout and onMeasure methods of ViewGroup.
 
 ### onLayout()
 
