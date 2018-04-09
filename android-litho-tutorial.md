@@ -1,7 +1,7 @@
 title: Android and Facebook's Litho: Getting started
 tags: android,litho
 
-Litho allows you to declare your view in code with speed optimisations for lists.
+Litho allows you to declare your view in code with speed optimisations for lists. It helps with reactive flows.
 
 It uses flexbox layout logic, via the Facebook Yoga library, allowing you to use your existing web knowledge. This applies to iOS too since Yoga also exists for iOS.
 
