@@ -4,7 +4,7 @@ tags: android,android-databinding,android-recyclerview
 If you want to do databinding in a RecyclerView:
 
 0. Ensure the `ViewHolder` has a variable for the binding.
-0. Change `onCreateViewHolder` to inflate your binding and pass that to the `ViewHolder` to return
+0. Change `onCreateViewHolder` to inflate your binding and pass that to `ViewHolder` to return
 0. Setup the bindings in `onBindViewHolder`
 
 For example:
