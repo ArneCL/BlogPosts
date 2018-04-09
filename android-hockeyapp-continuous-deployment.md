@@ -87,4 +87,4 @@ Now when you open the app again, or do something to trigger `onResume()`, it wil
 
 Click `update`, and voila - you and your testers will see the newest app, and any crashes will be reported to you with a stacktrace and device information.
 
-We don't yet automatically upload our APK to HockeyApp via a build server / continuous integration environment, or send up the release notes, but we can do that in later tutorials.
+We don't yet automatically upload our APK to HockeyApp via a build server / continuous integration environment, or send up the release notes, but we can do that in a later tutorial.
