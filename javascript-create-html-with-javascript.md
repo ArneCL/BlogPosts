@@ -45,6 +45,7 @@ In addition we want to be able to optionally add event listeners. These come aft
 node("div", 
   ["click", (event) => console.log("click"),
    "focus", (event) => console.log("focus")]
+)
 ```
 
 And it's annoying to type `node("div")` and not `div()` so let's fix that now.
