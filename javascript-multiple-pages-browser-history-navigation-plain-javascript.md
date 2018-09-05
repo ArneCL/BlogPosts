@@ -1,4 +1,4 @@
-title: Multiple pages and browser history navigation using plain js
+title: Javascript: Multiple pages and browser history navigation using plain js
 tags: javascript,html
 
 You often want different pages in your web app with browser navigation.
