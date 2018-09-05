@@ -1,4 +1,4 @@
-title: Create HTML with Javascript
+title: Javascript: create HTML with Javascript
 tags: javascript,html
 
 If you create HTML with javascript you can
