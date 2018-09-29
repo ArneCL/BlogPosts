@@ -109,4 +109,4 @@ div(
 )
 ```
 
-(the caveat of using a text node is that you /need/ to use a style string else it will confuse the function)
+(You can't set the style string to an empty string, since the DOM will freak out on seeing node.style = "")
