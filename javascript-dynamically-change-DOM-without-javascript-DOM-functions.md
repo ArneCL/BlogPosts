@@ -102,7 +102,7 @@ function dyn(name, initialData, fn) {
 }
 ```
 
-So now each time `dyn` is found by `node` it will save itself, and remembering its DOM parent, in `window.newfivefour.dynSetters`. We can now use this function to reset the dom. He's `dynSet` that does that:
+So now each time `dyn` is found by `node` it will save itself, and remembering its DOM parent, in `window.newfivefour.dynSetters`. We can now use this function to change that DOM node. He's `dynSet` that does that:
 
 ```
 function dynSet(name, data) {
