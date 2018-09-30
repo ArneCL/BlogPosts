@@ -35,6 +35,6 @@ function fetchData(inputText) {
 }
 ```
 
-Here's the JSFiddle that demonstrates that: https://jsfiddle.net/newfivefour/Luoadm6f/12/
+Here's the JSFiddle that demonstrates that: https://jsfiddle.net/newfivefour/fzr123xn/
 
 Note if you leave the input blank, you'll get a console.log, the one we defined in `.catch(e => console.log("A bad request!", e))`.
