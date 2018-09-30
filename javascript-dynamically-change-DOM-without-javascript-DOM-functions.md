@@ -126,7 +126,7 @@ body(
 )
 ```
 
-Here's a more advanced working example: https://jsfiddle.net/newfivefour/m6nh4uzq/2/ This can obviously be expanded so `data` is a full javascript object, with lists of tweets for example. 
+Here's a more advanced working example: https://jsfiddle.net/newfivefour/9gLts6pz/ This can obviously be expanded so `data` is a full javascript object, with lists of tweets for example. 
 
 Caveat 1: the `data => ` function must return a node, not an array of nodes, although the single node can of course return an array of nodes.
 
