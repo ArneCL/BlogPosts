@@ -38,5 +38,5 @@ It sets a animated transform that rotates the element 360 degrees. It applies th
 
 The `.spinner` class has a border at its top, and it's 20px square. It's placed in the centre and it has a margin half it's width and height to centre it. It has a border-radius to make it round. It has a border-box sizing to stop the margin and padding enlarging the box.
 
-We now have a spinning button. https://jsfiddle.net/newfivefour/17pj0wyt/7/ Next we will to turn it on and off and integrate it with `fetch`.
+We now have a spinning button. https://jsfiddle.net/newfivefour/17pj0wyt/7/ Next we will to turn it on and off and integrate it with `fetch`.  
 
