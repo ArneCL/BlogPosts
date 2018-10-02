@@ -50,13 +50,14 @@ var tokens = [`_${dot}*?_`,
 "hello *i am james* again /italic/ and _underlined_ yes".match(new RegExp(tokens.join("|"), "g"))
 ```
 
-But we have an extra problem with string interpretation since we're no longer using `/reg_ex_here/`. The `\` won't be shown, and we need it. So we need to put an extra `\` in front of it:
+But we have an extra problem with string interpretation since we're no longer using `/reg_ex_here/`. The `\` won't be shown. And we need it. So we need to put an extra `\` in front of it. But this will make our regex even uglier. There's a better solution though. Things in `[...]` don't need to be quoted, so we can use:
 
 ```
+
 var dot = "[\\s\\S]"
 var tokens = [`_${dot}*?_`, 
-              `\\*${dot}*?\\*`, 
-              `\\/${dot}*?\\/`, 
+              `[*]${dot}*?[*]`, 
+              `[/]${dot}*?[/]`, 
               `[^*_/][^*_/]*[^*_/]`]
 "hello *i am james* again /italic/ and _underlined_ yes".match(new RegExp(tokens.join("|"), "g"))
 ```
@@ -73,8 +74,8 @@ function quickText(txt) {
   var replaceSpaceAndNL = t => t.replace(/  /g, "&nbsp;").replace(/\n/g, ' <br> ')
   var dot = "[\\s\\S]"
   var tokens = [`_${dot}*?_`, 
-                `\\*${dot}*?\\*`, 
-                `\\/${dot}*?\\/`, 
+                `[*]${dot}*?[*]`, 
+                `[/]${dot}*?[/]`, 
                 `[^*_/][^*_/]*[^*_/]`]
   return txt.match(new RegExp(tokens.join("|"), "g"))
     .map(t => {
@@ -94,3 +95,5 @@ function quickText(txt) {
 ```
 
 You can play with the result here: https://codepen.io/newfivefour/pen/vVNjjV
+
+It doesn't deal with `_hello *there* again_`. But that can come in a later post.
