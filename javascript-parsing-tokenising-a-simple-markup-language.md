@@ -1,7 +1,7 @@
-title: Javascript parsing and tokenising a new simple new language
+title: Javascript parsing and tokenising for a new markup
 tags: javascript
 
-Making a new language, at least in UNIX, normally involves lex and yacc. But the concepts are universal and can be written in Javascript.
+Making a new markup language, and language in general, at least in UNIX, normally involves lex and yacc. But the concepts are universal and can be written in Javascript.
 
 A simple version of this means breaking down text into symbols, through spaces, and applying meaning to those symbols.
 
