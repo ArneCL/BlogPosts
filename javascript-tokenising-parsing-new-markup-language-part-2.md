@@ -1,4 +1,4 @@
-title: Javascript: Parsing and tokenising a new markup language with regular expressions
+title: Javascript: Parsing and tokenising a markup language with regular expressions
 tags: javascript
 
 Previously we did some tokenising and parsing for a simple markup lanuage (https://newfivefour.com/javascript-parsing-tokenising-a-simple-markup-language.html).
