@@ -1,4 +1,4 @@
-title: Javascript parsing and tokenising for a new markup
+title: Javascript parsing and tokenising for a new markup language
 tags: javascript
 
 Making a new markup language, and language in general, at least in UNIX, normally involves lex and yacc. But the concepts are universal and can be written in Javascript.
