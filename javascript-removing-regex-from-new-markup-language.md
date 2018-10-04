@@ -55,5 +55,5 @@ You can play with it here: https://codepen.io/newfivefour/pen/MPyqNa?editors=001
 
 Note this parsing section can be plugged into the other sections you saw in previous posts.
 
-But this function only deals with single character markups, and don't deal with markers with different start and end points (`[` and `]`). And we're deal with those in later posts.
+But this function only deals with single character markups, and doesn't deal with markers with different start and end points (`[` and `]`). And we're going to deal with those in later posts.
 
