@@ -1,7 +1,7 @@
 title: Javascript: Extending our new markup language, part 3
 tags: javascript
 
-Although our new markup language (https://newfivefour.com/javascript-tokenising-parsing-new-markup-language-part-2.html) doesn't deal with `_hello *there* again_` yet,  let's extend it with headings, links, formatted code and lists beforehand.
+Although our new markup language ( https://newfivefour.com/javascript-tokenising-parsing-new-markup-language-part-2.html ) doesn't deal with `_hello *there* again_` yet,  let's extend it with headings, links, formatted code and lists beforehand.
 
 Our markup language uses `*`, `_` and `/` to format the text. This means we can't use those characters lest they will be interpreted. But there is a way: we'll mark anything between &#96; as not to be interpreted.
 
@@ -108,7 +108,7 @@ function quickText(txt) {
 }
 ```
 
-It works, as you can see here (https://codepen.io/newfivefour/pen/ReWEvE), but the we have a few problems:
+It works, as you can see here ( https://codepen.io/newfivefour/pen/ReWEvE ), but the we have a few problems:
 
 * The regexs are getting unmaintainable. 
 * We can't now put a `.` in our text because the regex is saying "don't include a dot as normal text" since our numbered bullet points use that
