@@ -53,7 +53,9 @@ We'll next add links. They will be represented like this `[link text|https://lin
 
 Next we'll add headings. They'll be represented by `#a heading` and `##a smaller heading` and will last until the end of the line. The regexs will be `##.*?\\n` and `#[^#].*?\\n`. The `\\n` says match until the end of the line. the `#[^#]` is so `#` and `##` can be differentiated. Again, we'll add the `#` to our normal text regex so that `#` is eaten up as normal text.
 
-Finally we'll add ordered and unordered bullet points. The regexs for these are easy. We'll do a `* ` for unordered and `. ` for ordered.: `^[*] .*\\n` and `^[.] .*\\n`. Again, we'll add these symbols to our regex for normal characters so they're not eaten up as normal characters. Our final part of the functions is now more complex. We're saving what the previous token was (via an extra parameter to the map function) and if it was not previously a ordered list, but now is then add `<ol>` to the output, and if it now not a ordered list, but was previously, add a `<\ol>`.
+Finally we'll add ordered and unordered bullet points. The regexs for these are easy. We'll do a `* ` for unordered and `. ` for ordered.: `^[*] .*\\n` and `^[\\^] .*\\n`. (^ at the start of a reg ex means match the start of the line, and so our regex parameters will need to include "m" to give us multiline and therefore match the start of a line.)Again, we'll add these symbols to our regex for normal characters so they're not eaten up as normal characters. 
+
+Our final part of the functions is now more complex. We're saving what the previous token was (via an extra parameter to the map function) and if it was not previously a ordered list, but now is then add `<ol>` to the output, and if it now not a ordered list, but was previously, add a `<\ol>`.
 
 Our full function now looks like this:
 
@@ -63,21 +65,21 @@ function quickText(txt) {
   var replaceSpace = t => t.replace(/  /g, "&nbsp;")
   var notThisButThat = (dis, that, name) => dis != name && that == name
   var dot = "[\\s\\S]"
-  var tokens = ["[^*_/.`\\[\\]#][^*_/.`\\[\\]#]*[^*_/.`\\[\\]#]", 
+  var tokens = ["[^*_/\\^`\\[\\]#][^*_/\\^`\\[\\]#]*[^*_/\\^`\\[\\]#]", 
                 `_${dot}*?_`,
                 `[*][^ ]${dot}*?[*]`,
                 `##.*?\\n`,`#[^#].*?\\n`,
                 `[/]${dot}*?[/]`,
                 `\\[${dot}*?\\]`,
                 `^[*] .*\\n`,
-                `^[.] .*\\n`,
+                `^[\\^] .*\\n`,
                 "[`][\\s\\S]*?[`]"]
   return txt.match(new RegExp(tokens.join("|"), "gm"))
     .map(t => {
       if(t.startsWith("/")) return ["italic", t.slice(1, -1)]
       else if (t.startsWith("_")) return ["underline", t.slice(1, -1)]
       else if (t.startsWith("* ")) return ["ulistitem", t.slice(1)]
-      else if (t.startsWith(". ")) return ["olistitem", t.slice(1)]
+      else if (t.startsWith("^ ")) return ["olistitem", t.slice(1)]
       else if (t.startsWith("##")) return ["heading2", t.slice(2)]
       else if (t.startsWith("#")) return ["heading1", t.slice(1)]
       else if (t.startsWith("*")) return ["bold", t.slice(1, -1)]
@@ -86,6 +88,7 @@ function quickText(txt) {
       else return ["normal", t]
     })
     .map(function(token) {
+      console.log(token)
       let retValue = ""
       if(notThisButThat(token[0], this.prev, "olistitem")) retValue += "</ol>"
       else if(notThisButThat(token[0], this.prev, "ulistitem")) retValue += "</ul>"
@@ -111,9 +114,8 @@ function quickText(txt) {
 It works, as you can see here ( https://codepen.io/newfivefour/pen/ReWEvE ), but the we have a few problems:
 
 * The regexs are getting unmaintainable. 
-* We can't now put a `.` in our text because the regex is saying "don't include a dot as normal text" since our numbered bullet points use that
 * We can't deal with `_hello *there* again_`
 
-The first two problems will be fixed when we removed regular expressions. (Although we could make our normal text reg ex even more complex to fix point two, or simply remove numbered bullet points).
+The first problem will be fixed when we removed regular expressions.
 
 We'll deal with the last issue next.
