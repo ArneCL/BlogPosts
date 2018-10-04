@@ -108,4 +108,12 @@ function quickText(txt) {
 }
 ```
 
-It works, as you can see here (https://codepen.io/newfivefour/pen/ReWEvE), but the regexs are getting unmaintainable. But next we'll look at dealing with `_hello *there* again_` and later getting rid of the regexs.
+It works, as you can see here (https://codepen.io/newfivefour/pen/ReWEvE), but the we have a few problems:
+
+* The regexs are getting unmaintainable. 
+* We can't now put a `.` in our text because the regex is saying "don't include a dot as normal text" since our numbered bullet points use that
+* We can't deal with `_hello *there* again_`
+
+The first two problems will be fixed when we removed regular expressions. (Although we could make our normal text reg ex even more complex to fix point two, or simply remove numbered bullet points).
+
+We'll deal with the last issue next.
