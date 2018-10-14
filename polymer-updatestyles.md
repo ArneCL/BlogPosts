@@ -1,5 +1,6 @@
 title: PolymerJS: Usage of element.updateStyles()
 tags: polymer,polymer-styles
+date: Nov 13, 2015
 
 The shim used for CSS variables is lightweight. 
 
@@ -29,7 +30,7 @@ Within your custom element's style tag:
         background-color: var(--an-ele-name-bgcolor-warning, white);
     }
 
-Within your index.html ```custom-styles`` style tag:
+Within your index.html ```custom-styles``` style tag:
 
     an-ele {
         --an-ele-name-bgcolor-warning: red;
