@@ -1,5 +1,6 @@
 title: Javascript: Add an error display to our system
 tags: javascript,css
+date: Sun Sep 30 2018
 
 Previously we added an animated loading button during our `fetch`. (https://newfivefour.com/javascript-making-custom-components.html)
 
@@ -101,7 +102,7 @@ function fetchData(inputText) {
 }
 ```
 
-Now press 'search` when there's nothing in the input box and my NodeJS server will serve you up a 400 response.
+Now press `search` when there's nothing in the input box and my NodeJS server will serve you up a 400 response.
 
 Now we have dynamic DOM updates, remote data fetches, an animated loading button on remote data fetch, an error dialogue and some very simple new "tags".
 
