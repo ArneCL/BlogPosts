@@ -1,5 +1,6 @@
 title: Javascript: Parsing and tokenising a markup language with regular expressions
 tags: javascript
+date: Tue Oct 2 16:43:35 2018
 
 Previously we did some tokenising and parsing for a simple markup lanuage (https://newfivefour.com/javascript-parsing-tokenising-a-simple-markup-language.html).
 
@@ -16,7 +17,7 @@ We need to know how regexs work, but let's look at `\*.*\*` brefiely:
 
 0. This match a `*` (we must prefix it with `\`)
 0. ...then any character (represented by `.`)
-0. ..multiple times (respresented by a *)
+0. ..multiple times (respresented by a `*`)
 0. until we get a `*` (again, prefixed with `\`)
 
 Therefore `"hello *i am james* again".match(/\*.*\*/g)` gives us `["*i am james*"]`
@@ -31,7 +32,7 @@ The other two regexs we'll use for those are: `_.*?_` and `\/.*?\/` (the `/` mus
 
 So `"hello *i am james* again /italic/ and _underlined_ yes".match(/\*.*\*|_.*?_|\/.*?\//g)` gives us `["*i am james*", "/italic/", "_underlined_"]`.
 
-But we're still missing out all the text that's not italic, bold or underlined. We can grab this by saying "start with a character that's not *, / or _ and continue looking at such a thing until you find a character that is *, / or _. 
+But we're still missing out all the text that's not italic, bold or underlined. We can grab this by saying "start with a character that's not `*`, / or _ and continue looking at such a thing until you find a character that is `*`, / or `_`. 
 
 In regex land we use `[^b]` to say match anything that's not `b`. So our regex will look like this: `[^*_/][^*_/]*[^*_/]`. Notice we're not using `?`. This is because we now want to match as many of these as we can.
 

@@ -1,18 +1,19 @@
 title: Javascript: Removing the regular expression from our markup language, part 5
 tags: javascript
+date: Thu Oct 4 22:11:34 2018
 
 Previously we made a markup language but noted the regular expressions were becoming unmaintainable ( https://newfivefour.com/javascript-extending-our-new-markup-language-part-4.html ).
 
 We'll start making a function that parses our text into tokens. Our algorithm will go like this:
 
-0. Start a new tag when *, /, _, etc is encountered
-0. Continue until another *, /, _, etc tag is found
+0. Start a new tag when `*, /, _,` etc is encountered
+0. Continue until another `*, /, _,` etc tag is found
 9. Then save all the text inside that, including the markers, in an array
 
 And 
 
 0. If a tag ends, and the next character is not a markup tag, grab the text anyway
-0. Continue until a *, /, _, etc tag is found
+0. Continue until a `*, /, _,` etc tag is found
 0. Then save all the text in an array, and start a new markup tag as above
 
 The code that is below:
