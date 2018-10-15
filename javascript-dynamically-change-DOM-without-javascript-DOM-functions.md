@@ -1,5 +1,6 @@
 title: Javascript: Dynamically change HTML without calling the JS DOM functions
 tags: javascript
+date: Sun Sep 30 15:57:44 2018 
 
 In the previous post (https://newfivefour.com/javascript-create-html-with-javascript.html]) we started to make our HTML with Javascript. This gives us some flexibility. One of those flexibilities is the ability to use closures, functions that close over (or remember) data.
 
@@ -78,7 +79,7 @@ document.body.appendChild(
 )
 ```
 
-We can now use this to make our `dyn` function. This will save our function in `window.newfivefour.dynSetters`. And that saved function will have 'closed over` the DOM location for itself. This means when it's next run we'll be able to replace that DOM node with a new node.
+We can now use this to make our `dyn` function. This will save our function in `window.newfivefour.dynSetters`. And that saved function will have 'closed over' the DOM location for itself. This means when it's next run we'll be able to replace that DOM node with a new node.
 
 ```
 function dyn(name, initialData, fn) {
