@@ -1,5 +1,6 @@
 title: PolymerJS: Very simple template binding
-tags: polymer, polymer-binding
+tags: polymer, polymer-binding, html, javascript
+date: Nov 8, 2015
 
 The ```template``` element is a dumb "do not add this to the dom (until I say so)" element. It's in the web component spec, and widly supported.
 
