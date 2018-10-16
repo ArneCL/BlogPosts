@@ -1,5 +1,6 @@
 title: CSS: Create a simple dropdown without javascript
 tags: css
+date: May 29, 2016
 
 Here's the absolute basics of creating a dropdown with CSS without javascript.
 
@@ -27,7 +28,7 @@ Now with the css, hide the `.dropdown` class by default:
       display: none;
     }
 
-But when we hover over the `.dropdown_container` let's set the `display` property of `.dropdown` to `block'.
+But when we hover over the `.dropdown_container` let's set the `display` property of `.dropdown` to `block`.
 
     .dropdown_container:hover .dropdown { 
       display: block;
