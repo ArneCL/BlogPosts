@@ -1,5 +1,6 @@
 title: PolymerJS: Binding properties to DOM attributes & styling
-tags: polymer, polymer-styles, polymer-properties
+tags: polymer, polymer-styles, polymer-properties, javascript
+date: Nov 13, 2015
 
 We saw [previously](http://blog.denevell.org/polymer-custom-element-properties.html) that we could set a custom element's property and have that value changed in the DOM.
 
