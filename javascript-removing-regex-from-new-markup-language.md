@@ -8,7 +8,7 @@ We'll start making a function that parses our text into tokens. Our algorithm wi
 
 0. Start a new tag when `*, /, _,` etc is encountered
 0. Continue until another `*, /, _,` etc tag is found
-9. Then save all the text inside that, including the markers, in an array
+0. Then save all the text inside that, including the markers, in an array
 
 And 
 
