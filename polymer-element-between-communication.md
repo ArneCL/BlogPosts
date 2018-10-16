@@ -1,5 +1,6 @@
 title: PolymerJS: Communicating between elements
-tags: polymer, polymer-communication, polymer-properties
+tags: polymer, polymer-communication, polymer-properties, javascript
+date: Nov 13, 2015
 
 We've [learnt](http://blog.denevell.org/polymer-custom-element-properties.html) how to set custom properties on custom elements.
 
