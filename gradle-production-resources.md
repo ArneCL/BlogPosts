@@ -1,5 +1,6 @@
 title: Gradle: Production resource files
-tags: gradle,java,gradle-resources
+tags: gradle
+date: Apr 21, 2014
 
 Unlike Gradle's Android plugin, there doesn't seem (as of 1.10) a great way to specify production, or any other type, of resources.
 
