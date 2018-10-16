@@ -1,5 +1,8 @@
 Title: Count the files in a directory
 Tags: unix
+date: Feb 27, 2013
+
+So
 
     ls -1 | wc -l
 
