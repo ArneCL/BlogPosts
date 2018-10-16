@@ -1,5 +1,8 @@
 Tags:  java|jgit
 Title: Java: Using JGit to clone a repository
+date: Mar 2, 2013
+
+So
 
 	Git.cloneRepository()
 		.setURI(remoteRepo)
