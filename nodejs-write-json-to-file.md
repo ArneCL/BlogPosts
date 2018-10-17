@@ -1,5 +1,6 @@
 title: NodeJS: Write javascript to JSON file
-tags: nodejs,json
+tags: nodejs,json,javascript
+date: Oct 10, 2017
 
 If you want to write your javascript object to a json file, it's easy enough:
 
