@@ -1,5 +1,6 @@
 title: Nvim: Externally update a buffer keeping scroll position using msgpack and Python
 tags: nvim
+date: 2016-03-23T20:28:43Z
 
 Let's say you want to see the changes in a buffer, changes made externally, without pressing anything in nvim, while keeping your scroll position.
 
