@@ -37,8 +37,6 @@ let parseState = {
   }
 ```
 
-The 
-
 ( You can play with it here: https://codepen.io/newfivefour/pen/OBXXdp )
 
 We can also change the helper functions. They close over the `parseState` so there's no need to pass it in. And we can make them deal not with letters but with positions in a string. We'll have a look at some of the functions:
