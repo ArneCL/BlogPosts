@@ -4,7 +4,7 @@ tags: javascript
 
 This details the development of the package [[wildlife-analysis|https://github.com/newfivefour/wildlife-analysis]] which is available on [[npm|https://www.npmjs.com/package/wildlife-analysis]].
 
- 
+  
 
 Previously we refactored our markup parser to get rid of the regular expression and make it so the tags can have start and end tags ( https://newfivefour.com/javascript-extending-our-regex-less-markup-parser-part-six.html ).
 
