@@ -1,6 +1,6 @@
 title: Maven p21: Multi module projects
 date: 2012-3-24 23:59:03
-tags: maven,maven-multimodule
+tags: maven
 
 Multimodules projects are for when you've partitioned your project into sub projects, and you want to automate changing one, compiling it, and then going into the other project to compile it again to pull up the changes from the other sub-project.
 
