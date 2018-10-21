@@ -1,6 +1,6 @@
 title: Maven p23: Build profiles
 date: 2012-3-29 23:59:03
-tags: maven,maven-build-profile
+tags: maven
 
 Development and production version of a project often exist with different properties, SQL server params for example. 
 
