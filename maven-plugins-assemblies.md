@@ -1,6 +1,6 @@
 title: Maven p10: Assemblies
 date: 2012-02-26 05:50:02
-tags: maven,maven-assembly
+tags: maven
 
 Assemblies are archives Maven produces, a zipped up source folder, an execuatble jar file, for just two examples, alongsize your default type. 
 
