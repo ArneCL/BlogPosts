@@ -41,7 +41,7 @@ You can also use the getProperty and setProperty actions to manipulate request p
 
 		<jsp:setProperty name="bean" property="thing" param="other" />
 
-If you omit the 'param' part, we'll set the thing property via thing in the URL, example.com/hiya?thing=THIS, for example. Or if we put a '*' in the property we'll set the entire bean via parameter properties.
+If you omit the 'param' part, we'll set the thing property via thing in the URL, example.com/hiya?thing=THIS, for example. Or if we put a `*` in the property we'll set the entire bean via parameter properties.
 
 You can also forward pages to another page, and pass parameters there:
 
