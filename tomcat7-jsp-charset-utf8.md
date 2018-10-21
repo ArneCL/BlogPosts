@@ -1,5 +1,5 @@
 Title: JSP: Changing the page encoding to UTF-8
-Tags: jsp,jsp-charset
+Tags: jsp
 date: May 1, 2013
 
 Put this in your web.xml to change the page encoding:
