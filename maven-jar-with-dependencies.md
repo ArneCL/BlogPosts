@@ -1,6 +1,6 @@
 title: Maven p16: Assembly, java-with-dependencies
 date: 2012-3-14 23:50:03
-tags: maven,maven-assembly
+tags: maven
 
 The standard jar created will not include any dependencies included, as a quick way around this you can create a jar with dependencies. This is all the byte code included in the same jar, ergo it will be large.
 
