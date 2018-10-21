@@ -1,5 +1,6 @@
 Title: JSP: Creating a custom EL function
-Tags: jsp,jsp-el,el-custom-function
+Tags: jsp
+date: May 4, 2013
 
 Note I'm creating this custom EL tag in Tomcat 7.
 
