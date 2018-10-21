@@ -1,6 +1,6 @@
 title: Maven p17: Resources
 date: 2012-3-14 23:50:03
-tags: maven,maven-resources
+tags: maven
 
 You can add resources in both main and test in your project. Add a text file in src/main/resources. Then you can access that via
 	
