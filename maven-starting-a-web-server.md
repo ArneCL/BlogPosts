@@ -1,6 +1,6 @@
 title: Maven p19: Starting a Java webapp
 date: 2012-3-24 23:55:03
-tags: maven,maven-web,j2ee,jetty
+tags: maven,jetty
 
 You can create a simple java webapp with this, noting the archetypeArtifactId.
 
