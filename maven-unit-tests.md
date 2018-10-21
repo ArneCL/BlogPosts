@@ -1,6 +1,6 @@
 Title: Maven p4: Unit tests
 Date: 2012-2-24 17:23:20
-Tags: maven maven-unit-tests
+Tags: maven
 
 If you added the unit test dependency in the last tutorial, you can now add a HelloTest.java file in src/test/java. 
 
