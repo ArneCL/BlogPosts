@@ -1,5 +1,6 @@
 title: PART 4: Jersey 2 and Dependency Injection with HK2
-Tags: java,JPA,java-web-quick-start,jersey,jsr330
+Tags: java,JPA,jersey
+date: Apr 21, 2014
 
 (This is part of a series http://blog.denevell.org/category_java-web-quick-start.html)
 
