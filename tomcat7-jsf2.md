@@ -1,5 +1,6 @@
 title: Tomcat 7: Setting up JSF 2
-tags: tomcat,tomcat-jsf,jsf-setup,jsf
+tags: tomcat,jsf,java
+date: Mar 23, 2013
 
 Ensure you have the JSF reference implementation. Using gradle this would be:
 
@@ -27,7 +28,7 @@ In your web.xml file you must have:
 		      </welcome-file-list>
 		</web-app>
 
-This includes the faces servlet, and sets up a serlvet mapping that intercepts anything that has the faces/* url. Our welcome file will be hello.xhtml.
+This includes the faces servlet, and sets up a serlvet mapping that intercepts anything that has the `faces/*` url. Our welcome file will be hello.xhtml.
 
 In our WEB-INF/ folder we now need to define that hello.xhtml file:
 
