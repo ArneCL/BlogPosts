@@ -1,4 +1,4 @@
-title: Javascript: Simple dependency injection for unit testing with destructing assignment
+title: JS: Simple dependency injection for unit testing with destructing assignment
 tags: javascript,dependency-injection
 
 With destruction object assignment and default values you can easily implement dependency injection.
@@ -23,7 +23,7 @@ getFromServer("https://newfivefour.com:3000/id?id=E14000874")
 
 Then we could test the function by passing in a fake `fetch` as the second parameter. But we would have to know the order of parameters to use dependency injection.
 
-We can use destructing object parameters to get aroudn this:
+We can use destructing object parameters to get around this:
 
 ```
 var getFromServer = function({url, _di_fetch = fetch}) {
