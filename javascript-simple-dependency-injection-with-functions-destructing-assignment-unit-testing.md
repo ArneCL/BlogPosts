@@ -43,4 +43,14 @@ getFromServer({url: "www.google.com", _di_fetch: fakeFetch})
 
 And now it will print `The fake fetch has been passed www.google.com`.
 
-This is more a dependency injection solution than a full testing solution but it can be integrated into such with ease.
+You can also place all your depenencies in one place if you do:
+
+```
+import di_container from './di_container.mjs'
+...
+var getFromServer = function({url, _di_fetch = di_container.fetch}) {
+  _di_fetch(url)
+}
+```
+
+This is a dependency injection solution rather than a full testing solution but it can be integrated into such with ease.
