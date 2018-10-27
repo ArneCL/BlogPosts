@@ -1,7 +1,7 @@
-title: Javascript: Simple dependency injection for unit testing
+title: Javascript: Simple dependency injection for unit testing with destructing assignment
 tags: javascript,dependency-injection
 
-With destruction object parameters with default values you can easily implement dependency injection.
+With destruction object assignment and default values you can easily implement dependency injection.
 
 We can use default values easily in ES2015:
 
