@@ -1,4 +1,4 @@
-title: Javascript: Selenium setup in NodeJS with Firefox and ES6 modules.
+title: Javascript: Selenium setup in NodeJS with Firefox and ES6 modules
 tags: javascript,selenium
 
 First install `npm install selenium-webdriver`. I'm on 4.0.0.
