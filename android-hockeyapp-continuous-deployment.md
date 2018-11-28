@@ -79,8 +79,7 @@ I'm going to assume you've got a basic Android App in development.
           UpdateManager.unregister();
         }
 0. Now build and install that on your phone, and upload the APK to HockeyApp via the upload version button, clicking through all the dialog boxes until you can see the version on the Overview.
-0. Now change something in the app, like some text, and update the `versionCode` in `app/build.grade`.
-   Build it, but *do not install this to your device* (so we can see automatic updates on our phone - you don't normally do this)
+0. Now change something in the app, like some text, and update the `versionCode` in `app/build.grade`. Build it, but *do not install this to your device* (so we can see automatic updates on our phone - you don't normally do this)
 0. With this newly build version, upload it to HockeyApp as before.
 
 Now when you open the app again, or do something to trigger `onResume()`, it will ask you if you want to update to the latest version.
