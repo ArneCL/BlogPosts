@@ -37,7 +37,7 @@ Here's the entire commented shell script:
     # Let's find all the logs since that commit
     xargs -I '{}' git log {}..HEAD --pretty=format:'%s' --no-merges | \
     # Add a star to each newline to make the list
-    sed ':a;N;$!ba;s/\n/\n* /g'
+    awk '$0="* "$0'
     # The end of the revision log must have the latest commit
     # This is so later we can do the above again
     echo
