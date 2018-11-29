@@ -17,7 +17,7 @@ Now in your `app/build.gradle` file add this to the android block:
       ci {
         keyAlias "ci-key-alias"
         keyPassword System.getEnv("CI_KEYSTORE_PASSWORD")
-        storeFile "ci-key.keystore"
+        storeFile file("ci-key.keystore")
         storePassword System.getEnv("CI_KEYSTORE_PASSWORD")
       }
     }
