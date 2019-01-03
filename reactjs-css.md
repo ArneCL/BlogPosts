@@ -3,7 +3,7 @@ tags: reactjs
 
 ReactJS uses JSX and that works different with CSS. Normally you can use a `style` string. 
 
-But with JSX you use two curly-bracketed javascript property list then the css name and value are the properties. Dashes are replaced by camal case:
+But with JSX you use a two curly-bracketed javascript property list then the css name and value are the properties. Dashes are replaced by camal case:
 
 ```
 <html>
