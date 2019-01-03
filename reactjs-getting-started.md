@@ -12,7 +12,7 @@ If you want to use ReactJS without setting up a build change, you can directory 
     <script src="https://unpkg.com/prop-types@15.6.1/prop-types.js"></script>
   </head>
   <body>
-    Hello
+    Hello there
   </body>
 </html>
 ```
