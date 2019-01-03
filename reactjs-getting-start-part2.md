@@ -1,4 +1,4 @@
-title: ReactJS: Getting started parts
+title: ReactJS: Getting started part 2
 tags: javascript,reactjs
 
 We need to create a reactjs component. We do this in a `text/babel` script since we're using javascript ES6 features and JSX.
