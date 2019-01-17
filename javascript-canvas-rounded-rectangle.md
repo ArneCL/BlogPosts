@@ -5,7 +5,7 @@ Canvas doesn't provide a method to do rounded rectangles. But we can make one wi
 
 We can also add it to the `CanvasRenderingContext2D` prototype. This means we can use it like the below. And set your own stroke and fill styles:
 
-```javascript
+```
   var canvas = document.getElementById('example');
   var ctx = canvas.getContext('2d');  
   ctx.beginPath();
@@ -19,7 +19,7 @@ We can also add it to the `CanvasRenderingContext2D` prototype. This means we ca
 
 Here's the function to draw a rounded rectangle.
 
-```javascript
+```
 CanvasRenderingContext2D.prototype.roundedRectangle = function(x, y, width, height, rounded) {
   const radiansInCircle = 2 * Math.PI
   const halfRadians = (2 * Math.PI)/2
