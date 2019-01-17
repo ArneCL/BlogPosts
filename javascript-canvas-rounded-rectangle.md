@@ -47,8 +47,6 @@ CanvasRenderingContext2D.prototype.roundedRectangle = function(x, y, width, heig
   this.arc(x + width - rounded, y + rounded, rounded, 0, -quarterRadians, true)  
   
   // line from top right to top left
-  this.lineTo(x + rounded, y)
-  
-  this.closePath()
+  this.lineTo(x + rounded, y)  
 }
 ```
