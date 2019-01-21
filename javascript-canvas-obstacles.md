@@ -1,4 +1,4 @@
-title: Javascript: create game obstacles in canvas
+title: Javascript: Create game obstacles in canvas
 tags: javascript, canvas
 
 In our previous tutorial on canvas we smoothly moved a player (read: rectangle). We can use the same kind of code to generate obstacles.
