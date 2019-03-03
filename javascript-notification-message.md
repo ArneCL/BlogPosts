@@ -11,6 +11,7 @@ You can see the source below and a live example here: https://repl.it/@newfivefo
 
 ```
 <body>
+  
   <button onclick="notify()">Notify me</button>
 
   <script>
@@ -20,7 +21,8 @@ You can see the source below and a live example here: https://repl.it/@newfivefo
       if (!("Notification" in window)) {
         alert("This browser does not support system notifications");
       } else {
-        Notification.requestPermission().then(function(result) {
+        Notification.requestPermission()
+        .then(function(result) {
           if (result === "granted") {
             new Notification("Hi there!");
           } else {
