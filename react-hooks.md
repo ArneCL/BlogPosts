@@ -1,5 +1,5 @@
 title: React: Using hooks
-tags: react, javascript
+tags: reactjs, javascript
 
 React created functional components for when you need a component that doesn't have state and now they've released hooks which allow you to use state in functional components. Such is life. They're nice in some extra ways too.
 
