@@ -1,5 +1,5 @@
 title: React: Custom hooks
-tags: javascript, react
+tags: javascript, reactjs
 
 Custom hooks are used to reuse logic. If you understand `setState` and `useEffect` then custom hooks are nothing special. Let's create one. They're just normal functions. They return a value too.
 
