@@ -22,7 +22,7 @@ After we set this, we then pass the props into a `animated.div` component that u
 ```
 import { useSpring, animated } from 'react-spring'
 ...
-function App2 () {
+function App () {
   const springProps = useSpring({ 
     left: "400px", 
     position: "absolute",
@@ -39,5 +39,41 @@ function App2 () {
 ```
 
 And we thus animate. 
+
+`react-spring` is a physics based library but we can blissfully ignore that and specify a time in `config`:
+
+```
+  const springProps = useSpring({ 
+    left: "400px", 
+    position: "absolute",
+    from: { left: "0px" },
+    config: { duration: 500 }
+  })
+```
+
+You'll also notice this animation starts straight away. We can define when it's run by passing, not an object, but a function to `useSpring` and getting back the previous props, and a method to set the props:
+
+```
+function App () {
+  const [springProps, set] = useSpring(() => ({ 
+    left: "0px", 
+    position: "absolute"
+  }))
+  const click = () => {
+    set({ left: "400px" })
+  }
+  return (
+    <animated.div 
+      style={springProps} 
+      onClick={click}>
+      <AThing>
+        I will slide
+      </AThing>
+    </animated.div>
+  );
+}
+```
+
+I've left out the `from` part of what we pass to `useSpring` since the `from` is now defined, and the `to` part is now defined with the setter function.
 
 PS. You can animate your components inside the `animated.div` or do `const AnimatedThing = animated(Thing)` and then do `<AnimatedThing style="{springProps}">` but at the moment that means `Thing` must be a class component, not a functional components, for reasons that are beyond me.
