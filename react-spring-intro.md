@@ -66,9 +66,7 @@ function App () {
     <animated.div 
       style={springProps} 
       onClick={click}>
-      <AThing>
-        I will slide
-      </AThing>
+      I will slide
     </animated.div>
   );
 }
