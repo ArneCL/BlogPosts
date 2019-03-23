@@ -36,7 +36,7 @@ const transitions = useTransition(items, item => item.key, {
 })
 ```
 
-`initial` is the initial position of the items`. `from` is where they come from when they're added (100% above the final position in this case). `enter` is its resting place. And `leave` is where it will go when it's removed from the list (in our case we'll animate it off the screen)
+`initial` is the initial position of the items. `from` is where they come from when they're added (100% above the final position in this case). `enter` is its resting place. And `leave` is where it will go when it's removed from the list (in our case we'll animate it off the screen)
 
 Finally we render it like this:
 
