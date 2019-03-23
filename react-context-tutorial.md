@@ -86,7 +86,7 @@ They no longer take in props. They get noth the `name` and `onChooseUsername` fr
 const App2Context = React.createContext(null);
 ```
 
-Obviously it contains now data at the moment. We want it to contain the state for our app:
+It contains no data at the moment. We want it to contain the state for our app:
 
 ```
  this.state = {
