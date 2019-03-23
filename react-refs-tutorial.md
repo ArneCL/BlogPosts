@@ -1,4 +1,4 @@
-title: Reacting: Using Refs
+title: React: Using Refs
 tags: javascript,reactjs
 
 Sometimes you want direct access to DOM nodes, instead of using props and state to control them. You use `refs` for this.
