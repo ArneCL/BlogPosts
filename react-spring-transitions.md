@@ -1,5 +1,5 @@
 title: React: react-spring transitions tutorial
-tags: reactjs.javascript
+tags: reactjs,javascript
 
 React-spring transitions let your transition items when they're added or removed from a list. Let's use them with react hooks.
 
