@@ -81,23 +81,20 @@ How do we handle these 'actions'? It's all in the first argument to `useReducer`
 
 ```
 var [state, dispatch] = useReducer((state, [action, payload]) => {
-  var state = { textInput: state.textInput, todos: state.todos }
   switch(action) {
     case 'updateText': 
-      state.textInput = payload
-      return state;
+      return {...state, textInput: payload }
     case 'add': 
       state.todos.push({ item: state.textInput, done: false })
-      state.textInput = ""
-      return state;
+      return { ...state, textInput: "" }
     case 'delete': 
       state.todos.splice(payload, 1)
-      return state;
+      return { ...state }
     case 'mark': 
       state.todos[payload].done = !state.todos[payload].done
-      return state;
+      return { ...state }
     default: 
-      return new Error("bad action")
+      throw new Error("bad action")
   }
 }, initialList)
 ```
