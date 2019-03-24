@@ -32,11 +32,8 @@ Finally we have the `App` component that threads those two components together: 
 
 ```
 class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      name: "Blank"
-    }
+  state = {
+    name: "Blank"
   }
 
   setName = (newName) => {
@@ -110,15 +107,12 @@ Let's look at our `App2` class which uses the context:
 const App2Context = React.createContext(null);
 
 class App2 extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      name: "Blank",
-      onChooseUsername: (newName) => {
-        this.setState({
-          name: newName
-        })
-      }
+  state = {
+    name: "Blank",
+    onChooseUsername: (newName) => {
+      this.setState({
+        name: newName
+      })
     }
   }
   render() {
