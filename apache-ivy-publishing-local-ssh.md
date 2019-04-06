@@ -1,6 +1,7 @@
-Tags:  ant|ivy|ivy-publishing
+title: Apache Ivy: Publishing
+Tags:  ant|ivy
 Date: 2012-11-17 06:00:51 -0500 
-Author: Denevell
+
 
 Apache Ivy can publish a set a files to a machine somewhere and then someone else can fetch them down with a command in an Apache Ant build script.
 
