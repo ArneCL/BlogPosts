@@ -1,5 +1,5 @@
 Title: Golang: Types and the struct type
-Tags: golang,golang-type,golang-struct
+Tags: golang
 
 The 'type' keywords sets a new name for a type in your system. The new type will be a different name for one of golang's internal types, 'string' for example.
 
