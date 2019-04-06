@@ -1,5 +1,5 @@
 title: Alter a Postgresql constraint on a table
-tags: postgresql, postgresql-alter-table, postgresql-constraints
+tags: postgresql
 
 If you have a constraint you wish to alter, you need to drop it and re-add it.
 
