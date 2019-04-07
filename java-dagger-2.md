@@ -63,9 +63,9 @@ At the point, any instance methods in the current class that have the `@Inject` 
 ```
 @Inject Drink drink;
 ...
-Bar bar = DaggerBarComponent
-        .builder()
-        .inject(this);
+DaggerBarComponent
+  .builder()
+  .inject(this);
 ...
 drink.taste()
 ```
@@ -105,10 +105,10 @@ Now when we build our module we can pass in the `List<String> ingredients`:
 
 ```
 DaggerBarComponent
-        .builder()
-        .ingredients(Arrays.asList("Vodka", "Rum", "Coke"))
-        .build()
-        .inject(this);
+  .builder()
+  .ingredients(Arrays.asList("Vodka", "Rum", "Coke"))
+  .build()
+  .inject(this);
 ```
 
 You can also then use Android's build types to swap in or out the depedencies depending on the build type:
@@ -122,10 +122,10 @@ if(BuildConfig.BUILD_TYPE.equals("teeTotal")) {
 }
 
 DaggerBarComponent
-        .builder()
-        .ingredients(ingredients)
-        .build()
-        .inject(this);
+  .builder()
+  .ingredients(ingredients)
+  .build()
+  .inject(this);
 
 drink.taste();
 ```
