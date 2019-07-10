@@ -7,9 +7,9 @@ Let's start with your parent repo, and another repo, currently completely separa
 
 1) Let's add the repo like a normal repo: `git remote add my-subtree git@github.com:your_username/your_repo.git`.
 
-2) Add the other repo as a subtree: `git subtree add --prefix=the_folder/ my-subtree master`.
+2) Add the other repo as a subtree: `git subtree add --prefix=the_folder/ my-subtree master --squash`.
 
-That is, `git subtree add` and then the name of the folder it will live in and finally the repo name and branch.
+That is, `git subtree add` and then the name of the folder it will live in and finally the repo name and branch. The `--squash` option avoids storing the full history of the subtree in the parent repo, including it as a single commit.
 
 3) Make a change to the files in `the_folder` and commit. Your parent repo, along with the files in the subtree, will be updated. But the subtree will not.
 
