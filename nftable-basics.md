@@ -81,7 +81,7 @@ If we put all this together, we get:
 nft add table inet mytable
 nft add chain inet mytable myinputchain { type filter hook input priority 0 \; }
 nft add rule inet mytable myinputchain meta iif lo accept
-nft add rule inet mytable myinputchain tcp dport {443, 2200, 3000, 3002} accept
+nft add rule inet mytable myinputchain tcp dport {443, 22, 3000, 3002} accept
 nft add rule inet mytable myinputchain ip protocol icmp icmp type echo-request limit rate 1/second accept
 nft add rule inet mytable myinputchain ip protocol icmp drop
 nft add rule inet mytable myinputchain ct state established accept
