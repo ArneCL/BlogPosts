@@ -26,7 +26,7 @@ Let's add rules to allow SSH on port 22 and HTTPS on 442 and drop everything els
 
 ```
 nft add rule inet mytable myinputchain tcp dport {443, 22} accept
-nft add rule inet mytable myinputchain tcp drop
+nft add rule inet mytable myinputchain drop
 ```
 
 **Inserting rules and allowing established connections**
@@ -61,7 +61,7 @@ Let's save our list with `nft list table inet mytable -a -nn > fw.ruleset`, clea
 We should allow pings. Our table is a ipv4/ipv6 table so we need to specify that we're interested in the icmp protocol, then the type of icmp packet that interests, then we set a rate limit to stop ping flood, then accept. After this we drop any icmp packet else the established packet rule will accept the ping floods.
 
 ```
-nft add rule inet mytable myinputchain position <..before drop..> ip protocol icmp icmp echo-request limit rate 1/second accept
+nft add rule inet mytable myinputchain position <..before drop..> ip protocol icmp icmp type echo-request limit rate 1/second accept
 nft add rule inet mytable myinputchain position <after the above> ip protocol icmp drop
 ```
 
@@ -81,16 +81,9 @@ If we put all this together, we get:
 nft add table inet mytable
 nft add chain inet mytable myinputchain { type filter hook input priority 0 \; }
 nft add rule inet mytable myinputchain meta iif lo accept
-nft add rule inet mytable myinputchain tcp dport {443, 22} accept
-nft add rule inet mytable myinputchain ip protocol icmp icmp echo-request limit rate 1/second accept
+nft add rule inet mytable myinputchain tcp dport {443, 2200, 3000, 3002} accept
+nft add rule inet mytable myinputchain ip protocol icmp icmp type echo-request limit rate 1/second accept
 nft add rule inet mytable myinputchain ip protocol icmp drop
 nft add rule inet mytable myinputchain ct state established accept
-nft add rule inet mytable myinputchain tcp drop
-
-# saving, deleting, restoring
-# nft list table inet mytable -a -nn > fw.ruleset
-# nft delete table inet mytable
-# nft list tables
-# nft -f fw.ruleset
-# nft list tables
+nft add rule inet mytable myinputchain drop
 ```
