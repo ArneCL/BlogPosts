@@ -72,3 +72,25 @@ Local programs communicate with the computer using the loopback device. Let's al
 ```
 nft insert rule inet mytable myinputchain position 2 meta iif lo accept
 ```
+
+**In conclusion**
+
+If we put all this together, we get:
+
+```
+nft add table inet mytable
+nft add chain inet mytable myinputchain { type filter hook input priority 0 \; }
+nft add rule inet mytable myinputchain meta iif lo accept
+nft add rule inet mytable myinputchain tcp dport {443, 22} accept
+nft add rule inet mytable myinputchain ip protocol icmp icmp echo-request limit rate 1/second accept
+nft add rule inet mytable myinputchain ip protocol icmp drop
+nft add rule inet mytable myinputchain ct state established accept
+nft add rule inet mytable myinputchain tcp drop
+
+# saving, deleting, restoring
+# nft list table inet mytable -a -nn > fw.ruleset
+# nft delete table inet mytable
+# nft list tables
+# nft -f fw.ruleset
+# nft list tables
+```
