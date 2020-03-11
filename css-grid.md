@@ -48,7 +48,7 @@ It isn't a grid yet. Let's make one with a 200px height:
     }
 ```
 
-We name of grid pieces in quotation marks on three separate lines.
+We name the grid pieces in quotation marks on three separate lines.
 
 * the top line has three elements. They're all called "head".
 * the middle line has three elements. The first is called "img". The rest are "text".
@@ -58,9 +58,19 @@ After each line we specify the height: `25%` and `auto` and `auto`, in our case.
 
 After the three lines, we specify the row widths after a slash: `30%` and `auto` and `auto`.
 
+But what do these names refer to? Well, we need to specify those in the divs. Here is it quickly hacked into the style attribute!
+
+```
+    <div id="grid">
+        <div class="head" style="grid-area: head;">heading</div>
+        <div class="img" style="grid-area: img;">img</div>
+        <div class="text" style="grid-area: text;">text</div>
+    </div>
+```
+
 So that's done: https://repl.it/repls/UncommonConcreteInitializationfile 
 
-But we want to centre our header. We could use some css grid properties. But that would centre our `head` div, including the background colour. So let's just use css flexbox instead:
+But we want to centre our header. We could use some css grid properties. But that would centre our `head` div, including the background colour. So let's use css flexbox instead:
 
 
 ```
