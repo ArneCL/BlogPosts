@@ -5,7 +5,7 @@ If you want to upload an image to a server, an image from the photo gallery or c
 
 First create a POST Request as normal, with with a boundary string created via a UUID request and the content type as `multipart/form-data` with the boundary string. 
 
-    var r  = URLRequest(url: URL(string: "https://prospero.uatproxy.cdlis.co.uk/prospero/DocumentUpload.ajax")!)
+    var r  = URLRequest(url: URL(string: "https://some.url")!)
     r.httpMethod = "POST"
     let boundary = "Boundary-\(UUID().uuidString)"
     r.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
