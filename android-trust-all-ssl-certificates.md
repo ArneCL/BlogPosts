@@ -1,5 +1,5 @@
 title: Android: Trust all SSL certificates in Volley
-tags: android,android-volley,ssl
+tags: android,android-volley,android-ssl,java-ssl
 date: Mar 26, 2014
 
 This goes for more than just Volley, but a quick and easy way to accept all certificates is:
