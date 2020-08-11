@@ -1,5 +1,6 @@
 title: Gradle: Hello world Java with a fat jar
-tags: java,gradle,fat-jar,jar,bcrypt
+tags: java,gradle,gradle-jar,java-jar
+date: Mar 24, 2015
 
 Create your build.gradle with your dependencies and a jar section that collects all your libraries into the jar and sets the Main class file.
 
