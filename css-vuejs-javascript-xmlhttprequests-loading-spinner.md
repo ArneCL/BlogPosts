@@ -1,5 +1,6 @@
-title: A loading spinner for XMLHTTPRequest
-tags: css,javascript,vuejs
+title: Javascript: A loading spinner for XMLHTTPRequest
+tags: css,javascript
+date: May 31, 2017
 
 Take this CSS which will show a loading spinner similar to iPhone's. It takes up the entire background, and has 0.5 transparency.
 
@@ -12,13 +13,9 @@ Take this CSS which will show a loading spinner similar to iPhone's. It takes up
 }
 ```
 
-Now place the html below your holding div `<div v-show="loading" id="cover"></div>`.
+Now place the html below your holding div `<div id="cover"></div>`.
 
-The `v-show` is `vuejs` saying only show it when the `loading` variable is true. But you can turn it on and off however you please.
-
-Let's turn it on and off -- via this.loading=true/false -- in our `XMLHTTPREQUEST`. 
-
-I have a very simple reactive `observe`, `onNext` and `onError`. But simply we turn it just before we send the request and turn it off when we receive something back.
+I have a very simple reactive `observe`, `onNext` and `onError`. We turn it just before we send the request and turn it off when we receive something back.
 
 ```
 observe: function(receiver) {
@@ -29,14 +26,14 @@ observe: function(receiver) {
   }
   xhttp.open("GET", "https://whatever", true)
   xhttp.send()
-  this.loading = true
+  // show the #cover element
 },
 onNext: function(pagination) {
-  this.loading = false
+  // hide the #cover element
   ...
 },
 onError: function(message) {
-  this.loading = false
+  // hide the #cover element
   ...
 }
 ```
