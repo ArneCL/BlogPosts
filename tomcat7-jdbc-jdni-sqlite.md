@@ -1,7 +1,6 @@
 Title: Tomcat 7: JDBC via JNDI using sqlite
-Tags: java|tomcat-jndi|tomcat-jdbc|jdbc|sql|sqlite|tomcat
+Tags: java|java-jndi|java-jdbc|sql|sql-sqlite|tomcat
 Date: 2013-02-12 17:27:00 -0500 
-Author: Denevell
 
 First download the sqlite jdbc driver from https://bitbucket.org/xerial/sqlite-jdbc/downloads and copy it into your lib/ folder in your tomcat directory, /usr/share/tomcat7/lib/. Then restart tomcat so it can find your new jar.
 
