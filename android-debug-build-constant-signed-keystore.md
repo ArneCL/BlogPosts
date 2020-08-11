@@ -1,5 +1,6 @@
 title: Android: A debug build signed with a constant keystore
-tags: android,android-keystore,keytool
+tags: android,android-keystore,java-keytool,java
+date: Nov 29, 2018
 
 Each debug build of your android application will be signed with the debug keystore.
 
