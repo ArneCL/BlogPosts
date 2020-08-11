@@ -1,5 +1,6 @@
 title: Upload muliple file to Cloudinary with multer
-tags: javascript, expressjs
+tags: javascript,nodejs-expressjs,nodejs
+date: Mar 6, 2019
 
 Let's say we have some FormData and some files you've found with `<input type="file">`.
 
