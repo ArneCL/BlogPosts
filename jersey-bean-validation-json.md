@@ -1,5 +1,6 @@
 title: Jersey: Bean validation with JSON return objects
-tags: jersey, bean-validation, jackson, scala
+tags: java-jersey, java-beanvalidation, java-jackson, scala
+date: Aug 21, 2016
 
 Here's how to get JSON error messages detailing validation errors in your REST input.
 
