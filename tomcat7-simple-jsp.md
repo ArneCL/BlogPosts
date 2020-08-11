@@ -1,5 +1,5 @@
 Title: JSP: Scriptlet basics
-Tags: java,jsp
+Tags: java,java-jsp
 date: Apr 30, 2013
 
 If you've a penchant for unmaintainable hacked-up horrors, then scriptlets are for you!
