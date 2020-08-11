@@ -1,5 +1,6 @@
 title: Java: Using bcrypt to salt passwords
-tags: java,security,bcrypt
+tags: java,bcrypt
+date: Mar 24, 2013
 
 If you're storing passwords, don't simply hash them, use bcrpyt.
 
