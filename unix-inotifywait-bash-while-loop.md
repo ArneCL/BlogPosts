@@ -1,5 +1,6 @@
 title: Using inotifywait with a while loop in bash
-tags: bash,bash-while,inotifywait,unix
+tags: bash,bash-while,unix-inotifywait,unix
+date: Mar 22, 2016
 
 Install `inotify-tools` and then you can wait for a file to change using:
 
