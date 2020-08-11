@@ -1,5 +1,5 @@
 title: Simple SQLite3 and NodeJS interactions
-tags: nodejs, sqlite, javascript
+tags: nodejs, sql-sqlite, javascript
 date: Oct 4, 2017
 
 Firstly install sqlite3, `npm -g install sqlite3` then:
