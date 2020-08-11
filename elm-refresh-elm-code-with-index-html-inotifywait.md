@@ -1,5 +1,6 @@
 title: Elm-lang: Auto refresh Elm sources when you embed in an index.html file
-tags: elm,inotifywait
+tags: elm,unix-inotifywait, unix
+date: Nov 8, 2016
 
 `elm-react` works wonderfully when your entire project is in elm. However, you often embed Elm into a larger application.
 
