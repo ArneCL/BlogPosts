@@ -1,5 +1,6 @@
 Title: Servlets: Forwarding and Redirecting
-Tags: servlet|servlet-forwarding
+Tags: java-servlet|java-servlet-forwarding|java
+date: May 7, 2013
 
 If you want a 302 redirect, where res is a HttpServletResponse:
 
