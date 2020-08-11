@@ -1,5 +1,5 @@
 Title: JSP: Actions basics
-Tags: java,jsp
+Tags: java,java-jsp
 date: May 1, 2013
 
 Actions are marginally nicer versions of scriptlets, at least some actions that you can perform in scriptlets. 
