@@ -1,5 +1,6 @@
 title: Apache: Redirect HTTP traffic to HTTPS
-tags: unix,apache,ssl,https,apache-mod_rewrite
+tags: unix,apache,apache-mod_rewrite
+date: Mar 26, 2014
 
 If you want all the HTTP traffic to be rerouted through HTTPS, you need to specify a mod_rewrite rule:
 
