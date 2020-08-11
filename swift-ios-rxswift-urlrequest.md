@@ -1,5 +1,6 @@
 title: Swift 3 and RxSwift: Wrapping a URLRequest in RxSwift.
-tags: swift,ios,rxswift
+tags: swift,ios,swift-rxswift
+date: Oct 21, 2016
 
 Let's assume we have request called `r`, let's first create an `Observable`:
 
