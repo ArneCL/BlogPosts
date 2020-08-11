@@ -1,5 +1,5 @@
 title: Java: Dagger 2 Multibindings
-tags: java,dagger
+tags: java,java-dagger,android-dagger,android
 date: Mon 08 Apr 2019 16:50:18 GMT
 
 This follows on from our previous dagger tutorial:
