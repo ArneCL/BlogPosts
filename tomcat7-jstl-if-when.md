@@ -1,5 +1,5 @@
 Title: JSP: If else in JSTL
-Tags: jsp,jstl
+Tags: java-jsp,java-jstl,java
 date: May 5, 2013
 
 And if statement in JSTL is:
