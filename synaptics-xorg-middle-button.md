@@ -1,5 +1,6 @@
 title: Xorg: Enable middle mouse button with Synaptics
-tags: xorg,synaptics
+tags: unix-xorg,unix-synaptics,unix
+date: Jan 17, 2018
 
 Type this in `synclient TapButton3=2`.
 
