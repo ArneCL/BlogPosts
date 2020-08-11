@@ -1,5 +1,6 @@
 title: Android and Facebook's Litho: Getting started
-tags: android,litho
+tags: android,android-litho
+date: Apr 9, 2018
 
 Litho allows you to declare your view in code with speed optimisations for lists. It helps with reactive flows.
 
