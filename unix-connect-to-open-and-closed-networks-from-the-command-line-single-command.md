@@ -1,5 +1,6 @@
 title: Linux: Connect to open and closed networks from the command line with a single command.
-tags: unix,wifi
+tags: unix,unix-wifi
+date: Feb 13, 2018
 
 You can easily connect to an open network though
 
