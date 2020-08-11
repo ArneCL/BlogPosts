@@ -1,5 +1,6 @@
 Title: Unix: Systemv init system (Debian) tutorial
-tags: unix,debian,systemvinit
+tags: unix,unix-debian,unix-systemvinit
+date: Apr 15, 2014
 
 The systemv init system is used in Debian and many other distributions, although will be replaced by systemd in Jessie or later I believe.
 
