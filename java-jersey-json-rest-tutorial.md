@@ -1,5 +1,6 @@
 title: PART 2: Using JSON with Jersey 2
-Tags: jersey,java,json,java-web-quick-start
+Tags: java-jersey,java,java-web-quick-start
+date: Apr 17, 2014
 
 (This is part of a series http://blog.denevell.org/category_java-web-quick-start.html)
 
