@@ -1,5 +1,6 @@
 title: Unix: Urlencode decode from the command line with bash
-tags: unix,urlencode,urldecode
+tags: unix,unix-urlencode,unix-urldecode
+date: Nov 21, 2015
 
 If you want a native bash solution to urlencode and urldecode, put [this](https://gist.github.com/cdown/1163649) in your .bashrc
 
