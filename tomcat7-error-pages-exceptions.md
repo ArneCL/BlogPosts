@@ -1,5 +1,5 @@
 Title: Tomcat 7: Error pages for exceptions and error codes
-Tags: servlet,servlet-error-pages
+Tags: java-servlet,java-servlet-error-pages
 date: 2013-04-02 20:23:15
 
 You can specify an error page in your web folder for either an exception or a standard error code.
