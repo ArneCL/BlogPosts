@@ -1,5 +1,6 @@
 title: Android: Creating icons with imagemagick
-tags: android,unix,imagemagick
+tags: android,unix,unix-imagemagick
+date: Jun 22, 2014
 
 If you have an image, and you want to convert it to the sizes for an icon, such as the one for the actionbar, this will work:
 
