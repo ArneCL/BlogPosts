@@ -1,6 +1,6 @@
 title: Glassfish setup
 date: 2012-04-07 18:30:13
-tags: java glassfish glassfish-setup
+tags: java java-glassfish
 
 First download Java EE from http://www.oracle.com/technetwork/java/javaee/downloads/index.html and install that as a normal user. Keep the default settings throughout. 
 
