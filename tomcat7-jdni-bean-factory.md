@@ -1,3 +1,4 @@
+title: Tomcat: JDNI bean factory from context  
 Tags: tomcat|tomcat-jndi|java
 Date: 2013-02-10 18:30:21 -0500 
 Author: Denevell
