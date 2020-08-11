@@ -1,5 +1,5 @@
 Title: SQL: Renaming columns in sqlite
-Tags: sqlite|sql|sql-renamecolumns
+Tags: sql-sqlite|sql|sql-renamecolumns
 Date: 2013-02-18 17:50:09 -0500 
 Author: Denevell
 
