@@ -1,5 +1,6 @@
 title: Java and Android: Dagger 2 introduction (including Component.Builder)
-tags: java,dagger,android
+tags: java,java-dagger,android,android-dagger
+date: Apr 8, 2019
 
 Let's work through an example of Dagger 2. I'm doing it this in an Android project but for simplicity we'll be treating the project like a normal Java project for the most part: there will be no Activity or Fragment specific code. First this this in our gradle.build file:
 
