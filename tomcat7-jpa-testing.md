@@ -1,7 +1,6 @@
 Title: JPA: Testing
-Tags: jpa|java-testing|jpa-testing|junit
+Tags: java|java-junit|jpa
 Date: 2013-02-17 10:09:09 -0500 
-Author: Denevell
 
 You can test your JPA code by setting aside another folder structure, test/ for example, with a META-INF/ directory with a new persistence.xml file there pointing to a different database.
 
