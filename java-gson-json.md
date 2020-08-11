@@ -1,6 +1,5 @@
-Tags:  json|android|gson|java
+Tags:  android|java-gson|java
 Date: 2012-11-23 16:13:11 -0500 
-Author: Denevell
 
 First download Google's Gson.
 
