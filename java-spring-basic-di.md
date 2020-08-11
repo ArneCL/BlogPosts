@@ -1,5 +1,6 @@
 title: Basic Dependency Injection with Spring (with Gradle)
-tags: java,spring,gradle
+tags: java,java-spring,gradle
+date: Nov 25, 2013
 
 Let's start with some simple setter injection with an XML-based configuration.
 
