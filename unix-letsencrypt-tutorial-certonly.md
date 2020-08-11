@@ -1,5 +1,6 @@
 title: Let's Encrypt tutorial: create a simple certificate for Apache2
-tags: https,letsencrypt,unix,apache
+tags: letsencrypt,unix,apache
+date: Feb 14, 2016
 
 Let's create a simple certificate for Apache2. 
 
