@@ -1,5 +1,6 @@
 title: Unix: Urlencode and urldecode from the command line with Perl
-tags: unix,urlencode
+tags: unix,unix-urlencode
+date: May 29, 2016
 
 If you want to urlencode or urldecode from the command line--that is escape or unescape URL content--the simplest solution is to use Perl:
 
