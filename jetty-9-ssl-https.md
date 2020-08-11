@@ -1,5 +1,6 @@
 Title: Jetty 9: Enabling SSL in Embedded Jetty
-tags: java,jetty,ssl,https
+tags: java,java-jetty
+date: Mar 26, 2014
 
 First create a HttpConfiguration with a HTTP configuration that explains its secure scheme and port:
 
