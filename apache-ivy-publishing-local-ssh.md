@@ -1,5 +1,5 @@
 title: Apache Ivy: Publishing
-Tags:  ant|ivy
+Tags:  java-ant|maven-ivy
 Date: 2012-11-17 06:00:51 -0500 
 
 
