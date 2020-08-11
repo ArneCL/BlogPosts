@@ -1,5 +1,6 @@
 title: Gradle: Generate POM file etc with the maven plugin
-tags: gradle,maven,pom
+tags: gradle,maven,maven-pom
+date: Aug 20, 2016
 
 The maven plugin lets us install a maven package, the pom file etc, to a repository. The default repository is our local file system.
 
