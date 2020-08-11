@@ -1,5 +1,6 @@
 title: CSS: Flexbox simple explainer
-tags: css, flexbox
+tags: css, css-flexbox
+date: Apr 7, 2015
 
 Although flexbox is a rather lot to comprehend, it can be broken down into a bunch of questions asked to the layout items.
 
