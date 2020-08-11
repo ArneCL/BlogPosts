@@ -1,5 +1,6 @@
 title: Password lock and hibernate linux from the command line
-tags: unix, lock
+tags: unix, unix-lock
+date: Nov 7, 2015
 
 If you want to put your machine into hibernation, and also require a password on coming back up, do this:
 
