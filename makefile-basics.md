@@ -1,6 +1,6 @@
 title: Makefile basics
 date: 2012-03-16 23:30:13
-tags: makefile
+tags: unix, unix-makefile
 
 This makefile will have two commands. All and clean. These are on the lines as all: and clean:
 
