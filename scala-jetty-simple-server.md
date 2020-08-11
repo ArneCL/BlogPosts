@@ -1,5 +1,6 @@
 title: Simplest Jetty server in Scala
-tags: scala,jetty
+tags: scala,java-jetty
+date: Aug 13, 2016
 
 Let's first download the jetty runner:
 
