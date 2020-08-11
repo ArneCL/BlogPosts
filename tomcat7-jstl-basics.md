@@ -1,5 +1,5 @@
 Title: JSP: Setup JSTL and EL in Tomcat 7
-Tags: jsp,jstl,tomcat
+Tags: java-jsp,java-jstl,tomcat
 date: May 4, 2013
 
 If you want to use JSTL (and you do) instead of scriptlets you first have to include it in your war file or your tomcat lib file.
