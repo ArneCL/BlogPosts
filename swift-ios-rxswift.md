@@ -1,5 +1,6 @@
 title: Swift 3 and RxSwift: Basic subscriptions
-tags: ios,swift,rxswift
+tags: ios,swift,swift-rxswift
+date: Oct 10, 2016
 
 Let's say you've installed RxSwift via CocoaPods or whatever. And you can compile with `import RxSwift` at the top of your swift file.
 
