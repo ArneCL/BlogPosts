@@ -1,5 +1,5 @@
-title: Javascript: Showing a notification popup message with the Notification API
-tags: javascript,notification
+title: Javascript/HTML5: Showing a notification popup message with the Notification API
+tags: javascript,html5,html5-notification
 
 You can show a small notification popup with the Notification API.
 
