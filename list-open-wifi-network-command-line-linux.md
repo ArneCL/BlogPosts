@@ -1,5 +1,6 @@
 title: List the open wifi networks from the linux command line
-tags: wifi
+tags: unix-wifi, unix
+date: Dec 30, 2017
 
 If you want to use the command line and `iwlist scan` to list all the open wifi networks you can:
 
