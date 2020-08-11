@@ -1,5 +1,5 @@
 Title: JSP: Create a tag file
-Tags: jsp
+Tags: java-jsp, java
 date: May 6, 2013
 
 Put this in your WEB-INF/tags folder. It's called box.tag:
