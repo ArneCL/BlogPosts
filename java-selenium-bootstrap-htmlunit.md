@@ -1,5 +1,6 @@
 title: Using HtmlUnit, Selenium and Bootstrap
-tags: java, bootstrap, java-testing, selenium
+tags: java, selenium
+date: Oct 20, 2013
 
 If you using Selenium's HtmlUnit driver on a website with Bootstrap, you must disable Javascript support.
 
