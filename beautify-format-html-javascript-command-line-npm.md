@@ -1,5 +1,6 @@
 title: Formatting/Beautify HTML and Javascript from the command line
-tags: unix,javascript,html,beautify,npm
+tags: unix,javascript,html
+date: Nov 9, 2015
 
 First, install the js-beautify package from npm.
 
