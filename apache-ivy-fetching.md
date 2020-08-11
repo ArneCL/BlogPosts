@@ -1,6 +1,5 @@
-Tags:  ant|ivy|ivy-fetching
+Tags:  java-ant|maven-ivy|maven-ivy-fetching|java
 Date: 2012-11-18 12:44:11 -0500 
-Author: Denevell
 
 If your repository isn't local or isn't on the default maven reposistory on the internet, you'll need to specify it in ivysettings.xml. Apache Ivy calls these 'resolvers':
 
