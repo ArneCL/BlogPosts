@@ -1,5 +1,6 @@
 title: Gradle: Bintray tutorial
-tags: gradle,bintray
+tags: gradle,gradle-bintray
+date: Aug 20, 2016
 
 We can use gradle to upload our project as a maven repository to bintray, and by extension jcenter and mavenCentral.
 
