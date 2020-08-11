@@ -1,5 +1,6 @@
 title: Unix: Connect to a hidden WIFI network with Debian from the command line
-tags: unix,wifi
+tags: unix,unix-wifi
+date: Nov 21, 2015
 
 For some reason, putting a hidden WIFI network in `/etc/network/interfaces` doesn't work -- at least not if you do it the same way you do visible networks, perhaps.
 
