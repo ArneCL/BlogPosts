@@ -1,5 +1,6 @@
 title: List names of wifi networks on the command line
-tags: unix,wifi
+tags: unix,unix-wifi
+date: Nov 7, 2015
 
 This small script -- to be run as the superuser or someone with permissions to run iwlist -- will give you a list of the networks available.
 
