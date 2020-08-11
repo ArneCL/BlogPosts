@@ -1,5 +1,5 @@
 Title: Servlets: filtering
-Tags: servlet|servlet-filters
+Tags: java-servlet|java-servlet-filters
 Date: 2013-02-20 19:24:59 -0500 
 Author: Denevell
 
