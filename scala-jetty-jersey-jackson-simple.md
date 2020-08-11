@@ -1,5 +1,6 @@
 title: Scala: Simplest Jersey service with Jetty returning JSON via Jackson
-tags: scala,jersey,jetty,jackson
+tags: scala,java-jersey,java-jetty,java-jackson
+date: Aug 14, 2016
 
 If you want a quick web service with Jersey in Jetty returning JSON, you must:
 
