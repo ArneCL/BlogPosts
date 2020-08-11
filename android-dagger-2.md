@@ -1,5 +1,5 @@
 title: Android: Dagger 2 basic tutorial
-tags: android,dagger
+tags: android,android-dagger,java,java-dagger
 date: Mon 08 Apr 2019 16:50:10 GMT
 
 Say we have this dependency:
