@@ -1,6 +1,6 @@
 title: ReactJS: Sending props to elements
 date: 2019-04-01T12:27:38.275Z
-tags: reactjs,javascript
+tags: reactjs
 
 You can send the value of attributes to reactjs components. 
 
