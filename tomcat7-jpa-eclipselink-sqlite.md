@@ -1,5 +1,5 @@
 Title: Tomcat 7: JPA using EclipseLink and Sqlite
-Tags: java|jpa-jpql|java-jpa|java-tomcat|sql-sqlite|sql
+Tags: java|java-jpa-jpql|java-jpa|java-tomcat|sql-sqlite|sql
 Date: 2013-02-16 12:33:25 -0500 
 
 Download EclipseLink, the reference implementation for JPA, from http://www.eclipse.org/eclipselink/downloads/ and the sqlite jdbc library, from https://bitbucket.org/xerial/sqlite-jdbc/downloads. 
