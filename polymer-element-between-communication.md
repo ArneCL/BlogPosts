@@ -1,8 +1,8 @@
 title: PolymerJS: Communicating between elements
-tags: polymer, polymer-communication, polymer-properties, javascript
+tags: polymer, polymer-communication, polymer-properties
 date: Nov 13, 2015
 
-We've [learnt](http://blog.denevell.org/polymer-custom-element-properties.html) how to set custom properties on custom elements.
+We've [learnt](http://newfivefour.com/polymer-custom-element-properties.html) how to set custom properties on custom elements.
 
 But we may want to communicate data between the host element and the custom element. We can use a property on the custom element for this.
 
