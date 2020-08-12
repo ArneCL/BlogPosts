@@ -1,5 +1,6 @@
 title: A simple and naive Virtual DOM implementation, part 3
-tags: javascript, virtual-dom
+tags: javascript,javascript-virtual-dom
+date: Feb 6, 2018
 
 You'll recall from part 1 we have a javascript structure, `vd`, like this:
 
