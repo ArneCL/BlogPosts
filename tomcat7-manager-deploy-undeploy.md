@@ -1,5 +1,6 @@
 Title: Tomcat 7: Deploying from the command line with Tomcat Manager
-Tags: java,tomcat-manager,unix,unix-wget
+Tags: java,java-tomcat-manager,unix,unix-wget,java-tomcat
+date: Mar 30, 2013
 
 You can deploy a WAR from the command line with wget:
 
