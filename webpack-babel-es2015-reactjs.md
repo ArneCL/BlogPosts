@@ -1,5 +1,6 @@
 title: Using Webpack with babel and reactjs
-tags: reactjs, webpack
+tags: reactjs, javascript-webpack
+date: Apr 20, 2016
 
 If you're using webpack--and you probably are--with react, you can set webpack to process all the javascript files with babel, converting all the es2015 and reactjs stuff ready for the web.
 
