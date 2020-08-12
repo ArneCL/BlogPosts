@@ -1,5 +1,6 @@
 Title: Tomcat 7: Apache HTTPd 2.2 integration with virtual-hosts
-Tags: tomcat,apache,apache-mod_rewrite
+Tags: java-tomcat,apache,apache-mod_rewrite
+date: May 3, 2013
 
 First install and enable the mod_jk module for Apache
 
