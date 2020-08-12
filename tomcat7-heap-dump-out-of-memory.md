@@ -1,5 +1,6 @@
 Title: Tomcat 7: Heap dump on Out Of Memory errors.
-Tags: java|tomcat|java-memory
+Tags: java|java-tomcat|java-memory
+date: May 1, 2013
 
 In your /usr/share/tomcat7/bin/catalina.sh file, add this to JAVA_OPTS file. For example:
 
