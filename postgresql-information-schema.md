@@ -1,5 +1,6 @@
 title: Metadata about tables in postgresql (or in information_schema in general)
 tags: sql-postgresql,sql
+date: Feb 12, 2015
 
     SELECT tables.table_name
     FROM information_schema.tables
