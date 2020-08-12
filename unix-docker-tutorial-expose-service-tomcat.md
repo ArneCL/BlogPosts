@@ -1,5 +1,6 @@
 title: Docker tutorial: Expose a service (tomcat)
-tags: unix, docker, tomcat
+tags: unix, docker, java-tomcat
+date: Oct 20, 2013
 
 Once you've got docker (I'm on 0.6.4) running, you can start a service and expose it to the outside world.
 
