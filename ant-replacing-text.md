@@ -1,7 +1,6 @@
 Title: Ant: Replacing text
-Tags: ant|ant-replace
+Tags: java-ant|java-ant-replace
 Date: 2012-12-07 14:15:59 -0500 
-Author: Denevell
 
 You can use Ant to replace tokens in a file with values. With hello.txt as:
 
