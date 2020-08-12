@@ -1,5 +1,6 @@
 title: React: Using React-Router intro
-tags: reactjs,javascript
+tags: reactjs
+date: Mar 23, 2019
 
 React-router is a library that lets you do routing in React. Let's use it.
 
