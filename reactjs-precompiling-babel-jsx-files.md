@@ -1,5 +1,5 @@
 title: ReactJs: Precompiling JSX babel files
-tags: javascript,reactjs,javascript-babeljs,reactjs-babeljs
+tags: reactjs,reactjs-babeljs
 date:  Apr 19, 2016
 
 When you use JSX/Babel in your reactjs app, the import for babel is rather large.
