@@ -1,5 +1,6 @@
 title: Postgresql: Window functions intro
-tags: postgresql, postgresql-window
+tags: sql-postgresql, sql-postgresql-window
+date: Sep 28, 2015
 
 The `group by` SQL statement winds up all rows based on a column. Then you use aggregate functions to output something based on the wound up rows.
 
