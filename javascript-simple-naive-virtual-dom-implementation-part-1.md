@@ -1,5 +1,6 @@
 title: Javascript: A simple and naive Virtual DOM implementation, part 1
-tags: javascript,virtual-dom
+tags: javascript,javascript-virtual-dom
+date: Feb 3, 2018
 
 First thing we'll do is make a Javascript representation of a DOM tree.
 
