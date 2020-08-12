@@ -1,5 +1,6 @@
 title: NFTables: Basic rules, inserting, deleting, established packets and saving
-tags: unix,nftables
+tags: unix,unix-nftables
+date: Dec 2, 2015
 
 Now we've done the basic NFTables [setup](http://blog.denevell.org/nftables-setup-tutorial-debian.html), let's make and state some basic rules.
 
