@@ -1,7 +1,6 @@
 Title: JPA: Mapping to an existing database
-Tags: jpa|jpa-databasemapping
+Tags: java-jpa|java-jpa-databasemapping
 Date: 2013-02-18 18:11:16 -0500 
-Author: Denevell
 
 In your persistence.xml you can specify an XML mapping file. Anything in this will overrule whatever is in your annotations.
 
