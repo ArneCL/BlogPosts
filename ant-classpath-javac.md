@@ -1,6 +1,6 @@
 title: Ant classpath and javac
 date: 2012-4-7 23:13:30
-tags: ant
+tags: java-ant|java
 
 You can add to the classpath giving pathelement tags to a path element. The path's id will be used later on to reference this.
 
