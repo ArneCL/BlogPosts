@@ -1,5 +1,6 @@
 title: ReactJS: Updating state
-tags: javascript,reactjs
+tags: reactjs
+date: Jan 4, 2019
 
 We have state in our component. And we can call `this.setState` from a click listener to update that state. When we update the state the component with effecticently (using virutaldom) redraw itself and any sub components.
 
