@@ -1,5 +1,6 @@
 title: A simple and naive Virtual DOM implementation, part 2
-tags: javascript, virtual-dom
+tags: javascript,javascript-virtual-dom
+date: Feb 4, 2018
 
 We now have a javascript reprentation of our DOM. (See part 1).
 
