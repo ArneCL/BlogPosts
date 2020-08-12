@@ -1,5 +1,5 @@
 title: Reactjs: Quick start tutorial for react-router with browser history
-tags: reactjs,javascript
+tags: reactjs
 date: Apr 21, 2016
 
 Let's first initialise our directory and install the modules. I'm using nodejs v5.10.1.  
