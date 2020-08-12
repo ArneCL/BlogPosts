@@ -1,7 +1,6 @@
 Title: Ant: If-else conditionals
-Tags: ant|ant-condition
+Tags: java-ant|java-ant-condition
 Date: 2012-12-09 16:16:55 -0500 
-Author: Denevell
 
 You can create normal conditionals via:
 
