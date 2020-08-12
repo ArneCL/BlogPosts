@@ -1,5 +1,5 @@
 title: Tomcat 7: Setting up JSF 2
-tags: tomcat,jsf,java
+tags: java-tomcat,java-jsf,java
 date: Mar 23, 2013
 
 Ensure you have the JSF reference implementation. Using gradle this would be:
