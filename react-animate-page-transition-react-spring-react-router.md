@@ -1,5 +1,6 @@
 title: React: Animating component transition with react-spring and react-router
-tags: reactjs,javascript
+tags: reactjs
+date: Mar 24, 2019
 
 We can animate component transitions with react-spring's transitions. We'll use its react hooks implementation.
 
