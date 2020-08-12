@@ -1,5 +1,6 @@
 title: Quick introduction leaflet.js
-tags: leaflet-js,javascript
+tags: leafletjs,javascript
+date: Jan 30, 2018
 
 Let's create a HTML file:
 
