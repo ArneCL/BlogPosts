@@ -1,7 +1,6 @@
 Title: JPA: Named queries
-Tags: jpa|jpa-namedqueries
+Tags: java-jpa|java-jpa-namedqueries
 Date: 2013-02-17 09:39:07 -0500 
-Author: Denevell
 
 On your entity class if you put this below the @Entity annotation,
 
