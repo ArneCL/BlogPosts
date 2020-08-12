@@ -1,5 +1,7 @@
 title: A simple and naive Virtual DOM implementation, part 4
-tags: javascript,virtual-dom
+tags: javascript,javascript-virtual-dom
+date: Feb 7, 2018
+
 
 In part 3, we found a problem with our comparison function:
 
