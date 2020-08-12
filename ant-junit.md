@@ -1,6 +1,6 @@
 title: Ant junit
 date: 2012-4-7 23:13:30
-tags: ant
+tags: java-ant|java|java-junit
 
 The junit tag take in a formatter tag to define the output, and classpath so it can find the classes, and a fileset within a batchtest tag to say where the test classes are (`**` means recursive).
 
