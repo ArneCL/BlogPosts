@@ -1,5 +1,6 @@
 title: Jersey: Custom bean validation / ConstraintViolationException
-tags: jersey,bean-validation,scala
+tags: java-jersey,java-bean-validation,scala,java
+date: Aug 22, 2016
 
 With [bean validation in Jersey](https://newfivefour.com/jersey-bean-validation-json.html), you get JSON errors like this:
 
