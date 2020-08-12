@@ -1,5 +1,6 @@
 title: Postgresql: Remove punctuation from field with a regex
-tags: postgresql
+tags: sql, sql-postgresql
+date: Mar 16, 2017
 
 Sometimes it's useful to remove all punctuation from a field.
 
