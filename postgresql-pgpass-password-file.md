@@ -1,5 +1,6 @@
 title: Postgresql: Use of psql, .pgpass file and PGPASSFILE to store passwords
-tags: postgresql
+tags: sql,sql-postgresql
+date: May 26, 2016
 
 If you don't want to enter your password in everytime you use `psql`, you can use a .pgpass file.
 
