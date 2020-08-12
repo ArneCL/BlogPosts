@@ -1,5 +1,5 @@
 title: JSF2: Templates
-tags: jsf,jsf-templates
+tags: java-jsf,java-jsf-templates,java
 date: 2013-03-28 20:19:00
 
 You can have templates in your JSF pages. First create a template as such. Note the ui namespace and the ui:insert placeholders:
