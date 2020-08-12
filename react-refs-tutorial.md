@@ -1,5 +1,6 @@
 title: React: Using Refs
-tags: javascript,reactjs
+tags: reactjs
+date: Mar 23, 2019
 
 Sometimes you want direct access to DOM nodes, instead of using props and state to control them. You use `refs` for this.
 
