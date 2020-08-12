@@ -1,5 +1,5 @@
 title: Use data binding in the HTML Template element standalone without Polymer
-tags: html-template,html-data-binding,polymer,javascript
+tags: polymer,html,html-template,javascript
 date: May 28, 2016
 
 If you're using the new `template` tag to define inert content in your HTML, you may want to use data binding also.
