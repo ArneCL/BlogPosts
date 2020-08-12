@@ -1,5 +1,6 @@
 title: NFTables: setup and basic tutorial in Debian
-tags: unix, nftables
+tags: unix, unix-nftables
+date: Dec 1, 2015
 
 First get an external host with a Linux distribution on it with a recent kernel. I'm using Debian Jessie with 3.16 (later kernels will be fine).
 
