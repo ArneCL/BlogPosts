@@ -1,7 +1,8 @@
 title: PART 1: Quick start a RESTful project with Jersey, Jetty and Gradle
-Tags: jersey,java,jetty,gradle,java-web-quick-start
+Tags: java-jersey,java,java-jetty,gradle,java-web-quick-start
+date: Apr 17, 2014
 
-(This is part of a series http://blog.denevell.org/category_java-web-quick-start.html)
+(This is part of a series http://newfivefour.com/category_java-web-quick-start.html
 
 Make the project directory and the directory structure for Gradle:
 
