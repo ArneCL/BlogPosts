@@ -1,5 +1,5 @@
 title: Metadata about tables in postgresql (or in information_schema in general)
-tags: postgresql,sql
+tags: sql-postgresql,sql
 
     SELECT tables.table_name
     FROM information_schema.tables
