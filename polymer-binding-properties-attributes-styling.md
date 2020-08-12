@@ -1,8 +1,8 @@
 title: PolymerJS: Binding properties to DOM attributes & styling
-tags: polymer, polymer-styles, polymer-properties, javascript
+tags: polymer, polymer-styles, polymer-properties
 date: Nov 13, 2015
 
-We saw [previously](http://blog.denevell.org/polymer-custom-element-properties.html) that we could set a custom element's property and have that value changed in the DOM.
+We saw [previously](http://newfivefour.com/polymer-custom-element-properties.html) that we could set a custom element's property and have that value changed in the DOM.
 
 In that case, we set a boolean and `<span>{{warning}}</span>` changed. That is, the DOM changed.
 
