@@ -1,6 +1,6 @@
 title: Maven p20: Java servlets
 date: 2012-3-24 23:55:03
-tags: maven,java,servlet
+tags: maven,java,java-servlet
 
 To actually use Servlets in your webapp, we need a depedency which gives us all the J2EE goodness, the OSS Apache Geronimo project. The mvn depedency can be found here: http://mvnrepository.com/artifact/org.apache.geronimo.specs/geronimo-servlet_2.5_spec/1.2 Let's put that in the dependencies section of your pom.xml:
 
