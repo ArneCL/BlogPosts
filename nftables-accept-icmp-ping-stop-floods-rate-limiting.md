@@ -1,5 +1,6 @@
 title: NFTables: Allow ICMP pings and stop ping floods with rate limiting
-tags: unix, nftables
+tags: unix, unix-nftables
+date: Dec 3, 2015
 
 If you want to allow ping ICMP echo-requests, and you're automatically dropping all except a few selected incoming packets, you'll need to first add a rule:
 
