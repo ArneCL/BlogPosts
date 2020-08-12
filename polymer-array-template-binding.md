@@ -1,5 +1,5 @@
 title: PolymerJS: Array Template binding
-tags: polymer, polymer-binding, javascript
+tags: polymer, polymer-binding
 date: Nov 8, 2015
 
 After introducing [template binding](http://blog.denevell.org/polymer-simple-template-binding.html), we'll now look at repeating elements in an array.
