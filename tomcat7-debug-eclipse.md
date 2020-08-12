@@ -1,5 +1,6 @@
 title: Tomcat 7: Debugging in Eclipse
-tags: tomcat,tomcat-debug
+tags: java-tomcat,java-tomcat-debug,java,eclipse
+date: Apr 23, 2013
 
 In your catalina.sh file (if you're using unix), you must place this at the top:
 
