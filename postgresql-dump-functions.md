@@ -1,5 +1,6 @@
 title: Postgresql dump all functions to a file
-tags: postgresql,postgresql-functions
+tags: sql-postgresql,sql-postgresql-functions,sql
+date: Mar 13, 2016
 
 If you want to dump all the functions in your schema, public in the case, do this:
 
