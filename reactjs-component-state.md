@@ -1,5 +1,6 @@
 title: ReactJS: Component state
-tags: reactjs,javascript
+tags: reactjs
+date: Jan 3, 2019
 
 ReactJS component's state is set in the constructor, by setting the `state` property.
 
