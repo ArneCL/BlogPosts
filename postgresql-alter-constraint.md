@@ -1,6 +1,6 @@
 title: Alter a Postgresql constraint on a table
 date: 2015-9-10 05:47:23 -0500
-tags: postgresql
+tags: sql-postgresql,sql
 
 If you have a constraint you wish to alter, you need to drop it and re-add it.
 
