@@ -1,5 +1,6 @@
 title: ReactJS: Getting started part 2
-tags: javascript,reactjs
+tags: reactjs
+date: Jan 3, 2019
 
 We need to create a reactjs component. We do this in a `text/babel` script since we're using javascript ES6 features and JSX.
 
