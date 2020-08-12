@@ -1,7 +1,6 @@
 Title: Ant: Timestamps
-Tags: ant|ant-date
+Tags: java-ant|java-ant-date|java
 Date: 2012-12-04 13:14:26 -0500 
-Author: Denevell
 
 You can set the format of a timestamp as follows:
 
