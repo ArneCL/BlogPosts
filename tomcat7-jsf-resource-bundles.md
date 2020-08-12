@@ -1,5 +1,5 @@
 title: JSF2: Resource bundles / localisation
-tags: jsf,jsf-resource-bundle
+tags: java-jsf,java-jsf-resource-bundle
 date: 2013-03-28 20:19:00
 
 In your WEB-INF folder place a faces-config.xml file:
