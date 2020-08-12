@@ -1,5 +1,5 @@
 title: PART 3: Using JPA and Postgresql in your application
-Tags: java,java-JPA,postgresql,java-web-quick-start,java-jersey
+Tags: java,java-JPA,java-web-quick-start,java-jersey
 date: Apr 17, 2014
 
 (This is part of a series http://blog.denevell.org/category_java-web-quick-start.html)
