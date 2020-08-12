@@ -1,5 +1,6 @@
 title: Webpack: Quick introduction
-tags: webpack, reactjs
+tags: javascript-webpack, reactjs
+date: Apr 20, 2016
 
 The wonders, or horrors, of the reactjs toolchain generally includes webpack.
 
