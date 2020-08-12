@@ -1,5 +1,6 @@
 title: JS: Simple dependency injection for unit testing with destructing assignment
-tags: javascript,dependency-injection
+tags: javascript
+date: Oct 27, 2018
 
 With destruction object assignment and default values you can easily implement dependency injection.
 
