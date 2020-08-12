@@ -1,5 +1,6 @@
 title: React: Context tutorial
-tags: reactjs,javascript
+tags: reactjs
+date: Mar 24, 2019
 
 Instead of passing data and functions around as props around you can use a context. 
 
