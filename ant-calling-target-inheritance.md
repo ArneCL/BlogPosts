@@ -1,5 +1,5 @@
 Title:Ant: Calling targets and Inheritance
-Tags: java-ant|java-ant-inheritance|java-ant-target|java-ant-antcall
+Tags: java-ant|java-ant-inheritance|java-ant-target|java-ant-antcall|java
 Date: 2012-12-07 15:53:03 -0500 
 
 You can call other targets using antcall:
