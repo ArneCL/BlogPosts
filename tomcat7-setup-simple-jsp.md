@@ -1,7 +1,6 @@
 Title: Tomcat 7: Deploying a simple JSP
-Tags: tomcat|tomcat-setup|ant
+Tags: java-tomcat|java-tomcat-setup|java-ant|java
 Date: 2013-02-10 06:52:49 -0500 
-Author: Denevell
 
 First download Tomcat7. I used this to get it setup in Debian (https://wiki.bedis.eu/debian/squeeze_tomcat7_installation until Servlet installation). 
 
