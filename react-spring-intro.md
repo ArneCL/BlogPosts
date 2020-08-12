@@ -1,5 +1,6 @@
 title: React: Using react-spring intro
-tags: javascript,reactjs
+tags: reactjs
+date: Mar 23, 2019
 
 There's a nice animation library for react called react-springs. It uses hooks. So we'll be using hooks.
 
