@@ -1,5 +1,5 @@
 title: ReactJS: Getting started with a component very quickly and simply
-tags: reactjs, javascript
+tags: reactjs
 date: Apr 19, 2016
 
 First let's install `babel` and `reactjs` using `bower`:
