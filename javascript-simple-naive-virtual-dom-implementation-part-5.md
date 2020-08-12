@@ -1,5 +1,7 @@
 title: A simple and naive Virtual DOM implementation, part 5
-tags: javascript,virtual-dom
+tags: javascript,javascript-virtual-dom
+date: Feb 8, 2018
+
 
 In the last part, we gave our javascript structure creator function to ability to give each node a hashcode.
 
