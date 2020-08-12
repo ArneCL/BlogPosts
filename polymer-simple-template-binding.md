@@ -1,5 +1,5 @@
 title: PolymerJS: Very simple template binding
-tags: polymer, polymer-binding, html, javascript
+tags: polymer, polymer-binding
 date: Nov 8, 2015
 
 The ```template``` element is a dumb "do not add this to the dom (until I say so)" element. It's in the web component spec, and widly supported.
@@ -11,7 +11,7 @@ Although template binding is normally limited to PolymerJS elements, ```dom-bind
 So, inside the ```body``` element, we'll have this text:
 
     <template id="app" is="dom-bind">
-        {{something}}
+      {{something}}
     </template>
 
 We have a ```template``` element which has the ```is``` attribute telling us it's an extension to a *inbuild* element.  In this case, an extension called ```dom-bind```, allowing us to use template binding in index.html.
@@ -19,7 +19,7 @@ We have a ```template``` element which has the ```is``` attribute telling us it'
 Next, we need some javascript:
 
      window.addEventListener('WebComponentsReady', function(e) {
-            document.querySelector('#app').something = "yo";
+       document.querySelector('#app').something = "yo";
      });
 
 This is waiting for a ```WebComponentsReady``` event to say everything is ready, then setting a property on the 'dom-bind' template, which is then shown in the template, in boldface.
