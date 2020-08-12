@@ -1,5 +1,6 @@
 title: React: useReducer guide
-tags: reactjs,javascript
+tags: reactjs
+date: Mar 24, 2019
 
 React hooks introduced `useReducer`. This is an alternative to `useState`. And it comes from the redux world.
 
