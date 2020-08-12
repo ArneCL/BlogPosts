@@ -1,5 +1,6 @@
 title: Android: Retrofit 2.0 and RxJava
-tags: androd,androd-retrofit,android-rxjava
+tags: android,android-retrofit,android-rxjava
+date: Feb 25, 2016
 
 If you want to use all of the above buzzwords your code would look like the below.
 
