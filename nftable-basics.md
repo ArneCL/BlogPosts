@@ -1,5 +1,6 @@
 title: NFtables basics
-tags: unix,nftables
+tags: unix,unix-nftables
+date: Feb 14, 2020
 
 NFtables replaces the iptable firewall tools in Linux. It should make things nicer. But let's step back and talk about how firewalls are organised.
 
