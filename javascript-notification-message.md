@@ -1,5 +1,5 @@
 title: Javascript/HTML5: Showing a notification popup message with the Notification API
-tags: javascript,html5,html5-notification
+tags: javascript,html,html5-notification
 date: Mar 3, 2019
 
 You can show a small notification popup with the Notification API.
